@@ -7,6 +7,8 @@ from term import Term
 
 COURSES_SOURCE = "http://catalog.calpoly.edu/coursesaz/csc/"
 TERM_OFFERING_PREFIX = 'Term Typically Offered: '
+PREREQ_PREFIX = 'Prerequisite: '
+CR_NC_MARKER = 'CR/NC'
 
 
 def get_courses():
@@ -27,7 +29,19 @@ def get_courses():
                         if p.string.startswith(TERM_OFFERING_PREFIX)][0]
         terms = [Term.from_str(t) for t in terms_string[len(TERM_OFFERING_PREFIX):].split(', ')]
 
-        course = Course(CourseCode(dept, code), name, units, terms)
+        subheaders = list(subheader.strings)
+        is_CRNC = CR_NC_MARKER in subheaders
+
+        # WIP prereq parsing
+        prereq_idx = [idx for idx, string in enumerate(subheaders) if string.startswith(PREREQ_PREFIX)]
+        if len(prereq_idx) == 0:
+            prereqs = []
+        else:
+            prereqs = ''.join(subheaders[prereq_idx[0]:])
+            prereqs = prereqs[len(PREREQ_PREFIX):]
+        print(prereqs)
+
+        course = Course(CourseCode(dept, code), name, units, terms, is_CRNC)
         courses.append(course)
         print(course)
 
