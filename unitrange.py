@@ -16,9 +16,6 @@ class UnitRange:
 
     def __str__(self):
         if self.min == self.max:
-            if self.min == 1:
-                return '1 unit'
-            else:
-                return '{} units'.format(self.min)
+            return str(self.min)
         else:
-            return '{}-{} units'.format(self.min, self.max)
+            return '{}-{}'.format(self.min, self.max)
