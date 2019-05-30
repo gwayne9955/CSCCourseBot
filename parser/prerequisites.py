@@ -1,6 +1,6 @@
 from typing import *
 from enum import Enum, auto
-from coursecode import CourseCode
+from parser.coursecode import CourseCode
 
 
 class CourseCompletionRequirement(Enum):

@@ -1,7 +1,7 @@
 from typing import *
-from unitrange import UnitRange
-from coursecode import CourseCode
-from term import Term
+from parser.unitrange import UnitRange
+from parser.coursecode import CourseCode
+from parser.term import Term
 
 
 class Course:

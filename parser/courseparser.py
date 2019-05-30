@@ -1,9 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
-from course import Course
-from coursecode import CourseCode
-from unitrange import UnitRange
-from term import Term
+from parser.course import Course
+from parser.coursecode import CourseCode
+from parser.unitrange import UnitRange
+from parser.term import Term
 
 COURSES_SOURCE = "http://catalog.calpoly.edu/coursesaz/csc/"
 TERM_OFFERING_PREFIX = 'Term Typically Offered: '
