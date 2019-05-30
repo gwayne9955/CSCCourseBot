@@ -70,6 +70,9 @@ e.g. Appropriate Math Placement Level.
 class PrerequisiteDisjunction:
     """
     Describes an 'or' relationship between multiple prerequisites.
+    :param prerequisites: A list where each element is either
+        - a prerequisite, or
+        - a list of prerequisites, describing a conjunction
     """
     def __init__(self, prerequisites):
         self.prerequisites = prerequisites
