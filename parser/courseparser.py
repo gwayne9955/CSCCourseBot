@@ -4,6 +4,7 @@ from parser.course import Course
 from parser.coursecode import CourseCode
 from parser.unitrange import UnitRange
 from parser.term import Term
+from parser.prereqparser import parse_prepreqs
 
 COURSES_SOURCE = "http://catalog.calpoly.edu/coursesaz/csc/"
 TERM_OFFERING_PREFIX = 'Term Typically Offered: '
@@ -37,9 +38,7 @@ def get_courses():
         if len(prereq_idx) == 0:
             prereqs = []
         else:
-            prereqs = ''.join(subheaders[prereq_idx[0]:])
-            prereqs = prereqs[len(PREREQ_PREFIX):]
-        print(prereqs)
+            prereqs = parse_prepreqs(''.join(subheaders[prereq_idx[0]:]))
 
         course = Course(CourseCode(dept, code), name, units, terms, is_CRNC)
         courses.append(course)
@@ -58,6 +57,3 @@ def parse_unit_range(string):
 
 if __name__ == '__main__':
     get_courses()
-
-
-
