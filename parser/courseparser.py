@@ -38,7 +38,10 @@ def get_courses():
         else:
             prereqs = ''.join(subheaders[prereq_idx[0]:])[len(PREREQ_PREFIX):]
 
-        course = Course(CourseCode(dept, code), name, units, terms, is_CRNC, prereqs)
+        desc = ''.join(course_block.find('div', attrs={'class': 'courseblockdesc'}).p.strings)
+
+        course = Course(CourseCode(dept, code), name, units,
+                        terms, is_CRNC, prereqs, desc)
         courses.append(course)
         print(course)
 
