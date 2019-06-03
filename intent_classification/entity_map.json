@@ -1,0 +1,77 @@
+{
+	"[CLASS_NAME]": {
+		"wit_entity": "CLASS_NAME",
+		"description": "The name of a course",
+		"values": {
+			"CSC 357": ["CSC 357", "systems programming"],
+			"CSC 341": ["CSC 341", "introduction to compilers"]
+		}
+	},
+	"[QUARTER]": {
+		"wit_entity": "QUARTER",
+		"description": "The season of a quarter",
+		"values": {
+			"Fall": ["Fall", "Autumn"],
+			"Winter": ["Winter"],
+			"Spring": ["Spring"],
+			"Summer": ["Summer"]
+		}
+	},
+	"[CLASS_QUALIFICATION]": {
+		"wit_entity": "CLASS_QUALIFICATION",
+		"description": "An individual’s class standing",
+		"values": {
+			"freshman": ["freshman"],
+			"sophomore": ["sophomore"],
+			"junior": ["junior"],
+			"senior": ["senior"]
+		}
+	},
+	"[DEPARTMENT_ABBREVIATION]": {
+		"wit_entity": "DEPARTMENT_ABBREVIATION",
+		"description": "The three-letter abbreviation for a department",
+		"values": {
+			"CSC": ["CSC", "csc"],
+			"CPE": ["CPE", "cpe"]
+		}
+	},
+	"[SUBJECT_MATTER]": {
+		"wit_entity": "SUBJECT_MATTER",
+		"description": "A topic covered by a course",
+		"values": {
+			"compilers": ["compilers"],
+			"OOP": ["OOP", "object oriented programming", "object oriented"]
+		}
+	},
+	"[GE_AREA]": {
+		"wit_entity": "GE_AREA",
+		"description": "A GE area abbreviation",
+		"values": {
+			"A1": ["A1", "a1"],
+			"A2": ["A2", "a2"],
+			"A3": ["A3", "a3"],
+			"A4": ["A4", "a4"],
+			"B1": ["B1", "b1"],
+			"B2": ["B2", "b2"],
+			"B3": ["B3", "b3"],
+			"B4": ["B4", "b4"],
+			"C1": ["C1", "c1"],
+			"C2": ["C2", "c2"],
+			"C3": ["C3", "c3"],
+			"C4": ["C4", "c4"],
+			"D1": ["D1", "d1"],
+			"D2": ["D2", "d2"],
+			"D3": ["D3", "d3"],
+			"D4": ["D4", "d4"]
+		}
+	},
+	"[COURSE_LEVEL]": {
+		"wit_entity": "COURSE_LEVEL",
+		"description": "A generic course level",
+		"values": {
+			"100": ["100", "one hundred"],
+			"200": ["100", "two hundred"],
+			"300": ["100", "three hundred"]
+		}
+	}
+}
