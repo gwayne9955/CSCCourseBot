@@ -312,98 +312,211 @@
 	},
 	"Which classes include [SUBJECT_MATTER]?": {
 		"intent": "CLASSES_WITH_TOPIC",
-		"rephrases": []
+		"rephrases": [
+			"Which courses include [SUBJECT_MATTER]?",
+			"What are classes that include [SUBJECT_MATTER]?",
+			"What are some classes that include [SUBJECT_MATTER]?",
+			"Which classes consist of [SUBJECT_MATTER]?",
+			"Which classes touch on [SUBJECT_MATTER]?"
+		]
 	},
 	"Which classes don’t include [SUBJECT_MATTER]?": {
 		"intent": "CLASSES_NO_WITH_TOPIC",
-		"rephrases": []
+		"rephrases": [
+			"Which courses don't include [SUBJECT_MATTER]?",
+			"What are classes that don't include [SUBJECT_MATTER]?",
+			"What are some classes that don't include [SUBJECT_MATTER]?",
+			"Which classes don't consist of [SUBJECT_MATTER]?",
+			"Which classes don't touch on [SUBJECT_MATTER]?"
+		]
 	},
 	"Does [CLASS_NAME] include [SUBJECT_MATTER]?": {
 		"intent": "CLASS_WITH_TOPIC",
-		"rephrases": []
+		"rephrases": [
+			"Would [CLASS_NAME] include [SUBJECT_MATTER]?",
+			"Does [CLASS_NAME] consist of [SUBJECT_MATTER]?",
+			"Is [SUBJECT_MATTER] included in [CLASS_NAME]?",
+			"Is [SUBJECT_MATTER]? taught in [CLASS_NAME]?"
+		]
 	},
 	"What is the course title for [CLASS_NAME]?": {
 		"intent": "CLASS_TITLE",
-		"rephrases": []
+		"rephrases": [
+			"What is the class title for [CLASS_NAME]?",
+			"What class title is given to [CLASS_NAME]?",
+			"What class title is [CLASS_NAME] listed as?",
+			"Which course title is [CLASS_NAME]?"
+		]
 	},
 	"What is [CLASS_NAME] also called?": {
 		"intent": "CLASS_OTHER_NAME",
-		"rephrases": []
+		"rephrases": [
+			"What is another name for [CLASS_NAME]?",
+			"What name do people also call [CLASS_NAME]?",
+			"What is [CLASS_NAME] also named as?",
+			"What name is also given to [CLASS_NAME]?"
+		]
 	},
 	"What is the name of [CLASS_NAME]?": {
 		"intent": "WHAT_CLASS_NAME",
-		"rephrases": []
+		"rephrases": [
+			"What is [CLASS_NAME] called?",
+			"What is [CLASS_NAME]'s name?",
+			"What name does [CLASS_NAME] have?",
+			"What class name is [CLASS_NAME]?"
+		]
 	},
 	"What is the course code for [CLASS_NAME]?": {
 		"intent": "WHAT_CLASS_CODE",
-		"rephrases": []
+		"rephrases": [
+			"What is the class code for [CLASS_NAME]?",
+			"What code does [CLASS_NAME] have?",
+			"What is [CLASS_NAME]'s course code?",
+			"Which course code is [CLASS_NAME]?"
+		]
 	},
 	"Which classes include group work?": {
 		"intent": "CLASSES_GROUP",
-		"rephrases": []
+		"rephrases": [
+			"Which courses include group work?",
+			"Which classes have a lot of group work?",
+			"What classes can I take that has group work?",
+			"What courses consist of mostly group work?"
+		]
 	},
 	"Does [CLASS_NAME] include group work?": {
 		"intent": "CLASSES_NO_GROUP",
-		"rephrases": []
+		"rephrases": [
+			"Is there a lot of group work in [CLASS_NAME]?",
+			"Does [CLASS_NAME] have a lot of group work?",
+			"Is [CLASS_NAME] taught mostly by group work",
+			"Does [CLASS_NAME] consist mostly of group work?",
+			"Does [CLASS_NAME] typically consist of group work?"
+		]
 	},
 	"Which classes are project based?": {
 		"intent": "CLASSES_PROJECT",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are project based?",
+			"Which classes have a lot of projects?",
+			"What classes can I take that have a lot of projects?",
+			"What courses consist of mostly projects?"
+		]
 	},
 	"Is [CLASS_NAME] project based?": {
 		"intent": "CLASS_PROJECT",
-		"rephrases": []
+		"rephrases": [
+			"Are there a lot of projects in [CLASS_NAME]?",
+			"Does [CLASS_NAME] have a lot of projects?",
+			"Is [CLASS_NAME] taught mostly with projects",
+			"Does [CLASS_NAME] consist mostly of projects?",
+			"Does [CLASS_NAME] typically consist of projects?"
+		]
 	},
 	"What class should I take after [CLASS_NAME]?": {
 		"intent": "CLASS_AFTER_CLASS",
 		"rephrases": [
-			"What classes build off [CLASS_NAME]?"
+			"What course should I take after [CLASS_NAME]?",
+			"What classes build off [CLASS_NAME]?",
+			"Which course should I take following [CLASS_NAME]?",
+			"What class do students typically take after [CLASS_NAME]?",
+			"After [CLASS_NAME], what course should I take?",
+			"What class should I take next after [CLASS_NAME]?"
 		]
 	},
 	"Which classes are two-part sequences?": {
 		"intent": "CLASSES_TWO_PART",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are two-part sequences?",
+			"Which classes are usually taken in two parts?",
+			"What courses are usually taken as a two-part sequence?",
+			"Which courses are typically taken as two different parts?"
+		]
 	},
 	"Which classes are introductory studies?": {
 		"intent": "CLASSES_INTRO",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are introductory studies?",
+			"What classes are considered introductory studies?",
+			"What introductory classes can I take?",
+			"Which introductory classes can I take?",
+			"Which intro courses can be taken?"
+		]
 	},
 	"Which classes fulfill GE Area [GE_AREA]?": {
 		"intent": "CLASSES_GE_X",
-		"rephrases": []
+		"rephrases": [
+			"Which courses fulfill GE Area [GE_AREA]?",
+			"Which classes can I fulfill my [GE_AREA] with?",
+			"Which classes can I get credits for GE Area [GE_AREA] with?",
+			"Which classes give me credits for [GE_AREA]?",
+			"Which classes are possible to get credits for GE Area [GE_AREA]?"
+		]
 	},
 	"Does [CLASS_NAME] fulfill GE Area [GE_AREA]?": {
 		"intent": "CLASS_GE_X",
 		"rephrases": [
-			"Can I fulfill my [GE_AREA] with [CLASS_NAME]?"
+			"Can I fulfill my [GE_AREA] with [CLASS_NAME]?",
+			"Can I get credits for GE Area [GE_AREA] with [CLASS_NAME]?",
+			"Can I get credits for [GE_AREA] with [CLASS_NAME]?",
+			"Is it possible to get credits for GE Area [GE_AREA] with [CLASS_NAME]?"
 		]
 	},
 	"Which classes are most similar to [CLASS_NAME]?": {
 		"intent": "CLASSES_SIMILAR_CLASS",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are most similar to [CLASS_NAME]?",
+			"What classes are similar to [CLASS_NAME]?",
+			"Which courses are similar to [CLASS_NAME]?",
+			"Which classes are like [CLASS_NAME]?",
+			"If I could not get [CLASS_NAME], which classes should I take instead?"
+		]
 	},
 	"What are the similarities between [CLASS_NAME] and [CLASS_NAME]?": {
 		"intent": "CLASS_SHARED_TOPICS",
-		"rephrases": []
+		"rephrases": [
+			"What are the similarities in taking [CLASS_NAME] and [CLASS_NAME]?",
+			"What are key similarities in [CLASS_NAME] and [CLASS_NAME]?",
+			"Why would a student take [CLASS_NAME] and [CLASS_NAME]?",
+			"How is [CLASS_NAME] similar to [CLASS_NAME]?"
+		]
 	},
 	"What are the differences between [CLASS_NAME] and [CLASS_NAME]?": {
 		"intent": "CLASS_DIFFERENCES",
-		"rephrases": []
+		"rephrases": [
+			"What are the differences in taking [CLASS_NAME] versus [CLASS_NAME]?",
+			"What are key differences in [CLASS_NAME] and [CLASS_NAME]?",
+			"Why would a student take [CLASS_NAME] over [CLASS_NAME]?",
+			"How is [CLASS_NAME] different from [CLASS_NAME]?"
+		]
 	},
 	"What technical electives should I select to focus on [SUBJECT_MATTER]?": {
 		"intent": "TECHS_WITH_TOPIC",
 		"rephrases": [
 			"What technical electives should I select to do research in [SUBJECT_MATTER]?",
 			"What are some good tech electives to study [SUBJECT_MATTER]?",
-			"What classes should I take to get a job in [SUBJECT_MATTER]?"
+			"What classes should I take to get a job in [SUBJECT_MATTER]?",
+			"What are good technical electives to study [SUBJECT_MATTER]?"
 		]
 	},
 	"What classes should I take with [CLASS_NAME]?": {
 		"intent": "CLASSES_COMPLIMENT_CLASS",
-		"rephrases": []
+		"rephrases": [
+			"What courses should I take with [CLASS_NAME]?",
+			"What are good classes that I should take with [CLASS_NAME]?",
+			"What classes would people recommend taking [CLASS_NAME] with?",
+			"Which classes would students recommend taking [CLASS_NAME] alongside?",
+			"Which courses would be good for me to take with [CLASS_NAME]?"
+		]
 	},
 	"What subjects are also commonly studied with [SUBJECT_MATTER]?": {
 		"intent": "TOPICS_COMMON_TOPIC",
-		"rephrases": []
+		"rephrases": [
+			"What subjects do people tend to study with [SUBJECT_MATTER]?",
+			"What subjects do people tend to study alongside [SUBJECT_MATTER]?",
+			"What subjects do students tend to study with [SUBJECT_MATTER]?",
+			"What are some subjects alongside [SUBJECT_MATTER] that students tend to study?",
+			"Are there any subjects that are commonly studied with [SUBJECT_MATTER]?"
+		]
 	}
 }
