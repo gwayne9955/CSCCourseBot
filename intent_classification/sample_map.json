@@ -204,43 +204,107 @@
 	},
 	"Do I need a C- or better in [CLASS_NAME] to take any other classes?": {
 		"intent": "C_NEEDED_IN_CLASS",
-		"rephrases": []
+		"rephrases": [
+			"Do I need a C or better in [CLASS_NAME] to take any other courses?",
+			"Do I need at least a C- in [CLASS_NAME] to take other courses?",
+			"Do I need at least a C in [CLASS_NAME] to take other courses?",
+			"Is a C- needed in [CLASS_NAME] to take other classes?",
+			"Is a C needed in [CLASS_NAME] to take other classes?"
+		]
 	},
 	"What is the shortest path to taking [CLASS_NAME]?": {
 		"intent": "SHORTEST_PATH_CLASS",
-		"rephrases": []
+		"rephrases": [
+			"What is the easiest way to be able to take [CLASS_NAME]?",
+			"What is the shortest path to be able to take [CLASS_NAME]?",
+			"What is the shortest path of classes to be able to take [CLASS_NAME]?"
+		]
 	},
 	"What classes are prerequisites for the most other classes?": {
 		"intent": "CLASSES_PREREQ_FOR_MOST",
-		"rephrases": []
+		"rephrases": [
+			"What courses are prerequisites for the most other classes?",
+			"What courses are prereqs for the most other classes?",
+			"What classes are prereqs for most other classes?",
+			"Which classes are prerequisites for many other classes?",
+			"Which classes are foundational to take?"
+		]
 	},
 	"Which classes require [CLASS_QUALIFICATION] standing?": {
 		"intent": "CLASSES_REQ_STANDING",
-		"rephrases": []
+		"rephrases": [
+			"Which courses require [CLASS_QUALIFICATION] standing?",
+			"Which classes require me to be a [CLASS_QUALIFICATION]?",
+			"Which courses do I need to be a [CLASS_QUALIFICATION] to take?",
+			"Which classes need [CLASS_QUALIFICATION] standing?",
+			"Which classes need [CLASS_QUALIFICATION] in order to take them?"
+		]
 	},
 	"Which classes do not require [CLASS_QUALIFICATION] standing?": {
 		"intent": "CLASSES_NO_REQ_STANDING",
-		"rephrases": []
+		"rephrases": [
+			"Which courses do not require [CLASS_QUALIFICATION] standing?",
+			"Which courses do not require me to be a [CLASS_QUALIFICATION]?",
+			"Which classes is [CLASS_QUALIFICATION] standing not required?",
+			"For what courses is [CLASS_QUALIFICATION] standing not necessary?",
+			"For which courses is [CLASS_QUALIFICATION] standing not needed?"
+		]
 	},
 	"Does [CLASS_NAME] require [CLASS_QUALIFICATION] standing?": {
 		"intent": "CLASS_REQ_STANDING",
-		"rephrases": []
+		"rephrases": [
+			"Do I need [CLASS_QUALIFICATION] standing to take [CLASS_NAME]?",
+			"Is [CLASS_QUALIFICATION] required to take [CLASS_NAME]?",
+			"Is [CLASS_QUALIFICATION] needed to take [CLASS_NAME]?",
+			"Is [CLASS_QUALIFICATION] necessary to take [CLASS_NAME]?",
+			"Does [CLASS_NAME] need [CLASS_QUALIFICATION] standing?",
+			"Do I need to be a [CLASS_QUALIFICATION] to take [CLASS_NAME]?",
+			"Am I required to be a [CLASS_QUALIFICATION] to take [CLASS_NAME]?",
+			"Does [CLASS_NAME] require me to be a [CLASS_QUALIFICATION]?"
+		]
 	},
 	"When do most people take [CLASS_NAME]?": {
 		"intent": "WHEN_MOST_TAKE_CLASS",
-		"rephrases": []
+		"rephrases": [
+			"What quarter is [CLASS_NAME] mostly taken in?",
+			"What quarter is [CLASS_NAME] taken most frequently in?",
+			"When do students usually take [CLASS_NAME]?",
+			"What is the most common quarter to take [CLASS_NAME]?",
+			"When should I take [CLASS_NAME]?",
+			"When is most common to take [CLASS_NAME]?",
+			"Which quarter should I take [CLASS_NAME] in?"
+		]
 	},
 	"Which classes are limited in total credit?": {
 		"intent": "CLASSES_LIMITED_CREDIT",
-		"rephrases": []
+		"rephrases": [
+			"Which classes have a limit in total credit?",
+			"Which courses are limited in total credit?",
+			"Which courses have a limit on the total amount of credit?",
+			"Which classes have a limit on total credit?"
+		]
 	},
 	"Is [CLASS_NAME] limited in total credit?": {
 		"intent": "CLASS_LIMITED_CREDIT",
-		"rephrases": []
+		"rephrases": [
+			"Does [CLASS_NAME] have a limit in total credit?",
+			"Is [CLASS_NAME] limited by total credit?",
+			"Is total credit limited for [CLASS_NAME]?",
+			"Is total credit limited for taking [CLASS_NAME]?",
+			"Is there a limit on total credit for [CLASS_NAME]?"
+		]
 	},
 	"Which classes count as a tech elective?": {
 		"intent": "CLASSES_COUNT_TECH",
-		"rephrases": []
+		"rephrases": [
+			"Which courses count as a tech elective?",
+			"Which classes can count as a tech elective?",
+			"What classes can also count as a tech elective?",
+			"What tech electives can I take?",
+			"Which classes can I take as a tech elective?",
+			"Which classes can be taken as a tech elective?",
+			"What tech electives can be taken?"
+		]
 	},
 	"Can I select [CLASS_NAME] as a tech elective?": {
 		"intent": "CLASS_COUNT_TECH",
