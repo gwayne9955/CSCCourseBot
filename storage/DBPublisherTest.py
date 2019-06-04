@@ -43,3 +43,5 @@ class TestDBPublisher(unittest.TestCase):
 
         results = proxy.get("SELECT * FROM test_courses")
         print(results)
+
+        proxy.disconnect()
