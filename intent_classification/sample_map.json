@@ -244,71 +244,159 @@
 	},
 	"Can I select [CLASS_NAME] as a tech elective?": {
 		"intent": "CLASS_COUNT_TECH",
-		"rephrases": []
+		"rephrases": [
+			"Can I take [CLASS_NAME] as a tech elective?",
+			"Would [CLASS_NAME] count as a tech elective?",
+			"Can I count [CLASS_NAME] as a tech elective?",
+			"Can I count [CLASS_NAME] for a tech elective?",
+			"Can I take [CLASS_NAME] towards a tech elective?"
+		]
 	},
 	"Which classes include a lab section?": {
 		"intent": "CLASSES_LAB",
-		"rephrases": []
+		"rephrases": [
+			"Which courses include a lab section?",
+			"Which classes have a lab section?",
+			"Which classes also have a lab section?",
+			"Which classes have a lab section too?"
+		]
 	},
 	"Which classes include lecture only?": {
 		"intent": "CLASSES_ONLY_LECTURE",
-		"rephrases": []
+		"rephrases": [
+			"Which courses include lecture only?",
+			"Which classes are considered lecture only?",
+			"Which classes would be considered lecture only?",
+			"Which classes are taught only in lecture?",
+			"Which classes are taught by lecture only?"
+		]
 	},
 	"Which classes are seminars?": {
 		"intent": "CLASSES_SEMINAR",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are seminars?",
+			"What classes are considered to be seminars?",
+			"Which classes are taught as seminars?",
+			"Which courses are taight like seminars?"
+		]
 	},
 	"What is the structure of [CLASS_NAME]?": {
 		"intent": "CLASS_STRUCTURE",
-		"rephrases": []
+		"rephrases": [
+			"How is [CLASS_NAME] structured?",
+			"What does the structure of [CLASS_NAME] look like?",
+			"How is [CLASS_NAME] layed out?",
+			"What is the structure of [CLASS_NAME] like?"
+		]
 	},
 	"How many units is [CLASS_NAME]?": {
 		"intent": "CLASS_UNITS",
-		"rephrases": []
+		"rephrases": [
+			"How many units is [CLASS_NAME] worth?",
+			"How many credits is [CLASS_NAME] worth?",
+			"How many credits is [CLASS_NAME]?",
+			"How many units does [CLASS_NAME] count for?"
+		]
 	},
 	"Which classes are [NUMBER] units?": {
 		"intent": "CLASSES_X_UNITS",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are [NUMBER] units?",
+			"Which classes count for [NUMBER] units?",
+			"Which classes are worth [NUMBER] units?",
+			"What are all [NUMBER] unit classes?"
+		]
 	},
 	"Is [CLASS_NAME] a [NUMBER] unit course?": {
 		"intent": "CLASS_X_UNITS",
-		"rephrases": []
+		"rephrases": [
+			"Is [CLASS_NAME] a [NUMBER] unit class?",
+			"Does [CLASS_NAME] count for [NUMBER] units?",
+			"Does [CLASS_NAME] count for [NUMBER] credits?",
+			"Is [CLASS_NAME] a [NUMBER] credit course?"
+		]
 	},
 	"Is [CLASS_NAME] worth more units than [CLASS_NAME]?": {
 		"intent": "CLASS_MORE_UNITS_CLASS",
-		"rephrases": []
+		"rephrases": [
+			"Does [CLASS_NAME] count for more units than [CLASS_NAME]?",
+			"Can I get more units taking [CLASS_NAME] than [CLASS_NAME]?",
+			"Is [CLASS_NAME] listed for more units than [CLASS_NAME]?",
+			"Is [CLASS_NAME] worth more credits than [CLASS_NAME]?"
+		]
 	},
 	"Which classes are crosslisted in another department?": {
 		"intent": "CLASSES_CROSSLISTED",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are crosslisted in another department?",
+			"What classes are also listed in another department?",
+			"Which class listings can also be found in another department?",
+			"Which classes are crosslisted under another department?"
+		]
 	},
 	"Is [CLASS_NAME] crosslisted in another department?": {
 		"intent": "CLASS_CROSSLISTED",
-		"rephrases": []
+		"rephrases": [
+			"Can I find [CLASS_NAME] listed in another department?",
+			"Is there another department listing of [CLASS_NAME]?",
+			"Is [CLASS_NAME] crosslisted somewhere else?",
+			"Is [CLASS_NAME] crosslisted in some other department?"
+		]
 	},
 	"Which classes are crosslisted in [DEPARTMENT_ABBREVIATION]?": {
 		"intent": "CLASSES_CROSSLISTED_DEP",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are crosslisted in [DEPARTMENT_ABBREVIATION]?",
+			"What classes are crosslisted in [DEPARTMENT_ABBREVIATION]?",
+			"In [DEPARTMENT_ABBREVIATION], which classes are crosslisted?",
+			"Which classes can also be found in [DEPARTMENT_ABBREVIATION]?"
+		]
 	},
 	"Is [CLASS_NAME] crosslisted in [DEPARTMENT_ABBREVIATION]?": {
 		"intent": "CLASS_CROSSLISTED_DEP",
-		"rephrases": []
+		"rephrases": [
+			"Can [CLASS_NAME] also be found in [DEPARTMENT_ABBREVIATION]?",
+			"May [CLASS_NAME] also be listed in [DEPARTMENT_ABBREVIATION]?",
+			"Can I also find [CLASS_NAME] in [DEPARTMENT_ABBREVIATION]?"
+		]
 	},
 	"Which classes are credit/no credit grading only?": {
 		"intent": "CLASSES_CNC",
-		"rephrases": []
+		"rephrases": [
+			"Which courses are credit/no credit grading only?",
+			"Which classes are credit or no credit grading only?",
+			"Which classes can only be taken credit or no credit?",
+			"What are classes that can only be taken credit or no credit?",
+			"What are credit or no credit only classes?",
+			"What are credit or no credit only courses?"
+		]
 	},
 	"Is [CLASS_NAME] credit/no credit grading only?": {
 		"intent": "CLASS_CNC",
-		"rephrases": []
+		"rephrases": [
+			"Can [CLASS_NAME] only be taken as credit or no credit?",
+			"Can you only take [CLASS_NAME] as credit or no credit?",
+			"Is [CLASS_NAME] credit or no credit only?",
+			"Is [CLASS_NAME] credit or no credit grading only?"
+		]
 	},
 	"What is [CLASS_NAME] about?": {
 		"intent": "CLASS_ABOUT",
-		"rephrases": []
+		"rephrases": [
+			"What does it look like to take [CLASS_NAME]?",
+			"What will I learn in [CLASS_NAME]?",
+			"What is the course description for [CLASS_NAME]?",
+			"What do you learn about in [CLASS_NAME]?"
+		]
 	},
 	"What topics are covered in [CLASS_NAME]?": {
 		"intent": "CLASS_TOPICS",
-		"rephrases": []
+		"rephrases": [
+			"What topics are taught in [CLASS_NAME]?",
+			"Which topics are covered in [CLASS_NAME]?",
+			"What topics does [CLASS_NAME] cover?",
+			"Which topics does [CLASS_NAME] cover?"
+		]
 	},
 	"Which classes include [SUBJECT_MATTER]?": {
 		"intent": "CLASSES_WITH_TOPIC",
