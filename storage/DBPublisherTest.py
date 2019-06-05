@@ -1,5 +1,7 @@
+import os
 import sys
-sys.path.insert(0, "/home/silveria466/CSCCourseBot")
+cur_path = os.getcwd()
+sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 
 import unittest
 
