@@ -1,4 +1,5 @@
 import requests
+import re
 from bs4 import BeautifulSoup
 from parser.course import Course
 from parser.coursecode import CourseCode
@@ -12,6 +13,7 @@ class CourseParser:
         self.TERM_OFFERING_PREFIX = 'Term Typically Offered: '
         self.PREREQ_PREFIX = 'Prerequisite: '
         self.CR_NC_MARKER = 'CR/NC'
+        self.CROSSLIST_REGEX = r'Crosslisted as (\w+/\w+)'
 
     def get_courses(self):
         request = requests.get(self.COURSES_SOURCE)
@@ -41,11 +43,15 @@ class CourseParser:
                 prereqs = ''.join(subheaders[prereq_idx[0]:])[len(self.PREREQ_PREFIX):]
     
             desc = ''.join(course_block.find('div', attrs={'class': 'courseblockdesc'}).p.strings)
+            print("\n {} \n".format(desc))
+            crosslist = re.search(self.CROSSLIST_REGEX, desc)
+            if crosslist:
+               dept = crosslist.group(1)
+               print("Found crosslist: {}".format(dept))
     
             course = Course(CourseCode(dept, code), name, units,
                             terms, is_CRNC, prereqs, desc)
             courses.append(course)
-            print(course)
     
         return courses
     

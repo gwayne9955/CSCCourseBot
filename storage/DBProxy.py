@@ -30,9 +30,18 @@ class DBProxy:
             self.disconnect()
             raise RuntimeError("Database error, closing connection.")
 
-    def get(self, sql: str) -> str:
+    def call(self, sql: str) -> str:
         try:
             self.cursor.execute(sql)
+            result = self.cursor.fetchall()
+            return result
+        except:
+            self.disconnect()
+            raise RuntimeError("Database error, closing connection.")
+   
+    def truncate(self, table: str) -> str:
+        try:
+            self.cursor.execute("DELETE FROM {}".format(table))
             result = self.cursor.fetchall()
             return result
         except:

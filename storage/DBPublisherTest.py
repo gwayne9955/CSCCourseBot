@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, "/home/silveria466/CSCCourseBot")
+
 import unittest
 
 from parser.course import Course
@@ -13,7 +16,7 @@ class TestDBPublisher(unittest.TestCase):
 
     # Wet run test, will add to database on Frank
     def test_publish_courses(self):
-        test_course_code = CourseCode("CSC", 466)
+        test_course_code = CourseCode("CSC/CPE", 466)
         test_couse_name = "Knowledge Discovery from Data"
         test_unit_range = UnitRange(1, 4)
         test_terms = [Term.from_str("F"), Term.from_str("SP")]
@@ -25,7 +28,7 @@ class TestDBPublisher(unittest.TestCase):
                     "(association rules mining, classification, clustering), " \
                     "information retrieval, web mining. Emphasis on use of KDD " \
                     "techniques in modern software applications. 3 lectures, " \
-                    "1 laboratory."
+                    "1 laboratory.  "
 
         test_courses = [Course(test_course_code,
                                test_couse_name,
@@ -37,11 +40,20 @@ class TestDBPublisher(unittest.TestCase):
 
         proxy = DBProxy()
         db = DBPublisher(proxy)
-        db.set_table("test_courses")
+        db.set_table_prefix("test")
 
         db.publish_courses(test_courses)
 
-        results = proxy.get("SELECT * FROM test_courses")
-        print(results)
+        #results = proxy.get("SELECT * FROM test_courses")
+        #print(results)
+        cleanup = input("Cleanup test tables? (y/n): ")
+        if (cleanup == "y"):
+            proxy.truncate("test_main_courses")
+            proxy.truncate("test_course_terms")
+            proxy.truncate("test_course_depts")
 
         proxy.disconnect()
+
+
+if __name__ == "__main__":
+   unittest.main()
