@@ -11,6 +11,7 @@ from parser.term import Term
 from parser.unitrange import UnitRange
 
 from storage.DBProxy import DBProxy
+from storage.preprocessor import Preprocessor
 from storage.DBPublisher import DBPublisher
 
 
@@ -18,7 +19,8 @@ class TestDBPublisher(unittest.TestCase):
 
     def setUp(self) -> None:
         self.proxy = DBProxy()
-        self.db = DBPublisher(self.proxy)
+        self.preprocessor = Preprocessor()
+        self.db = DBPublisher(self.proxy, self.preprocessor)
         self.db.set_table_prefix("test_")
         self.db.cleanup()
 
@@ -59,6 +61,7 @@ class TestDBPublisher(unittest.TestCase):
                                ("Foaad Khosmood", "MWF 10:10 AM-11:00 AM")]}
 
         self.db.publish_schedule((cur_schedule, next_schedule))
+
 
 if __name__ == "__main__":
     unittest.main()

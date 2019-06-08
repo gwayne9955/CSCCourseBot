@@ -1,12 +1,13 @@
 from typing import *
 from parser.course import Course
-from parser.schedulecourse import ScheduleCourse
 from storage.DBProxy import DBProxy
+from storage.preprocessor import Preprocessor
 
 
 class DBPublisher:
-    def __init__(self, db: DBProxy):
+    def __init__(self, db: DBProxy, preprocessor: Preprocessor):
         self.db = db
+        self.preprocessor = preprocessor
 
         self.MAIN = "main_courses" 
         self.MAIN_SQL = None
@@ -60,6 +61,7 @@ class DBPublisher:
         self.db.truncate(self.DEPT)
         self.db.truncate(self.CUR_QUARTER)
         self.db.truncate(self.NEXT_QUARTER)
+        self.db.truncate(self.TOPICS)
 
     def publish_catalog(self, courses: List[Course]) -> None:
         results = []
@@ -95,8 +97,7 @@ class DBPublisher:
         self.publish_quarter(cur_courses, self.CUR_QUARTER_SQL)
         self.publish_quarter(next_courses, self.NEXT_QUARTER_SQL)
 
-    @staticmethod
-    def get_topics(courses: List[Course]) -> Tuple[Dict[int: List[str]],
+    def get_topics(self, courses: List[Course]) -> Tuple[Dict[int: List[str]],
                                                    Dict[str: List[int]]]:
         """
 
@@ -110,7 +111,7 @@ class DBPublisher:
         topic_to_courses = {}
 
         for course in courses:
-            word_list = course.desc.split(' ')
+            word_list = self.preprocessor.get_tokens(course.desc)
             for num_words in range(NGRAMS):
                 for j in range(len(word_list) - num_words + 1):
                     ngram = '_'.join(word_list[j:j+num_words])

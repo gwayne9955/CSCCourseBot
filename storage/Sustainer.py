@@ -5,13 +5,15 @@ sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 
 from storage.DBProxy import DBProxy
 from storage.DBPublisher import DBPublisher
+from storage.preprocessor import Preprocessor
 from parser.courseparser import CourseParser
 from parser.scheduleparser import ScheduleParser
 
 
 def main():
     proxy = DBProxy()
-    db = DBPublisher(proxy)
+    preprocessor = Preprocessor()
+    db = DBPublisher(proxy, preprocessor)
     course_parser = CourseParser()
     schedule_parser = ScheduleParser()
 
