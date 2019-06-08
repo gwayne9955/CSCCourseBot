@@ -3,6 +3,8 @@
 import json
 import requests
 import uuid
+from intent_handling.intenthandler import IntentHandler
+
 
 def main():
     with open("dialogflow.json", 'r') as j:
@@ -37,9 +39,11 @@ def main():
         # these are to be passed for further computation in the database
         intent = responseJson['result']['metadata']['intentName']  # a string
         parameters = responseJson['result']['parameters']  # a dict
+        response = IntentHandler().handle(intent, parameters)
 
         print("\nResulting intent: {0}".format(intent))
         print("Resulting parameters: {0}\n".format(parameters))
+        print("Response: {}".format(response))
 
         query = input("What question can I answer for ya?:\n")
 
