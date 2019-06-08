@@ -1,7 +1,5 @@
 import os
 import sys
-cur_path = os.getcwd()
-sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 
 import unittest
 
@@ -13,11 +11,22 @@ from parser.unitrange import UnitRange
 from storage.DBProxy import DBProxy
 from storage.DBPublisher import DBPublisher
 
+cur_path = os.getcwd()
+sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
+
 
 class TestDBPublisher(unittest.TestCase):
 
+    def setUp(self) -> None:
+        self.proxy = DBProxy()
+        self.db = DBPublisher(self.proxy)
+        self.db.set_table_prefix("test_")
+
+    def tearDown(self) -> None:
+        self.proxy.disconnect()
+
     # Wet run test, will add to database on Frank
-    def test_publish_courses(self):
+    def test_publish_catalog(self):
         test_course_code = CourseCode("CSC/CPE", 466)
         test_couse_name = "Knowledge Discovery from Data"
         test_unit_range = UnitRange(1, 4)
@@ -40,22 +49,25 @@ class TestDBPublisher(unittest.TestCase):
                                test_prereqs,
                                test_desc)]
 
-        proxy = DBProxy()
-        db = DBPublisher(proxy)
-        db.set_table_prefix("test")
+        self.db.publish_catalog(test_courses)
 
-        db.publish_courses(test_courses)
+        cleanup = input("Cleanup catalog test tables? (y/n): ")
+        if cleanup == "y":
+            self.proxy.truncate("test_main_courses")
+            self.proxy.truncate("test_course_terms")
+            self.proxy.truncate("test_course_depts")
 
-        #results = proxy.get("SELECT * FROM test_courses")
-        #print(results)
-        cleanup = input("Cleanup test tables? (y/n): ")
-        if (cleanup == "y"):
-            proxy.truncate("test_main_courses")
-            proxy.truncate("test_course_terms")
-            proxy.truncate("test_course_depts")
+    def test_publish_schedule(self):
+        cur_schedule = {466: [("Foaad", "12:10 AM-1:30 PM")]}
+        next_schedule = {482: [("Foaad", "8:10 AM-9:30 PM")]}
 
-        proxy.disconnect()
+        self.db.publish_schedule((cur_schedule, next_schedule))
+
+        cleanup = input("Cleanup schedule test tables? (y/n): ")
+        if cleanup == "y":
+            self.proxy.truncate("test_cur_schedule")
+            self.proxy.truncate("test_next_schedule")
 
 
 if __name__ == "__main__":
-   unittest.main()
+    unittest.main()

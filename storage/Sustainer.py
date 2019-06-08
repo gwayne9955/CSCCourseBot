@@ -1,11 +1,11 @@
 import os
 import sys
-cur_path = os.getcwd()
-sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
-
 from storage.DBProxy import DBProxy
 from storage.DBPublisher import DBPublisher
 from parser.courseparser import CourseParser
+
+cur_path = os.getcwd()
+sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 
 
 def main():
@@ -15,8 +15,8 @@ def main():
 
     db.cleanup()
 
-    courses = parser.get_courses()
-    db.publish_courses(courses)
+    catalog = parser.get_courses()
+    db.publish_catalog(catalog)
 
     proxy.disconnect()
 
