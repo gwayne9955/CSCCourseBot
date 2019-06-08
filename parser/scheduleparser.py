@@ -55,7 +55,7 @@ class ScheduleParser:
             if prof is not None:
                 name = prof.get_text().split(',')
                 cur_prof = name[1].strip() + ' ' + name[0]
-                #print("Starting {}'s course list".format(cur_prof))
+                print("Starting {}'s course list".format(cur_prof))
             course = entry.find('td', attrs={'class': 'courseName active'})
             course_type = entry.find('td', attrs={'class': 'courseType'})
             course_days = entry.find('td', attrs={'class': 'courseDays'})

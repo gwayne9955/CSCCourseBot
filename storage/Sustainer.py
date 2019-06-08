@@ -1,12 +1,12 @@
 import os
 import sys
-cur_path = os.getcwd()
-sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
-
 from storage.DBProxy import DBProxy
 from storage.DBPublisher import DBPublisher
 from parser.courseparser import CourseParser
 from parser.scheduleparser import ScheduleParser
+
+cur_path = os.getcwd()
+sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 
 
 def main():

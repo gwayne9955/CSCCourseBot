@@ -1,7 +1,5 @@
 import os
 import sys
-cur_path = os.getcwd()
-sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 
 import unittest
 
@@ -12,6 +10,9 @@ from parser.unitrange import UnitRange
 
 from storage.DBProxy import DBProxy
 from storage.DBPublisher import DBPublisher
+
+cur_path = os.getcwd()
+sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 
 
 class TestDBPublisher(unittest.TestCase):
