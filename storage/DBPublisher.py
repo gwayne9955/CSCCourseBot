@@ -41,16 +41,18 @@ class DBPublisher:
 
         self.CUR_QUARTER = prefix + self.CUR_QUARTER
         self.CUR_QUARTER_SQL = "INSERT INTO " + self.CUR_QUARTER + \
-                               " (code, professor, time) VALUES (%s, %s, %s)"
+                               " (code, first, last, time) VALUES (%s, %s, %s, %s)"
 
         self.NEXT_QUARTER = prefix + self.NEXT_QUARTER
         self.NEXT_QUARTER_SQL = "INSERT INTO " + self.NEXT_QUARTER + \
-                                " (code, professor, time) VALUES (%s, %s, %s)"
+                                " (code, first, last, time) VALUES (%s, %s, %s, %s)"
 
     def cleanup(self):
         self.db.truncate(self.MAIN)
         self.db.truncate(self.TERM)
         self.db.truncate(self.DEPT)
+        self.db.truncate(self.CUR_QUARTER)
+        self.db.truncate(self.NEXT_QUARTER)
 
     def publish_catalog(self, courses: List[Course]) -> None:
         results = []
@@ -62,31 +64,32 @@ class DBPublisher:
             results.append(self.db.store(self.MAIN_SQL, data)) 
 
             for term in course.terms_offered:
-                data = (course.code.number, term.name)
+                data = (course.code.number, self.to_lower(term.name))
                 results.append(self.db.store(self.TERM_SQL, data))
                
             for dept in course.code.depts:
-                data = (course.code.number, dept)
+                data = (course.code.number, self.to_lower(dept))
                 results.append(self.db.store(self.DEPT_SQL, data))
+
+    def publish_quarter(self, quarter: Dict[int, List[Tuple[str, str]]], sql: str):
+        results = []
+        for code, sections in quarter.items():
+            for section in sections:
+                # Example section: ('Zoe J. Wood', 'TR 09:40 AM-11:00AM')
+                name = section[0].split(' ')
+                data = (code,
+                        self.to_lower(name[0]),
+                        self.to_lower(name[-1]),
+                        section[1])
+                results.append(self.db.store(sql, data))
 
     def publish_schedule(self, courses: Tuple[Dict[int, List[Tuple[str, str]]],
                                               Dict[int, List[Tuple[str, str]]]]):
-        results = []
-
         cur_courses = courses[0]
         next_courses = courses[1]
 
-        for code, sections in cur_courses.items():
-            for section in sections:
-                # Example section: ('Foaad Khosmood', 'TR 12:10 PM- 1:30PM')
-                data = (code, section[0], section[1])
-                results.append(self.db.store(self.CUR_QUARTER_SQL, data))
-
-        for code, sections in next_courses.items():
-            for section in sections:
-                # Example section: ('Foaad Khosmood', 'TR 12:10 PM- 1:30PM')
-                data = (code, section[0], section[1])
-                results.append(self.db.store(self.NEXT_QUARTER_SQL, data))
+        self.publish_quarter(cur_courses, self.CUR_QUARTER_SQL)
+        self.publish_quarter(next_courses, self.NEXT_QUARTER_SQL)
 
     @staticmethod
     def to_lower(string):
@@ -96,7 +99,7 @@ class DBPublisher:
             new_str = new_str + words[idx].lower()
             if idx < len(words) - 1 and len(words[idx + 1]) > 0:
                 delimiter = "-" 
-                if ord(words[idx + 1][0]):
+                if ord(words[idx + 1][0]) >= 65 and ord(words[idx + 1][0]) <= 90:
                    delimiter = "_"
                 new_str = new_str + delimiter
         return new_str

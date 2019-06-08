@@ -1,5 +1,7 @@
 import os
 import sys
+cur_path = os.getcwd()
+sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 
 import unittest
 
@@ -11,9 +13,6 @@ from parser.unitrange import UnitRange
 from storage.DBProxy import DBProxy
 from storage.DBPublisher import DBPublisher
 
-cur_path = os.getcwd()
-sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
-
 
 class TestDBPublisher(unittest.TestCase):
 
@@ -21,6 +20,7 @@ class TestDBPublisher(unittest.TestCase):
         self.proxy = DBProxy()
         self.db = DBPublisher(self.proxy)
         self.db.set_table_prefix("test_")
+        self.db.cleanup()
 
     def tearDown(self) -> None:
         self.proxy.disconnect()
@@ -51,23 +51,14 @@ class TestDBPublisher(unittest.TestCase):
 
         self.db.publish_catalog(test_courses)
 
-        cleanup = input("Cleanup catalog test tables? (y/n): ")
-        if cleanup == "y":
-            self.proxy.truncate("test_main_courses")
-            self.proxy.truncate("test_course_terms")
-            self.proxy.truncate("test_course_depts")
-
     def test_publish_schedule(self):
-        cur_schedule = {466: [("Foaad", "12:10 AM-1:30 PM")]}
-        next_schedule = {482: [("Foaad", "8:10 AM-9:30 PM")]}
+        cur_schedule = {466: [("Foaad Khosmood", "TR 12:10 AM-1:30 PM")],
+                        471: [("Zoe J. Wood", "TR 8:10 AM-9:30AM")]}
+        next_schedule = {482: [("Foaad Khosmood", "TR 8:10 AM-9:30 PM")],
+                         466: [("Foaad Khosmood", "TR 12:10 AM-1:30 PM"),
+                               ("Foaad Khosmood", "MWF 10:10 AM-11:00 AM")]}
 
         self.db.publish_schedule((cur_schedule, next_schedule))
-
-        cleanup = input("Cleanup schedule test tables? (y/n): ")
-        if cleanup == "y":
-            self.proxy.truncate("test_cur_schedule")
-            self.proxy.truncate("test_next_schedule")
-
 
 if __name__ == "__main__":
     unittest.main()
