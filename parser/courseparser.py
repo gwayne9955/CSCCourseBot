@@ -43,11 +43,9 @@ class CourseParser:
                 prereqs = ''.join(subheaders[prereq_idx[0]:])[len(self.PREREQ_PREFIX):]
     
             desc = ''.join(course_block.find('div', attrs={'class': 'courseblockdesc'}).p.strings)
-            print("\n {} \n".format(desc))
             crosslist = re.search(self.CROSSLIST_REGEX, desc)
             if crosslist:
                dept = crosslist.group(1)
-               print("Found crosslist: {}".format(dept))
     
             course = Course(CourseCode(dept, code), name, units,
                             terms, is_CRNC, prereqs, desc)
