@@ -1,0 +1,898 @@
+[
+  {
+    "value": "accelerated_introduction_to_computer_science",
+    "synonyms": [
+      "CPE 108",
+      "CSC 108",
+      "accelerated introduction to computer science"
+    ]
+  },
+  {
+    "value": "advanced_rendering_techniques",
+    "synonyms": [
+      "CPE 473",
+      "CSC 473",
+      "advanced rendering techniques"
+    ]
+  },
+  {
+    "value": "artificial_intelligence",
+    "synonyms": [
+      "CPE 580",
+      "CSC 580",
+      "artificial intelligence"
+    ]
+  },
+  {
+    "value": "artificial_intelligence",
+    "synonyms": [
+      "CPE 480",
+      "CSC 480",
+      "artificial intelligence"
+    ]
+  },
+  {
+    "value": "bioinformatics_algorithms",
+    "synonyms": [
+      "CPE 448",
+      "CSC 448",
+      "bioinformatics algorithms"
+    ]
+  },
+  {
+    "value": "c_and_unix",
+    "synonyms": [
+      "CPE 234",
+      "CSC 234",
+      "c and unix"
+    ]
+  },
+  {
+    "value": "compiler_construction",
+    "synonyms": [
+      "CPE 431",
+      "CSC 431",
+      "compiler construction"
+    ]
+  },
+  {
+    "value": "computational_art",
+    "synonyms": [
+      "CPE 311",
+      "CSC 311",
+      "computational art"
+    ]
+  },
+  {
+    "value": "computational_linguistics",
+    "synonyms": [
+      "CPE 582",
+      "CSC 582",
+      "computational linguistics"
+    ]
+  },
+  {
+    "value": "computer_animation",
+    "synonyms": [
+      "CPE 474",
+      "CSC 474",
+      "computer animation"
+    ]
+  },
+  {
+    "value": "computer_architecture",
+    "synonyms": [
+      "CPE 515",
+      "CSC 515",
+      "computer architecture"
+    ]
+  },
+  {
+    "value": "computer_graphics",
+    "synonyms": [
+      "CPE 572",
+      "CSC 572",
+      "computer graphics"
+    ]
+  },
+  {
+    "value": "computer_networks:_research_topics",
+    "synonyms": [
+      "CPE 564",
+      "CSC 564",
+      "computer networks: research topics"
+    ]
+  },
+  {
+    "value": "computer_programming_for_scientists_and_engineers",
+    "synonyms": [
+      "CPE 232",
+      "CSC 232",
+      "computer programming for scientists and engineers"
+    ]
+  },
+  {
+    "value": "computer_security",
+    "synonyms": [
+      "CPE 521",
+      "CSC 521",
+      "computer security"
+    ]
+  },
+  {
+    "value": "computer_support_for_knowledge_management",
+    "synonyms": [
+      "CPE 581",
+      "CSC 581",
+      "computer support for knowledge management"
+    ]
+  },
+  {
+    "value": "computers_and_society",
+    "synonyms": [
+      "CPE 302",
+      "CSC 302",
+      "computers and society"
+    ]
+  },
+  {
+    "value": "computers_for_poets",
+    "synonyms": [
+      "CPE 310",
+      "CSC 310",
+      "computers for poets"
+    ]
+  },
+  {
+    "value": "computing_for_interactive_arts_capstone_i",
+    "synonyms": [
+      "CPE 350",
+      "CSC 350",
+      "computing for interactive arts capstone i"
+    ]
+  },
+  {
+    "value": "computing_for_interactive_arts_capstone_ii",
+    "synonyms": [
+      "CPE 450",
+      "CSC 450",
+      "computing for interactive arts capstone ii"
+    ]
+  },
+  {
+    "value": "cooperative_education_experience",
+    "synonyms": [
+      "CPE 494",
+      "CSC 494",
+      "cooperative education experience"
+    ]
+  },
+  {
+    "value": "cooperative_education_experience",
+    "synonyms": [
+      "CPE 595",
+      "CSC 595",
+      "cooperative education experience"
+    ]
+  },
+  {
+    "value": "cooperative_education_experience",
+    "synonyms": [
+      "CPE 593",
+      "CSC 593",
+      "cooperative education experience"
+    ]
+  },
+  {
+    "value": "cooperative_education_experience",
+    "synonyms": [
+      "CPE 493",
+      "CSC 493",
+      "cooperative education experience"
+    ]
+  },
+  {
+    "value": "cooperative_education_experience",
+    "synonyms": [
+      "CPE 594",
+      "CSC 594",
+      "cooperative education experience"
+    ]
+  },
+  {
+    "value": "cooperative_education_experience",
+    "synonyms": [
+      "CPE 495",
+      "CSC 495",
+      "cooperative education experience"
+    ]
+  },
+  {
+    "value": "cryptography_engineering",
+    "synonyms": [
+      "CPE 323",
+      "CSC 323",
+      "cryptography engineering"
+    ]
+  },
+  {
+    "value": "current_topics_in_artificial_intelligence",
+    "synonyms": [
+      "CPE 489",
+      "CSC 489",
+      "current topics in artificial intelligence"
+    ]
+  },
+  {
+    "value": "current_topics_in_computer_graphics",
+    "synonyms": [
+      "CPE 478",
+      "CSC 478",
+      "current topics in computer graphics"
+    ]
+  },
+  {
+    "value": "current_topics_in_computer_science",
+    "synonyms": [
+      "CPE 570",
+      "CSC 570",
+      "current topics in computer science"
+    ]
+  },
+  {
+    "value": "current_topics_in_computer_security",
+    "synonyms": [
+      "CPE 429",
+      "CSC 429",
+      "current topics in computer security"
+    ]
+  },
+  {
+    "value": "current_topics_in_computer_systems",
+    "synonyms": [
+      "CPE 458",
+      "CSC 458",
+      "current topics in computer systems"
+    ]
+  },
+  {
+    "value": "current_topics_in_human-computer_interaction",
+    "synonyms": [
+      "CPE 483",
+      "CSC 483",
+      "current topics in human-computer interaction"
+    ]
+  },
+  {
+    "value": "current_topics_in_software_engineering",
+    "synonyms": [
+      "CPE 409",
+      "CSC 409",
+      "current topics in software engineering"
+    ]
+  },
+  {
+    "value": "data_structures",
+    "synonyms": [
+      "CPE 202",
+      "CSC 202",
+      "data structures"
+    ]
+  },
+  {
+    "value": "database_management_systems_implementation",
+    "synonyms": [
+      "CPE 468",
+      "CSC 468",
+      "database management systems implementation"
+    ]
+  },
+  {
+    "value": "database_modeling,_design_and_implementation",
+    "synonyms": [
+      "CPE 366",
+      "CSC 366",
+      "database modeling, design and implementation"
+    ]
+  },
+  {
+    "value": "database_systems",
+    "synonyms": [
+      "CPE 560",
+      "CSC 560",
+      "database systems"
+    ]
+  },
+  {
+    "value": "deep_learning",
+    "synonyms": [
+      "CPE 487",
+      "CSC 487",
+      "deep learning"
+    ]
+  },
+  {
+    "value": "design_and_analysis_of_algorithms",
+    "synonyms": [
+      "CPE 349",
+      "CSC 349",
+      "design and analysis of algorithms"
+    ]
+  },
+  {
+    "value": "directed_study",
+    "synonyms": [
+      "CPE 500",
+      "CSC 500",
+      "directed study"
+    ]
+  },
+  {
+    "value": "discrete_structures",
+    "synonyms": [
+      "CPE 348",
+      "CSC 348",
+      "discrete structures"
+    ]
+  },
+  {
+    "value": "distributed_computing",
+    "synonyms": [
+      "CPE 569",
+      "CSC 569",
+      "distributed computing"
+    ]
+  },
+  {
+    "value": "distributed_systems",
+    "synonyms": [
+      "CPE 469",
+      "CSC 469",
+      "distributed systems"
+    ]
+  },
+  {
+    "value": "dynamic_web_development",
+    "synonyms": [
+      "CPE 437",
+      "CSC 437",
+      "dynamic web development"
+    ]
+  },
+  {
+    "value": "fundamentals_of_computer_science",
+    "synonyms": [
+      "CPE 101",
+      "CSC 101",
+      "fundamentals of computer science"
+    ]
+  },
+  {
+    "value": "fundamentals_of_computer_science_for_scientists_and_engineers_i",
+    "synonyms": [
+      "CPE 235",
+      "CSC 235",
+      "fundamentals of computer science for scientists and engineers i"
+    ]
+  },
+  {
+    "value": "fundamentals_of_computer_science_for_scientists_and_engineers_ii",
+    "synonyms": [
+      "CPE 236",
+      "CSC 236",
+      "fundamentals of computer science for scientists and engineers ii"
+    ]
+  },
+  {
+    "value": "fundamentals_of_computer_science_i_supplemental_instruction",
+    "synonyms": [
+      "CPE 105",
+      "CSC 105",
+      "fundamentals of computer science i supplemental instruction"
+    ]
+  },
+  {
+    "value": "game_design",
+    "synonyms": [
+      "CPE 371",
+      "CSC 371",
+      "game design"
+    ]
+  },
+  {
+    "value": "human-computer_interaction_theory_and_design",
+    "synonyms": [
+      "CPE 486",
+      "CSC 486",
+      "human-computer interaction theory and design"
+    ]
+  },
+  {
+    "value": "implementation_of_operating_systems",
+    "synonyms": [
+      "CPE 454",
+      "CSC 454",
+      "implementation of operating systems"
+    ]
+  },
+  {
+    "value": "individual_software_design_and_development",
+    "synonyms": [
+      "CPE 305",
+      "CSC 305",
+      "individual software design and development"
+    ]
+  },
+  {
+    "value": "interactive_entertainment_engineering",
+    "synonyms": [
+      "CPE 378",
+      "CSC 378",
+      "interactive entertainment engineering"
+    ]
+  },
+  {
+    "value": "introduction_to_computer_graphics",
+    "synonyms": [
+      "CPE 471",
+      "CSC 471",
+      "introduction to computer graphics"
+    ]
+  },
+  {
+    "value": "introduction_to_computer_organization",
+    "synonyms": [
+      "CPE 225",
+      "CSC 225",
+      "introduction to computer organization"
+    ]
+  },
+  {
+    "value": "introduction_to_computer_security",
+    "synonyms": [
+      "CPE 321",
+      "CSC 321",
+      "introduction to computer security"
+    ]
+  },
+  {
+    "value": "introduction_to_computing",
+    "synonyms": [
+      "CPE 123",
+      "CSC 123",
+      "introduction to computing"
+    ]
+  },
+  {
+    "value": "introduction_to_database_systems",
+    "synonyms": [
+      "CPE 365",
+      "CSC 365",
+      "introduction to database systems"
+    ]
+  },
+  {
+    "value": "introduction_to_distributed_computing",
+    "synonyms": [
+      "CPE 369",
+      "CSC 369",
+      "introduction to distributed computing"
+    ]
+  },
+  {
+    "value": "introduction_to_interactive_entertainment",
+    "synonyms": [
+      "CPE 171",
+      "CSC 171",
+      "introduction to interactive entertainment"
+    ]
+  },
+  {
+    "value": "introduction_to_mixed_reality",
+    "synonyms": [
+      "CPE 377",
+      "CSC 377",
+      "introduction to mixed reality"
+    ]
+  },
+  {
+    "value": "introduction_to_object_oriented_design_using_graphical_user_interfaces",
+    "synonyms": [
+      "CPE 435",
+      "CSC 435",
+      "introduction to object oriented design using graphical user interfaces"
+    ]
+  },
+  {
+    "value": "introduction_to_operating_systems",
+    "synonyms": [
+      "CPE 453",
+      "CSC 453",
+      "introduction to operating systems"
+    ]
+  },
+  {
+    "value": "introduction_to_privacy:_policy_and_technology",
+    "synonyms": [
+      "CPE 325",
+      "CSC 325",
+      "introduction to privacy: policy and technology"
+    ]
+  },
+  {
+    "value": "introduction_to_software_engineering",
+    "synonyms": [
+      "CPE 307",
+      "CSC 307",
+      "introduction to software engineering"
+    ]
+  },
+  {
+    "value": "knowledge_based_systems",
+    "synonyms": [
+      "CPE 481",
+      "CSC 481",
+      "knowledge based systems"
+    ]
+  },
+  {
+    "value": "knowledge_discovery_from_data",
+    "synonyms": [
+      "CPE 466",
+      "CSC 466",
+      "knowledge discovery from data"
+    ]
+  },
+  {
+    "value": "languages_and_translators",
+    "synonyms": [
+      "CPE 530",
+      "CSC 530",
+      "languages and translators"
+    ]
+  },
+  {
+    "value": "mobile_application_development",
+    "synonyms": [
+      "CPE 436",
+      "CSC 436",
+      "mobile application development"
+    ]
+  },
+  {
+    "value": "music_programming",
+    "synonyms": [
+      "CPE 344",
+      "CSC 344",
+      "music programming"
+    ]
+  },
+  {
+    "value": "network_and_web_security",
+    "synonyms": [
+      "CPE 422",
+      "CSC 422",
+      "network and web security"
+    ]
+  },
+  {
+    "value": "operating_systems",
+    "synonyms": [
+      "CPE 550",
+      "CSC 550",
+      "operating systems"
+    ]
+  },
+  {
+    "value": "personal_software_process",
+    "synonyms": [
+      "CPE 301",
+      "CSC 301",
+      "personal software process"
+    ]
+  },
+  {
+    "value": "practical_computer_security_for_everyone",
+    "synonyms": [
+      "CPE 320",
+      "CSC 320",
+      "practical computer security for everyone"
+    ]
+  },
+  {
+    "value": "problem_solving_with_computers",
+    "synonyms": [
+      "CPE 209",
+      "CSC 209",
+      "problem solving with computers"
+    ]
+  },
+  {
+    "value": "professional_responsibilities",
+    "synonyms": [
+      "CPE 300",
+      "CSC 300",
+      "professional responsibilities"
+    ]
+  },
+  {
+    "value": "programming_for_engineering_students",
+    "synonyms": [
+      "CPE 231",
+      "CSC 231",
+      "programming for engineering students"
+    ]
+  },
+  {
+    "value": "programming_languages",
+    "synonyms": [
+      "CPE 430",
+      "CSC 430",
+      "programming languages"
+    ]
+  },
+  {
+    "value": "project-based_object-oriented_programming_and_design",
+    "synonyms": [
+      "CPE 203",
+      "CSC 203",
+      "project-based object-oriented programming and design"
+    ]
+  },
+  {
+    "value": "real-time_3d_computer_graphics_software",
+    "synonyms": [
+      "CPE 476",
+      "CSC 476",
+      "real-time 3d computer graphics software"
+    ]
+  },
+  {
+    "value": "research_in_computer_science_i",
+    "synonyms": [
+      "CPE 596",
+      "CSC 596",
+      "research in computer science i"
+    ]
+  },
+  {
+    "value": "research_in_computer_science_ii",
+    "synonyms": [
+      "CPE 597",
+      "CSC 597",
+      "research in computer science ii"
+    ]
+  },
+  {
+    "value": "research_senior_project_i",
+    "synonyms": [
+      "CPE 497",
+      "CSC 497",
+      "research senior project i"
+    ]
+  },
+  {
+    "value": "research_senior_project_ii",
+    "synonyms": [
+      "CPE 498",
+      "CSC 498",
+      "research senior project ii"
+    ]
+  },
+  {
+    "value": "scientific_and_information_visualization",
+    "synonyms": [
+      "CPE 477",
+      "CSC 477",
+      "scientific and information visualization"
+    ]
+  },
+  {
+    "value": "selected_advanced_laboratory",
+    "synonyms": [
+      "CPE 496",
+      "CSC 496",
+      "selected advanced laboratory"
+    ]
+  },
+  {
+    "value": "selected_advanced_topics",
+    "synonyms": [
+      "CPE 490",
+      "CSC 490",
+      "selected advanced topics"
+    ]
+  },
+  {
+    "value": "selected_topics",
+    "synonyms": [
+      "CPE 290",
+      "CSC 290",
+      "selected topics"
+    ]
+  },
+  {
+    "value": "senior_project_-_software_deployment",
+    "synonyms": [
+      "CPE 406",
+      "CSC 406",
+      "senior project - software deployment"
+    ]
+  },
+  {
+    "value": "senior_project_i",
+    "synonyms": [
+      "CPE 491",
+      "CSC 491",
+      "senior project i"
+    ]
+  },
+  {
+    "value": "senior_project_ii",
+    "synonyms": [
+      "CPE 492",
+      "CSC 492",
+      "senior project ii"
+    ]
+  },
+  {
+    "value": "software_construction",
+    "synonyms": [
+      "CPE 405",
+      "CSC 405",
+      "software construction"
+    ]
+  },
+  {
+    "value": "software_engineering_i",
+    "synonyms": [
+      "CPE 308",
+      "CSC 308",
+      "software engineering i"
+    ]
+  },
+  {
+    "value": "software_engineering_i",
+    "synonyms": [
+      "CPE 508",
+      "CSC 508",
+      "software engineering i"
+    ]
+  },
+  {
+    "value": "software_engineering_ii",
+    "synonyms": [
+      "CPE 509",
+      "CSC 509",
+      "software engineering ii"
+    ]
+  },
+  {
+    "value": "software_engineering_ii",
+    "synonyms": [
+      "CPE 309",
+      "CSC 309",
+      "software engineering ii"
+    ]
+  },
+  {
+    "value": "software_evaluation",
+    "synonyms": [
+      "CPE 410",
+      "CSC 410",
+      "software evaluation"
+    ]
+  },
+  {
+    "value": "software_requirements_engineering",
+    "synonyms": [
+      "CPE 402",
+      "CSC 402",
+      "software requirements engineering"
+    ]
+  },
+  {
+    "value": "software_security",
+    "synonyms": [
+      "CPE 424",
+      "CSC 424",
+      "software security"
+    ]
+  },
+  {
+    "value": "special_problems",
+    "synonyms": [
+      "CPE 400",
+      "CSC 400",
+      "special problems"
+    ]
+  },
+  {
+    "value": "special_problems_for_undergraduates",
+    "synonyms": [
+      "CPE 200",
+      "CSC 200",
+      "special problems for undergraduates"
+    ]
+  },
+  {
+    "value": "speech_and_language_processing",
+    "synonyms": [
+      "CPE 482",
+      "CSC 482",
+      "speech and language processing"
+    ]
+  },
+  {
+    "value": "systems_programming",
+    "synonyms": [
+      "CPE 357",
+      "CSC 357",
+      "systems programming"
+    ]
+  },
+  {
+    "value": "teaching_computer_science",
+    "synonyms": [
+      "CPE 303",
+      "CSC 303",
+      "teaching computer science"
+    ]
+  },
+  {
+    "value": "teaching_computing",
+    "synonyms": [
+      "CPE 313",
+      "CSC 313",
+      "teaching computing"
+    ]
+  },
+  {
+    "value": "theory_of_computation_i",
+    "synonyms": [
+      "CPE 445",
+      "CSC 445",
+      "theory of computation i"
+    ]
+  },
+  {
+    "value": "theory_of_computation_ii",
+    "synonyms": [
+      "CPE 540",
+      "CSC 540",
+      "theory of computation ii"
+    ]
+  },
+  {
+    "value": "thesis",
+    "synonyms": [
+      "CPE 599",
+      "CSC 599",
+      "thesis"
+    ]
+  },
+  {
+    "value": "thesis_seminar",
+    "synonyms": [
+      "CPE 590",
+      "CSC 590",
+      "thesis seminar"
+    ]
+  },
+  {
+    "value": "topics_in_advanced_data_mining",
+    "synonyms": [
+      "CPE 566",
+      "CSC 566",
+      "topics in advanced data mining"
+    ]
+  },
+  {
+    "value": "user-centered_interface_design_and_development",
+    "synonyms": [
+      "CPE 484",
+      "CSC 484",
+      "user-centered interface design and development"
+    ]
+  }
+]

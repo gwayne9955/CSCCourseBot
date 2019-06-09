@@ -1,4 +1,5 @@
 import random
+import re
 
 
 # find all occurances of a string in another
@@ -31,33 +32,36 @@ class Sample:
     """
     def __init__(self, text, intent):
         self.text = text
-        self.entities = [{
-            "entity": "intent",
-            "value": intent
-        }]
+        self.entities = []
+        self.intent = intent
+
+    def __repr__(self):
+        return "Text: {}\nEntities: {}".format(self.text, self.entities)
 
     def populate_entities(self, entity_map):
         """Method to parse entities from a sample's text """
+        without_bracks = [c[1:-1] for c in entity_map.keys()]
         # add secondary entities
-        for entity in entity_map:
-            if entity in self.text:
-                added_str_length = 0
-                occurances = list(find_all(self.text, entity))
-                all_values = entity_map[entity]['values'].keys()
-                chosen_values = random.sample(all_values, len(occurances))
-                # for each occurance, grab a random value to put in sample
-                for i in range(len(occurances)):
-                    expressions = entity_map[entity]['values'][chosen_values[i]]
-                    expression = random.choice(expressions)
-                    # update string
-                    self.text = self.text.replace(entity, expression, 1)
-                    # track resulting changes to str length
-                    start = occurances[i] + added_str_length
-                    added_str_length += len(expression) - len(entity)
-                    # add to sample entities
-                    self.entities.append({
-                        "entity": entity_map[entity]['wit_entity'],
-                        "start": start,
-                        "end": start + len(expression),
-                        "value": expression
-                    })
+        for word in self.text.split():
+            for entity in entity_map:
+                if entity in word:
+                    added_str_length = 0
+                    occurances = list(find_all(self.text, entity))
+                    all_values = entity_map[entity]['values'].keys()
+                    chosen_values = random.sample(all_values, len(occurances))
+                    # for each occurance, grab a random value to put in sample
+                    for i in range(len(occurances)):
+                        expressions = entity_map[entity]['values'][chosen_values[i]]
+                        expression = random.choice(expressions)
+                        # update string
+                        self.text = self.text.replace(entity, expression, 1)
+                        # track resulting changes to str length
+                        start = occurances[i] + added_str_length
+                        added_str_length += len(expression) - len(entity)
+                        # add to sample entities
+                        self.entities.append({
+                            "entity": entity_map[entity]['entity_type'],
+                            "start": start,
+                            "end": start + len(expression),
+                            "value": expression
+                        })

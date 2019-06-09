@@ -1,0 +1,9 @@
+{
+  "id": "48897ef7-f1b3-4c2a-b4ee-dcb4cdc7131c",
+  "name": "CLASS_QUALIFICATION",
+  "isOverridable": true,
+  "isEnum": true,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

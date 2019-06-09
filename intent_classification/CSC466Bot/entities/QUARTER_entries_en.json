@@ -1,0 +1,27 @@
+[
+  {
+    "value": "Fall",
+    "synonyms": [
+      "Autumn",
+      "Fall"
+    ]
+  },
+  {
+    "value": "Spring",
+    "synonyms": [
+      "Spring"
+    ]
+  },
+  {
+    "value": "Summer",
+    "synonyms": [
+      "Summer"
+    ]
+  },
+  {
+    "value": "Winter",
+    "synonyms": [
+      "Winter"
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+{"displayName": "CLASSES_WITHOUT_UPPER_PREREQ", "responses": [{"messages": [{"speech": [], "lang": "en", "type": 0}], "speech": [], "defaultResponsePlatforms": {}, "resetContexts": false, "affectedContexts": [], "parameters": []}], "name": "CLASSES_WITHOUT_UPPER_PREREQ", "action": "CSC_BOT", "id": "afb584f2-e96a-4575-adf3-4bebb328c46d"}

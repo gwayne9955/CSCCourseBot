@@ -1,0 +1,9 @@
+{
+  "id": "71ccdd68-71e8-4098-bc1e-649875b08824",
+  "name": "DEPARTMENT_ABBREVIATION",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

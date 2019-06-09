@@ -1,0 +1,32 @@
+[
+  {
+    "value": "freshman",
+    "synonyms": [
+      "freshman"
+    ]
+  },
+  {
+    "value": "graduate",
+    "synonyms": [
+      "graduate"
+    ]
+  },
+  {
+    "value": "junior",
+    "synonyms": [
+      "junior"
+    ]
+  },
+  {
+    "value": "senior",
+    "synonyms": [
+      "senior"
+    ]
+  },
+  {
+    "value": "sophomore",
+    "synonyms": [
+      "sophomore"
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "e9532188-8fde-4939-99f8-5d6fc0347d8b",
+  "name": "COURSE_LEVEL",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

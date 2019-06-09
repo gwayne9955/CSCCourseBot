@@ -1,0 +1,9 @@
+{
+  "id": "d303d449-973f-470a-b2ef-f00dfa3b33ef",
+  "name": "GE_AREA",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

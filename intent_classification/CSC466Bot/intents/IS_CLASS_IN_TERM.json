@@ -1,0 +1,44 @@
+{
+  "id": "008fce25-cc35-4049-92e1-273e54408dd1",
+  "name": "IS_CLASS_IN_TERM",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "56fce22c-a275-42e9-8a81-d3ffc5b25051",
+          "required": false,
+          "dataType": "@CLASS_NAME",
+          "name": "CLASS_NAME",
+          "value": "$CLASS_NAME",
+          "isList": false
+        },
+        {
+          "id": "bfaf812c-2cdc-4e05-94c0-64e6e32e55f4",
+          "required": false,
+          "dataType": "@QUARTER",
+          "name": "QUARTER",
+          "value": "$QUARTER",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

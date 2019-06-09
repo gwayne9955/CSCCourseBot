@@ -1,0 +1,9 @@
+{
+  "id": "0a043e24-e10e-4236-b689-84b5ff37cd29",
+  "name": "QUARTER",
+  "isOverridable": true,
+  "isEnum": true,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}
