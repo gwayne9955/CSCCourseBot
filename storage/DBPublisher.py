@@ -31,9 +31,10 @@ class DBPublisher:
 
     def set_table_prefix(self, prefix: str) -> None:
         self.MAIN = prefix + self.MAIN
-        self.MAIN_SQL = "INSERT INTO " + self.MAIN + " (code, name, min_units, max_units," \
+        self.MAIN_SQL = "INSERT INTO " + self.MAIN + \
+                        " (code, intent_name, pretty_name, min_units, max_units," \
                         "is_crnc, prereqs, description) " \
-                        "VALUES (%s, %s, %s, %s, %s, %s, %s)"
+                        "VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
 
         self.TERM = prefix + self.TERM
         self.TERM_SQL = "INSERT INTO " + self.TERM + " (code, term) " \
@@ -72,17 +73,17 @@ class DBPublisher:
 
         for course in courses:
             prereqs = "" if course.prereqs is None else course.prereqs
-            data = (course.code.number, self.to_lower(course.name), course.units.min,
-                    course.units.max, course.is_CRNC,
-                    self.to_lower(prereqs), self.to_lower(course.desc))
+            data = (course.code.number, self.to_lower(course.name), course.name,
+                    course.units.min, course.units.max, course.is_CRNC,
+                    prereqs, course.desc)
             results.append(self.db.store(self.MAIN_SQL, data)) 
 
             for term in course.terms_offered:
-                data = (course.code.number, self.to_lower(term.name))
+                data = (course.code.number, term.name.lower())
                 results.append(self.db.store(self.TERM_SQL, data))
                
             for dept in course.code.depts:
-                data = (course.code.number, self.to_lower(dept))
+                data = (course.code.number, dept.lower())
                 results.append(self.db.store(self.DEPT_SQL, data))
 
             # Some courses will not have any relevant topics
@@ -148,8 +149,8 @@ class DBPublisher:
                 # Example section: ('Zoe J. Wood', 'TR 09:40 AM-11:00AM')
                 name = section[0].split(' ')
                 data = (code,
-                        self.to_lower(name[0]),
-                        self.to_lower(name[-1]),
+                        (name[0]).lower(),
+                        (name[-1]).lower(),
                         section[1])
                 results.append(self.db.store(sql, data))
 
@@ -160,8 +161,6 @@ class DBPublisher:
         for idx in range(len(words)):
             new_str = new_str + words[idx].lower()
             if idx < len(words) - 1 and len(words[idx + 1]) > 0:
-                delimiter = "-" 
-                if ord(words[idx + 1][0]) >= 65 and ord(words[idx + 1][0]) <= 90:
-                   delimiter = "_"
+                delimiter = "_"
                 new_str = new_str + delimiter
         return new_str
