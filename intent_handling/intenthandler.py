@@ -19,5 +19,5 @@ class IntentHandler:
 
         IntentType = IntentHandler.INTENT_MAPPING[intent_name]
         params = Parameters(parameters)
-        query = IntentType(params).query()
-        return self.db.call(query)
+        response = IntentType(params).execute(self.db)
+        return response

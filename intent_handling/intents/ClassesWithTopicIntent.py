@@ -6,5 +6,5 @@ class ClassesWithTopicIntent:
     def __init__(self, parameters):
         self.parameters = parameters
 
-    def query(self):
+    def execute(self, db):
         pass
