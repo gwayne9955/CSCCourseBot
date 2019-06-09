@@ -15,6 +15,6 @@ class TermsClassOfferedIntent:
         if len(result) == 0:
             return Signal.UNKNOWN, 'No course term information for {} is available.'.format(
                 self.parameters.class_name)
-        quarters = ', '.join(result)
+        quarters = ', '.join(tup[0] for tup in result)
         return Signal.NORMAL, '{} is offered in {}.'.format(
             self.parameters.class_name, quarters)
