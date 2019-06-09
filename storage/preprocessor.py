@@ -5,7 +5,14 @@ from nltk.stem.wordnet import WordNetLemmatizer
 
 class Preprocessor:
     def __init__(self):
-        self.stop_words = frozenset(nltk.corpus.stopwords.words('english'))
+        self.stop_words = set(nltk.corpus.stopwords.words('english'))
+        self.stop_words.add("lecture")
+        self.stop_words.add("laboratory")
+        self.stop_words.add("student")
+        self.stop_words.add("credit")
+        self.stop_words.add("crosslisted")
+        self.stop_words.add("csc")
+        self.stop_words.add("cpe")
 
     # extract tokenized values from text
     def get_tokens(self, text):
@@ -19,6 +26,9 @@ class Preprocessor:
         lemmad = []
         for word in stop_filtered:
             lemmad.append(self.get_lemma2(self.get_lemma(word)))
+
+        lemmad = self.get_stop_filtered(lemmad)
+
         return lemmad
 
     # lemmatization 1 - extracting plurality reduction
@@ -46,6 +56,6 @@ class Preprocessor:
     def get_stop_filtered(self, simple_tokenized):
         stop_filtered = []
         for word in simple_tokenized:
-            if word not in self.stop_words:
+            if word not in self.stop_words and not word.isdigit():
                 stop_filtered.append(word)
         return stop_filtered

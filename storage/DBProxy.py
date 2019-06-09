@@ -14,7 +14,9 @@ class DBProxy:
         connection = pymysql.connect(host=credentials[0],
                                      user=credentials[1],
                                      password=credentials[2],
-                                     db=credentials[3])
+                                     db=credentials[3],
+                                     use_unicode=True,
+                                     charset="utf8")
         return connection
 
     def disconnect(self) -> None:
