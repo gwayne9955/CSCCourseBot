@@ -8,7 +8,7 @@ class DBProxy:
 
     @staticmethod
     def setup():
-        f = open("credentials.txt")
+        f = open("../credentials.txt")
         credentials = f.read().split(',')
         f.close()
         connection = pymysql.connect(host=credentials[0],

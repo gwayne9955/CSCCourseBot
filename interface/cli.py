@@ -1,5 +1,10 @@
 # The command line interface for Project 3
 
+import os
+import sys
+cur_path = os.getcwd()
+sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
+
 import json
 import requests
 import uuid
