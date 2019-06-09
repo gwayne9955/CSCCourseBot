@@ -3,6 +3,7 @@
 import json
 import requests
 import uuid
+from storage.DBProxy import DBProxy
 from intent_handling.intenthandler import IntentHandler
 
 
@@ -15,6 +16,7 @@ def main():
 
     print("Hello! And welcome to the CSC Course Chatbot!")
     query = input("What question can I answer for ya?:\n")
+    handler = IntentHandler(DBProxy())
     while (query.lower() != 'quit'):
 
         # The http request
@@ -39,7 +41,7 @@ def main():
         # these are to be passed for further computation in the database
         intent = responseJson['result']['metadata']['intentName']  # a string
         parameters = responseJson['result']['parameters']  # a dict
-        response = IntentHandler().handle(intent, parameters)
+        response = handler.handle(intent, parameters)
 
         print("\nResulting intent: {0}".format(intent))
         print("Resulting parameters: {0}\n".format(parameters))
