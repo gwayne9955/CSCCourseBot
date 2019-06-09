@@ -6,5 +6,5 @@ class TermsClassOfferedIntent:
     def __init__(self, parameters):
         self.parameters = parameters
 
-    def execute(self):
+    def execute(self, db):
         pass
