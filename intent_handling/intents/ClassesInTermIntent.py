@@ -1,3 +1,4 @@
+from intent_handling.signal import Signal
 
 
 class ClassesInTermIntent:
