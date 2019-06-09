@@ -85,9 +85,13 @@ class DBPublisher:
                 data = (course.code.number, self.to_lower(dept))
                 results.append(self.db.store(self.DEPT_SQL, data))
 
-            for topic in course_to_topics[course.code.number]:
-                data = (course.code.number, topic)
-                results.append(self.db.store(self.TOPICS_SQL, data))
+            # Some courses will not have any relevant topics
+            try:
+                for topic in course_to_topics[course.code.number]:
+                    data = (course.code.number, topic)
+                    results.append(self.db.store(self.TOPICS_SQL, data))
+            except KeyError:
+                pass
 
     def publish_schedule(self, courses: Tuple[Dict[int, List[Tuple[str, str]]],
                                               Dict[int, List[Tuple[str, str]]]]):
@@ -97,8 +101,8 @@ class DBPublisher:
         self.publish_quarter(cur_courses, self.CUR_QUARTER_SQL)
         self.publish_quarter(next_courses, self.NEXT_QUARTER_SQL)
 
-    def get_topics(self, courses: List[Course]) -> Tuple[Dict[int: List[str]],
-                                                   Dict[str: List[int]]]:
+    def get_topics(self, courses: List[Course]) -> Tuple[Dict[int, List[str]],
+                                                         Dict[str, List[int]]]:
         """
 
         :param courses: List of course objects that contains the descriptions
@@ -106,25 +110,34 @@ class DBPublisher:
         :return course_to_topics: Maps course number to its list of topics
         :return topic_to_courses: Maps topic to list of courses that reference it
         """
-        NGRAMS = 3
+        NGRAM_LENGTH = 3
         course_to_topics = {}
         topic_to_courses = {}
 
         for course in courses:
             word_list = self.preprocessor.get_tokens(course.desc)
-            for num_words in range(NGRAMS):
+            for num_words in range(NGRAM_LENGTH + 1):
                 for j in range(len(word_list) - num_words + 1):
                     ngram = '_'.join(word_list[j:j+num_words])
                     try:
-                        course_to_topics[course.code.number].add(ngram)
-                    except KeyError:
-                        course_to_topics[course.code.number] = set()
-                        course_to_topics[course.code.number].add(ngram)
-                    try:
                         topic_to_courses[ngram].add(course.code.number)
                     except KeyError:
-                        course_to_topics[ngram] = set()
-                        course_to_topics[ngram].add(course.code.number)
+                        topic_to_courses[ngram] = set()
+                        topic_to_courses[ngram].add(course.code.number)
+
+        topic_to_courses = {k: v for k, v in topic_to_courses.items()
+                            if len(v) > 1 and len(v) < 8}
+
+        f = open("topic_list.txt", 'w')
+        for topic, courses in topic_to_courses.items():
+            f.write(topic + '\n')
+            for course in courses:
+                try:
+                    course_to_topics[course].add(topic)
+                except KeyError:
+                    course_to_topics[course] = set()
+                    course_to_topics[course].add(topic)
+        f.close()
 
         return course_to_topics, topic_to_courses
 

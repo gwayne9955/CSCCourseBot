@@ -22,13 +22,14 @@ class TestDBPublisher(unittest.TestCase):
         self.preprocessor = Preprocessor()
         self.db = DBPublisher(self.proxy, self.preprocessor)
         self.db.set_table_prefix("test_")
-        self.db.cleanup()
 
     def tearDown(self) -> None:
         self.proxy.disconnect()
 
     # Wet run test, will add to database on Frank
     def test_publish_catalog(self):
+        self.db.cleanup()
+
         test_course_code = CourseCode("CSC/CPE", 466)
         test_couse_name = "Knowledge Discovery from Data"
         test_unit_range = UnitRange(1, 4)
