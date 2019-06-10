@@ -11,4 +11,5 @@ class ClassAfterClassIntent:
     def execute(db):
         output = "The CSC flowchart would be best to understand what order to" \
                  " take courses. "
-        return output + LinkToFlowchart().execute()
+        flowchart = LinkToFlowchart().execute()
+        return flowchart[0], output + flowchart[1]

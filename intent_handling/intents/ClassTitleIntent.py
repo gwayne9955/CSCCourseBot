@@ -11,9 +11,9 @@ class ClassTitleIntent:
         code = db.course_code(self.parameters.class_name)
         sql = 'SELECT pretty_name ' \
               'FROM main_courses ' \
-              'WHERE code="{}"'.format(code)
+              'WHERE code="{}"'.format(code.split(' ')[-1])
         result = db.call(sql)
 
-        output = "CSC {}'s course name is {}".format(code, result[0][0])
+        output = "{}'s course name is {}".format(code, result[0][0])
 
         return Signal.NORMAL, output
