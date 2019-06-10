@@ -14,5 +14,5 @@ class ClassesNumUnitsIntent:
         result = db.call(sql)
         if len(result) == 0:
             return Signal.NORMAL, 'No classes are {} units.'.format(self.parameters.number)
-        matching = ', '.join('CSC {}'.format(code) for code in result)
+        matching = ', '.join('CSC {}'.format(tup[0]) for tup in result)
         return Signal.NORMAL, 'The following classes are {} units: {}.'.format(self.parameters.number, matching)
