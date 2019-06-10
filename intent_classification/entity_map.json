@@ -412,7 +412,9 @@
 			"D1": ["D1", "d1"],
 			"D2": ["D2", "d2"],
 			"D3": ["D3", "d3"],
-			"D4": ["D4", "d4"]
+			"D4": ["D4", "d4"],
+            "B7": ["B7", "b7", "b 7"],
+            "F": ["F", "f"]
 		}
 	},
 	"[COURSE_LEVEL]": {
@@ -421,7 +423,9 @@
 		"values": {
 			"100": ["100", "one hundred", "100 level", "one hundred level"],
 			"200": ["200", "two hundred", "200 level", "two hundred level"],
-			"300": ["300", "three hundred", "300 level", "three hundred level"]
+			"300": ["300", "three hundred", "300 level", "three hundred level"],
+            "400": ["400", "four hundred", "400 level", "four hundred level"],
+            "500": ["500", "five hundred", "500 level", "five hundred level"]
 		}
 	},
     "[NUMBER]": {
