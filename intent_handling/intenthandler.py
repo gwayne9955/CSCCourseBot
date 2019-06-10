@@ -36,7 +36,7 @@ class IntentHandler:
         ClassesWithStandingIntent, IsClassInTermIntent, ClassHasLabIntent,
         LevelClassesInTermIntent, PrereqsForClassIntent, TermAllLowerIntent,
         TermAllUpperIntent, TermAnyLevelIntent, UnitCountIntent, WhenTakeClassIntent,
-        ClassesNumUnitsIntent, ClassIsUnitsIntent, ClassesCrosslistedIntent
+        ClassesNumUnitsIntent, ClassIsUnitsIntent, ClassesCrosslistedIntent,
         SeminarClassesIntent,
         TermsClassOfferedIntent,
         TermsClassOfferedIntent,
