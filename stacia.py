@@ -7,7 +7,7 @@ from storage.DBProxy import DBProxy
 from intent_handling.intenthandler import IntentHandler
 
 def main():
-    with open("dialogflow.json", 'r') as j:
+    with open("/home/mjpangbu466/CSCCourseBot/dialogflow.json", 'r') as j:
         api = json.load(j)
 
     url = (api["url"])
@@ -15,7 +15,7 @@ def main():
 
     print("Hello! And welcome to the CSC Course Chatbot!")
     query = input("What question can I answer for ya?:\n")
-    db = DBProxy('credentials.txt')
+    db = DBProxy('/home/mjpangbu466/CSCCourseBot/credentials.txt')
     handler = IntentHandler(db)
     while (query.lower() != 'quit'):
 
