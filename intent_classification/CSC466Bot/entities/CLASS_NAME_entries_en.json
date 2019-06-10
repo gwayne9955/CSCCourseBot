@@ -162,8 +162,8 @@
   {
     "value": "cooperative_education_experience",
     "synonyms": [
-      "CPE 494",
-      "CSC 494",
+      "CPE 493",
+      "CSC 493",
       "cooperative education experience"
     ]
   },
@@ -178,6 +178,14 @@
   {
     "value": "cooperative_education_experience",
     "synonyms": [
+      "CPE 495",
+      "CSC 495",
+      "cooperative education experience"
+    ]
+  },
+  {
+    "value": "cooperative_education_experience",
+    "synonyms": [
       "CPE 593",
       "CSC 593",
       "cooperative education experience"
@@ -186,8 +194,8 @@
   {
     "value": "cooperative_education_experience",
     "synonyms": [
-      "CPE 493",
-      "CSC 493",
+      "CPE 494",
+      "CSC 494",
       "cooperative education experience"
     ]
   },
@@ -196,14 +204,6 @@
     "synonyms": [
       "CPE 594",
       "CSC 594",
-      "cooperative education experience"
-    ]
-  },
-  {
-    "value": "cooperative_education_experience",
-    "synonyms": [
-      "CPE 495",
-      "CSC 495",
       "cooperative education experience"
     ]
   },
@@ -746,25 +746,17 @@
   {
     "value": "software_engineering_i",
     "synonyms": [
-      "CPE 308",
-      "CSC 308",
-      "software engineering i"
-    ]
-  },
-  {
-    "value": "software_engineering_i",
-    "synonyms": [
       "CPE 508",
       "CSC 508",
       "software engineering i"
     ]
   },
   {
-    "value": "software_engineering_ii",
+    "value": "software_engineering_i",
     "synonyms": [
-      "CPE 509",
-      "CSC 509",
-      "software engineering ii"
+      "CPE 308",
+      "CSC 308",
+      "software engineering i"
     ]
   },
   {
@@ -772,6 +764,14 @@
     "synonyms": [
       "CPE 309",
       "CSC 309",
+      "software engineering ii"
+    ]
+  },
+  {
+    "value": "software_engineering_ii",
+    "synonyms": [
+      "CPE 509",
+      "CSC 509",
       "software engineering ii"
     ]
   },
