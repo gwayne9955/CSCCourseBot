@@ -16,5 +16,5 @@ class ClassesInTermIntent:
             return Signal.UNKNOWN, 'No term information for {} is available.'.format(
                 self.parameters.quarter)
 
-        courses = ','.join('CSC {}'.format(tup[0]) for tup in result)
+        courses = ', '.join('CSC {}'.format(tup[0]) for tup in result)
         return Signal.NORMAL, 'The following courses are offered in {}: {}.'.format(self.parameters.quarter, courses)
