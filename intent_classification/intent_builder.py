@@ -45,10 +45,12 @@ class Intent():
         phrases = sample_map[sample_frame]['rephrases']
         phrases.append(key)
         samples = []
+        vals_per_question = 10
         for phrase in phrases:
-            s = sample.Sample(phrase, self.name)
-            s.populate_entities(entity_map)
-            samples.append(s)
+            for i in range(vals_per_question):
+                s = sample.Sample(phrase, self.name)
+                s.populate_entities(entity_map)
+                samples.append(s)
 
         for s in samples:
             self.build_phrase(s)

@@ -40,7 +40,6 @@ class Sample:
 
     def populate_entities(self, entity_map):
         """Method to parse entities from a sample's text """
-        without_bracks = [c[1:-1] for c in entity_map.keys()]
         # add secondary entities
         for word in self.text.split():
             for entity in entity_map:
