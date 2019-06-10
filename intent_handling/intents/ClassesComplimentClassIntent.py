@@ -1,4 +1,4 @@
-from intent_handling.intents.LinkToFlowchart import LinkToFlowchart
+from intent_handling.intents.LinkToFlowchartIntent import LinkToFlowchart
 
 
 class ClassesComplimentClass:
