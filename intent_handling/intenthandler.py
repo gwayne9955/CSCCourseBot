@@ -20,6 +20,7 @@ from intent_handling.intents.ClassAfterClassIntent import ClassAfterClassIntent
 from intent_handling.intents.WhatClassCodeIntent import WhatClassCodeIntent
 from intent_handling.intents.ClassTitleIntent import ClassTitleIntent
 
+from intent_handling.intents.ClassCrosslistedIntent import ClassCrosslistedIntent
 from intent_handling.intents.ClassesCrosslistedIntent import ClassesCrosslistedIntent
 from intent_handling.intents.ClassHasLabIntent import ClassHasLabIntent
 from intent_handling.intents.ClassIsUnitsIntent import ClassIsUnitsIntent
@@ -37,6 +38,7 @@ class IntentHandler:
         LevelClassesInTermIntent, PrereqsForClassIntent, TermAllLowerIntent,
         TermAllUpperIntent, TermAnyLevelIntent, UnitCountIntent, WhenTakeClassIntent,
         ClassesNumUnitsIntent, ClassIsUnitsIntent, ClassesCrosslistedIntent,
+        ClassCrosslistedIntent,
         SeminarClassesIntent,
         TermsClassOfferedIntent,
         TermsClassOfferedIntent,
