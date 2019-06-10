@@ -10,7 +10,7 @@ class ClassesNumUnitsIntent:
     def execute(self, db):
         sql = 'SELECT code ' \
               'FROM main_courses ' \
-              'WHERE min_units={} AND max_units={}'.format(self.parameters.number)
+              'WHERE min_units={} AND max_units={}'.format(self.parameters.number, self.parameters.number)
         result = db.call(sql)
         if len(result) == 0:
             return Signal.NORMAL, 'No classes are {} units.'.format(self.parameters.number)
