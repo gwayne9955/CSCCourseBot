@@ -4,13 +4,14 @@ from intent_handling.intents.IsClassInTermIntent import IsClassInTermIntent
 from intent_handling.intents.ClassesInTermIntent import ClassesInTermIntent
 from intent_handling.intents.ClassesOnlyInTermIntent import ClassesOnlyInTermIntent
 from intent_handling.intents.TermsClassOfferedIntent import TermsClassOfferedIntent
+from intent_handling.intents.TermAllUpperIntent import TermAllUpperIntent
 from intent_handling.parameters import Parameters
 
 
 class IntentHandler:
     ALL_INTENTS: List[type] = [
         IsClassInTermIntent, ClassesInTermIntent, ClassesOnlyInTermIntent,
-        TermsClassOfferedIntent,
+        TermsClassOfferedIntent, TermAllUpperIntent,
     ]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
