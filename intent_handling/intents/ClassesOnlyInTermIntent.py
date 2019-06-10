@@ -12,7 +12,8 @@ class ClassesOnlyInTermIntent:
         sql = 'SELECT * FROM course_terms'
         result = db.call(sql)
         by_term = assoc(result, key=lambda pair: pair[0], value=lambda pair: pair[1])
-        matching = [course for course, terms in by_term.items()
+        matching = ['CSC {}'.format(course)
+                    for course, terms in by_term.items()
                     if len(terms) == 1 and terms[0] == self.parameters.quarter]
         if len(matching) == 0:
             return Signal.UNKNOWN, 'No course information available for {}.'.format(self.parameters.quarter)
