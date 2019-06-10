@@ -7,6 +7,7 @@ from storage.DBProxy import DBProxy
 from intent_handling.intenthandler import IntentHandler
 from spell_checker import spell_check
 from intent_handling.teamdelegation import best_team_estimate
+from intent_handling.signal import Signal
 
 
 class Stacia:
@@ -35,46 +36,54 @@ class Stacia:
             'Authorization': "Bearer {0}".format(self.api["clientId"]),
             'Content-Type': "application/json"
         }
-        response = requests.request("POST",
+        httpResponse = requests.request("POST",
                                     self.url,
                                     data=json.dumps(body),
                                     headers=headers,
                                     params=version)
-        if response.status_code == 200:
+        if httpResponse.status_code == 200:
             # a valid response
-            responseJson = json.loads(response.text)
+            responseJson = json.loads(httpResponse.text)
 
             # these are to be passed for further computation in the database
-            intent = responseJson['result']['metadata'][
-                'intentName']  # a string
+            intent = responseJson['result']['metadata']['intentName']  # a string
             parameters = responseJson['result']['parameters']  # a dict
             response = self.handler.handle(intent, parameters)
 
             if response is None:
                 team = best_team_estimate(query)
                 if team is None:
-                    response = "Sorry, I'm not sure how to answer that."
+                    response = Signal.ERROR, "Sorry, I'm not sure how to answer that."
                 else:
-                    response = 'The {} bot might be able to answer that question for you.'.format(
-                        team)
+                    response = Signal.NORMAL, 'The {} bot might be able to answer that question for you.'.format(team)
 
-            print("\nResulting intent: {0}".format(intent))
-            print("Resulting parameters: {0}\n".format(parameters))
+            #print("\nResulting intent: {0}".format(intent))
+            #print("Resulting parameters: {0}\n".format(parameters))
 
             return response
         else:
-            return "{0} error getting response from DialogFlow\n\tReason: {1}".format(
+            return Signal.ERROR, "{0} error getting response from DialogFlow\n\tReason: {1}".format(
                 response.status_code, response.reason)
 
 
 def main():
     print("Hello! And welcome to the CSC Course Chatbot!")
+    print("You can me questions about the Cal Poly CSC Course System or enter \'Help\' or \'quit\'")
     stacia = Stacia()
-    query = input("What question can I answer for ya?:\n")
+    query = input("What question can I help answer for you?:\n")
     while (query.lower() != 'quit'):
-        response = stacia.respond(query)
-        print("Response: {}".format(response))
-        query = input("What question can I answer for ya?:\n")
+        if query.lower() == 'help':
+            helpStr = """Example questions about the Cal Poly CSC Course System you can ask me:\n
+                \t• \'Does CSC 349 satisfy GE Area a2?\'
+                \t• \'What class title is given to CSC 466?\'
+                \t• \'When is CSC 453 typically offered?\'
+                \t• \'Which courses require junior standing?\'
+                \t• \'What code does computer graphics have?\'\n"""
+            print(helpStr)
+        else:
+            response = stacia.respond(query)
+            print("{}".format(response[1]))
+        query = input("What question can I help answer for you?:\n")
 
     print("Goodbye and thank you for using our CSC Course Chatbot")
 

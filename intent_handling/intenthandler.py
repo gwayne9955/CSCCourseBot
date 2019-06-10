@@ -1,4 +1,5 @@
 from typing import *
+from intent_handling.signal import Signal
 from storage.DBProxy import DBProxy
 from intent_handling.intents.ClassesInTermIntent import ClassesInTermIntent
 from intent_handling.intents.ClassesOnlyInTermIntent import ClassesOnlyInTermIntent
@@ -34,6 +35,7 @@ from intent_handling.intents.WhenTakeClassIntent import WhenTakeClassIntent
 from intent_handling.intents.SeminarClassesIntent import SeminarClassesIntent
 from intent_handling.intents.UnitCountIntent import UnitCountIntent
 from intent_handling.intents.ClassRequiresStandingIntent import ClassRequiresStandingIntent
+from intent_handling.intents.WelcomeIntent import WelcomeIntent
 from intent_handling.parameters import Parameters
 
 
@@ -58,7 +60,8 @@ class IntentHandler:
         ClassTitleIntent,
         ClassWithTopicIntent,
         ClassTopicsIntent,
-        ClassCNCIntent
+        ClassCNCIntent,
+        WelcomeIntent
     ]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
