@@ -1,3 +1,4 @@
+from intent_handling.signal import Signal
 
 
 class LinkToFlowchart:
@@ -8,6 +9,6 @@ class LinkToFlowchart:
     @staticmethod
     def execute():
         link = "https://flowcharts.calpoly.edu/downloads/mymap/17-19.52CSCBSU.pdf"
-        answer = "To see the most recent CSC course catalog, visit {}"\
+        answer = "To see the most recent CSC flowchart, visit {}"\
                  .format(link)
-        return answer
+        return Signal.NORMAL, answer
