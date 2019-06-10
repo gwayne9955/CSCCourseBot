@@ -11,7 +11,6 @@ import uuid
 from storage.DBProxy import DBProxy
 from intent_handling.intenthandler import IntentHandler
 
-
 def main():
     with open("dialogflow.json", 'r') as j:
         api = json.load(j)
@@ -33,7 +32,7 @@ def main():
         }
         version = {"v": api['version']}
         headers = {
-            'Authorization': "Bearer 461c339b64ce4f96bf44502fbb9b0a23",
+            'Authorization': "Bearer {0}".format(api["clientId"]),
             'Content-Type': "application/json"
         }
         response = requests.request("POST",
@@ -41,21 +40,24 @@ def main():
                                     data=json.dumps(body),
                                     headers=headers,
                                     params=version)
-        responseJson = json.loads(response.text)
+        if response.status_code == 200:
+            # a valid response
+            responseJson = json.loads(response.text)
 
-        # these are to be passed for further computation in the database
-        intent = responseJson['result']['metadata']['intentName']  # a string
-        parameters = responseJson['result']['parameters']  # a dict
-        response = handler.handle(intent, parameters)
+            # these are to be passed for further computation in the database
+            intent = responseJson['result']['metadata']['intentName']  # a string
+            parameters = responseJson['result']['parameters']  # a dict
+            response = handler.handle(intent, parameters)
 
-        print("\nResulting intent: {0}".format(intent))
-        print("Resulting parameters: {0}\n".format(parameters))
-        print("Response: {}".format(response))
+            print("\nResulting intent: {0}".format(intent))
+            print("Resulting parameters: {0}\n".format(parameters))
+            print("Response: {}".format(response))
+        else:
+            print("{0} error getting response from DialogFlow\n\tReason: {1}".format(response.status_code, response.reason))
 
         query = input("What question can I answer for ya?:\n")
 
     print("Goodbye and thank you for using our CSC Course Chatbot")
-
 
 if __name__ == '__main__':
     main()
