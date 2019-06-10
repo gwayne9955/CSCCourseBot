@@ -8,35 +8,35 @@ from intent_handling.intenthandler import IntentHandler
 from spell_checker import spell_check
 from intent_handling.teamdelegation import best_team_estimate
 
-def main():
-    with open("dialogflow.json", 'r') as j:
-        api = json.load(j)
 
-    url = (api["url"])
-    id = uuid.uuid1()
+class Stacia:
+    def __init__(self):
+        with open("dialogflow.json", 'r') as j:
+            self.api = json.load(j)
 
-    print("Hello! And welcome to the CSC Course Chatbot!")
-    query = input("What question can I answer for ya?:\n")
-    # run speck check over query
-    query = spell_check(query)
-    db = DBProxy('credentials.txt')
-    handler = IntentHandler(db)
-    while (query.lower() != 'quit'):
+        self.url = (self.api["url"])
+        self.id = uuid.uuid1()
+
+        db = DBProxy('credentials.txt')
+        self.handler = handler = IntentHandler(db)
+
+    def respond(self, query) -> str:
+        query = spell_check(query)
 
         # The http request
         body = {
-            "lang": api["lang"],
+            "lang": self.api["lang"],
             "query": query,
             "sessionId": str(id),
-            "timezone": api["timezone"]
+            "timezone": self.api["timezone"]
         }
-        version = {"v": api['version']}
+        version = {"v": self.api['version']}
         headers = {
-            'Authorization': "Bearer {0}".format(api["clientId"]),
+            'Authorization': "Bearer {0}".format(self.api["clientId"]),
             'Content-Type': "application/json"
         }
         response = requests.request("POST",
-                                    url,
+                                    self.url,
                                     data=json.dumps(body),
                                     headers=headers,
                                     params=version)
@@ -45,26 +45,39 @@ def main():
             responseJson = json.loads(response.text)
 
             # these are to be passed for further computation in the database
-            intent = responseJson['result']['metadata']['intentName']  # a string
+            intent = responseJson['result']['metadata'][
+                'intentName']  # a string
             parameters = responseJson['result']['parameters']  # a dict
-            response = handler.handle(intent, parameters)
+            response = self.handler.handle(intent, parameters)
 
             if response is None:
                 team = best_team_estimate(query)
                 if team is None:
                     response = "Sorry, I'm not sure how to answer that."
                 else:
-                    response = 'The {} bot might be able to answer that question for you.'.format(team)
+                    response = 'The {} bot might be able to answer that question for you.'.format(
+                        team)
 
             print("\nResulting intent: {0}".format(intent))
             print("Resulting parameters: {0}\n".format(parameters))
-            print("Response: {}".format(response))
-        else:
-            print("{0} error getting response from DialogFlow\n\tReason: {1}".format(response.status_code, response.reason))
 
+            return response
+        else:
+            return "{0} error getting response from DialogFlow\n\tReason: {1}".format(
+                response.status_code, response.reason)
+
+
+def main():
+    print("Hello! And welcome to the CSC Course Chatbot!")
+    stacia = Stacia()
+    query = input("What question can I answer for ya?:\n")
+    while (query.lower() != 'quit'):
+        response = stacia.respond(query)
+        print("Response: {}".format(response))
         query = input("What question can I answer for ya?:\n")
 
     print("Goodbye and thank you for using our CSC Course Chatbot")
+
 
 if __name__ == '__main__':
     main()
