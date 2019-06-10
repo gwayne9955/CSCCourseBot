@@ -15,3 +15,5 @@ class Parameters:
         self.subject_matter = safe_get(d, 'SUBJECT_MATTER')
         self.ge_area = safe_get(d, 'GE_AREA')
         self.course_level = safe_get(d, 'COURSE_LEVEL')
+        if self.course_level is not None:
+            self.course_level = int(self.course_level)
