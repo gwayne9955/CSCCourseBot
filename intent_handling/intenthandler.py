@@ -33,6 +33,7 @@ from intent_handling.intents.CNCClassesIntent import CNCClassesIntent
 from intent_handling.intents.WhenTakeClassIntent import WhenTakeClassIntent
 from intent_handling.intents.SeminarClassesIntent import SeminarClassesIntent
 from intent_handling.intents.UnitCountIntent import UnitCountIntent
+from intent_handling.intents.ClassRequiresStandingIntent import ClassRequiresStandingIntent
 from intent_handling.parameters import Parameters
 
 
@@ -44,7 +45,7 @@ class IntentHandler:
         TermAllUpperIntent, TermAnyLevelIntent, UnitCountIntent, WhenTakeClassIntent,
         ClassesNumUnitsIntent, ClassIsUnitsIntent, ClassesCrosslistedIntent,
         ClassCrosslistedIntent, ClassCrosslistedInDeptIntent, ClassesCrosslistedInDeptIntent,
-        SeminarClassesIntent, CNCClassesIntent,
+        SeminarClassesIntent, CNCClassesIntent, ClassRequiresStandingIntent,
         TermsClassOfferedIntent,
         TermsClassOfferedIntent,
         ClassesComplimentClassIntent,
