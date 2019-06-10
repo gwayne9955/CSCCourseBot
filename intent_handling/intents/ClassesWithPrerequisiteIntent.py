@@ -10,7 +10,7 @@ class ClassesWithPrerequisiteIntent:
     def execute(self, db):
         sql = 'SELECT code, prereqs FROM main_courses'
         result = db.call(sql)
-        code = db.call('SELECT code FROM main_courses WHERE intent_name="{}"'.format(self.parameters.class_name))
+        code = db.call('SELECT code FROM main_courses WHERE intent_name="{}"'.format(self.parameters.class_name))[0][0]
         matching = ['CSC {}'.format(c) for c, prereqs in result
                     if 'CSC {}'.format(code) in prereqs
                     or 'CSC/CPE {}'.format(code) in prereqs]
