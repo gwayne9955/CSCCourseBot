@@ -14,7 +14,7 @@ class ClassHasLabIntent:
         result = db.call(sql)
         if len(result) == 0:
             return Signal.UNKNOWN, 'No information about {} is available.'.format(self.parameters.class_name)
-        code = db.class_code(self.parameters.class_name)
+        code = db.course_code(self.parameters.class_name)
         description = result[0][0]
         if 'laboratory' in description:
             return Signal.NORMAL, 'Yes, {} has a lab section.'.format(code)
