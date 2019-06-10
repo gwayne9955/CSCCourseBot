@@ -1,4 +1,4 @@
-from intent_handling.signal import Signal
+from intent_handling.intents.TermsClassOfferedIntent import TermsClassOfferedIntent
 
 
 class IsClassInTermIntent:
@@ -8,4 +8,4 @@ class IsClassInTermIntent:
         self.parameters = parameters
 
     def execute(self, db):
-        pass
+        return TermsClassOfferedIntent(self.parameters).execute(db)
