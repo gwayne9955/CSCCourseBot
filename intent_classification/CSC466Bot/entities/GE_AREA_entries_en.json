@@ -56,6 +56,14 @@
     ]
   },
   {
+    "value": "B7",
+    "synonyms": [
+      "B7",
+      "b 7",
+      "b7"
+    ]
+  },
+  {
     "value": "C1",
     "synonyms": [
       "C1",
@@ -109,6 +117,13 @@
     "synonyms": [
       "D4",
       "d4"
+    ]
+  },
+  {
+    "value": "F",
+    "synonyms": [
+      "F",
+      "f"
     ]
   }
 ]

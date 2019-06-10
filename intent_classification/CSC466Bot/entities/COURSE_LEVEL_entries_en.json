@@ -25,5 +25,23 @@
       "three hundred",
       "three hundred level"
     ]
+  },
+  {
+    "value": "400",
+    "synonyms": [
+      "400",
+      "400 level",
+      "four hundred",
+      "four hundred level"
+    ]
+  },
+  {
+    "value": "500",
+    "synonyms": [
+      "500",
+      "500 level",
+      "five hundred",
+      "five hundred level"
+    ]
   }
 ]

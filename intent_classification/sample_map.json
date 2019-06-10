@@ -367,6 +367,9 @@
 	"Which classes fulfill GE Area [GE_AREA]?": {
 		"intent": "CLASSES_GE_X",
 		"rephrases": [
+            "Which classes satisfy GE Area [GE_AREA]?",
+            "Which courses satisfy GE Area [GE_AREA]?",
+            "Which classes can I satisfy my [GE_AREA] with?",
 			"Which courses fulfill GE Area [GE_AREA]?",
 			"Which classes can I fulfill my [GE_AREA] with?",
 			"Which classes can I get credits for GE Area [GE_AREA] with?",
@@ -379,6 +382,8 @@
 	"Does [CLASS_NAME] fulfill GE Area [GE_AREA]?": {
 		"intent": "CLASS_GE_X",
 		"rephrases": [
+            "Does [CLASS_NAME] satisfy GE Area [GE_AREA]?",
+            "Can I satisfy my [GE_AREA] with [CLASS_NAME]?",
 			"Can I fulfill my [GE_AREA] with [CLASS_NAME]?",
 			"Can I get credits for GE Area [GE_AREA] with [CLASS_NAME]?",
 			"Can I get credits for [GE_AREA] with [CLASS_NAME]?",
