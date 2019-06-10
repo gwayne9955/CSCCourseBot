@@ -9,7 +9,7 @@ class ClassCrosslistedIntent:
 
     def execute(self, db):
         sql = 'SELECT code, department ' \
-              'FROM course_depts JOIN main_courses ON course_depts.code=main_courses.code' \
+              'FROM course_depts JOIN main_courses ON course_depts.code=main_courses.code ' \
               'WHERE intent_name="{}"'.format(self.parameters.class_name)
         result = db.call(sql)
         if len(result) == 0:
