@@ -5,7 +5,10 @@
 			"When is [CLASS_NAME] typically offered?",
 			"When is [CLASS_NAME] offered?",
 			"When's [CLASS_NAME] offered?",
-			"What quarter is [CLASS_NAME] offered?"
+			"What quarter is [CLASS_NAME] offered?",
+			"Which terms is [CLASS_NAME] offered?",
+			"Which terms is [CLASS_NAME] typically offered?",
+			"What terms is [CLASS_NAME] offered?"
 		]
 	},
 	"Is [CLASS_NAME] offered in [QUARTER]?": {
@@ -95,16 +98,9 @@
 			"What are prerequisites for taking [CLASS_NAME]?",
 			"What are some prereqs for [CLASS_NAME]?",
 			"What are the prerequisites to take [CLASS_NAME]?",
-			"What are the prereqs to take [CLASS_NAME]?"
-		]
-	},
-	"Is [CLASS_NAME] a prerequisite for [CLASS_NAME]?": {
-      	"status": "Two of the same parameters not working",
-		"intent": "IS_CLASS_PREREQ_ANOTHER",
-		"rephrases": [
-			"Is [CLASS_NAME] a prereq for [CLASS_NAME]?",
-			"Does [CLASS_NAME] have [CLASS_NAME] as a prerequisite?",
-			"Does [CLASS_NAME] have [CLASS_NAME] as a prereq?"
+			"What are the prereqs to take [CLASS_NAME]?",
+			"What are the prereqs for [CLASS_NAME]?",
+			"What do I have to take before [CLASS_NAME]?"
 		]
 	},
 	"Which classes have [CLASS_NAME] as a prerequisite?": {
@@ -115,7 +111,9 @@
 			"Which classes have [CLASS_NAME] as a prereq?",
 			"Which classes require [CLASS_NAME] as a prereq?",
 			"Which classes have as a prequisite [CLASS_NAME]?",
-			"Which classes have as a preq [CLASS_NAME]?"
+			"Which classes have as a preq [CLASS_NAME]?",
+			"Which classes require [CLASS_NAME]?",
+			"Which courses require [CLASS_NAME]?"
 		]
 	},
 	"Which classes have no prerequisites?": {
@@ -124,19 +122,8 @@
 			"Which courses have no prerequisites?",
 			"Which classes have no prereqs?",
 			"Which classes do not require prerequisites?",
-			"Which classes are there no prerequisites?"
-		]
-	},
-	"Does [CLASS_NAME] have an upper divisional prerequisite?": {
-      	"status": "Not parsing",
-		"intent": "CLASS_HAVE_UPPER_PREREQ",
-		"rephrases": [
-			"Does [CLASS_NAME] have an upper division prerequisite?",
-			"Is there an upper division prerequisite for [CLASS_NAME]?",
-			"Are there upper division prerequisites for [CLASS_NAME]?",
-			"Does [CLASS_NAME] have an upper division prereq?",
-			"Is there an upper division prereq for [CLASS_NAME]?",
-			"Are there upper division prereqs for [CLASS_NAME]?"
+			"Which classes are there no prerequisites?",
+			"Which courses have no prereqs?"
 		]
 	},
 	"Which classes require [CLASS_QUALIFICATION] standing?": {
@@ -180,7 +167,8 @@
       	"status": "Just added, check course description",
 		"intent": "CLASSES_LAB",
 		"rephrases": [
-			"Is [CLASS_NAME] lecture only?"
+			"Is [CLASS_NAME] lecture only?",
+			"Does [CLASS_NAME] have a lab?"
 		]
 	},
 	"Which classes are seminars?": {
@@ -217,7 +205,8 @@
 			"Is [CLASS_NAME] a [NUMBER] unit class?",
 			"Does [CLASS_NAME] count for [NUMBER] units?",
 			"Does [CLASS_NAME] count for [NUMBER] credits?",
-			"Is [CLASS_NAME] a [NUMBER] credit course?"
+			"Is [CLASS_NAME] a [NUMBER] credit course?",
+			"Is [CLASS_NAME] worth [NUMBER] units?"
 		]
 	},
 	"Which classes are crosslisted in another department?": {
@@ -226,7 +215,9 @@
 			"Which courses are crosslisted in another department?",
 			"What classes are also listed in another department?",
 			"Which class listings can also be found in another department?",
-			"Which classes are crosslisted under another department?"
+			"Which classes are crosslisted under another department?",
+			"Which classes are crosslisted?",
+			"Which courses are crosslisted?"
 		]
 	},
 	"Is [CLASS_NAME] crosslisted in another department?": {
@@ -235,7 +226,8 @@
 			"Can I find [CLASS_NAME] listed in another department?",
 			"Is there another department listing of [CLASS_NAME]?",
 			"Is [CLASS_NAME] crosslisted somewhere else?",
-			"Is [CLASS_NAME] crosslisted in some other department?"
+			"Is [CLASS_NAME] crosslisted in some other department?",
+			"Is [CLASS_NAME] crosslisted?"
 		]
 	},
 	"Which classes are crosslisted in [DEPARTMENT_ABBREVIATION]?": {
@@ -263,7 +255,11 @@
 			"Which classes can only be taken credit or no credit?",
 			"What are classes that can only be taken credit or no credit?",
 			"What are credit or no credit only classes?",
-			"What are credit or no credit only courses?"
+			"What are credit or no credit only courses?",
+			"Which classes are credit/no credit only?",
+			"Which courses are credit/no credit only?",
+			"What classes are credit/no credit only?",
+			"What courses are credit/no credit only?"
 		]
 	},
 	"Is [CLASS_NAME] credit/no credit grading only?": {
@@ -273,7 +269,8 @@
 			"Can [CLASS_NAME] only be taken as credit or no credit?",
 			"Can you only take [CLASS_NAME] as credit or no credit?",
 			"Is [CLASS_NAME] credit or no credit only?",
-			"Is [CLASS_NAME] credit or no credit grading only?"
+			"Is [CLASS_NAME] credit or no credit grading only?",
+			"Is [CLASS_NAME] credit/no credit only?"
 		]
 	},
 	"What topics are covered in [CLASS_NAME]?": {
@@ -298,7 +295,8 @@
 			"What are classes that include [SUBJECT_MATTER]?",
 			"What are some classes that include [SUBJECT_MATTER]?",
 			"Which classes consist of [SUBJECT_MATTER]?",
-			"Which classes touch on [SUBJECT_MATTER]?"
+			"Which classes touch on [SUBJECT_MATTER]?",
+			"Which classes discuss [SUBJECT_MATTER]?"
 		]
 	},
 	"Does [CLASS_NAME] include [SUBJECT_MATTER]?": {
@@ -307,7 +305,8 @@
 			"Would [CLASS_NAME] include [SUBJECT_MATTER]?",
 			"Does [CLASS_NAME] consist of [SUBJECT_MATTER]?",
 			"Is [SUBJECT_MATTER] included in [CLASS_NAME]?",
-			"Is [SUBJECT_MATTER]? taught in [CLASS_NAME]?"
+			"Is [SUBJECT_MATTER]? taught in [CLASS_NAME]?",
+			"Does [CLASS_NAME] discuss [SUBJECT_MATTER]?"
 		]
 	},
 	"What is the course title for [CLASS_NAME]?": {
@@ -325,7 +324,8 @@
 			"What name do people also call [CLASS_NAME]?",
 			"What is [CLASS_NAME] also named as?",
 			"What is [CLASS_NAME] also called?",
-			"What name is also given to [CLASS_NAME]?"
+			"What name is also given to [CLASS_NAME]?",
+			"What is the name of [CLASS_NAME]?"
 		]
 	},
 	"What is the course code for [CLASS_NAME]?": {
@@ -334,7 +334,9 @@
 			"What is the class code for [CLASS_NAME]?",
 			"What code does [CLASS_NAME] have?",
 			"What is [CLASS_NAME]'s course code?",
-			"Which course code is [CLASS_NAME]?"
+			"Which course code is [CLASS_NAME]?",
+			"What is the course number for [CLASS_NAME]?",
+			"What course number is [CLASS_NAME]?"
 		]
 	},
 	"What class should I take after [CLASS_NAME]?": {
@@ -346,7 +348,8 @@
 			"Which course should I take following [CLASS_NAME]?",
 			"What class do students typically take after [CLASS_NAME]?",
 			"After [CLASS_NAME], what course should I take?",
-			"What class should I take next after [CLASS_NAME]?"
+			"What class should I take next after [CLASS_NAME]?",
+			"What should I take after [CLASS_NAME]?"
 		]
 	},
 	"Which classes are two-part sequences?": {
@@ -356,7 +359,9 @@
 			"Which courses are two-part sequences?",
 			"Which classes are usually taken in two parts?",
 			"What courses are usually taken as a two-part sequence?",
-			"Which courses are typically taken as two different parts?"
+			"Which courses are typically taken as two different parts?",
+			"Which classes have multiple parts?",
+			"Which courses have multiple parts?"
 		]
 	},
 	"Which classes fulfill GE Area [GE_AREA]?": {
@@ -366,7 +371,9 @@
 			"Which classes can I fulfill my [GE_AREA] with?",
 			"Which classes can I get credits for GE Area [GE_AREA] with?",
 			"Which classes give me credits for [GE_AREA]?",
-			"Which classes are possible to get credits for GE Area [GE_AREA]?"
+			"Which classes are possible to get credits for GE Area [GE_AREA]?",
+			"What can I take to fulfill GE [GE_AREA]?",
+			"What can I take to fulfill my [GE_AREA]?"
 		]
 	},
 	"Does [CLASS_NAME] fulfill GE Area [GE_AREA]?": {
@@ -375,7 +382,8 @@
 			"Can I fulfill my [GE_AREA] with [CLASS_NAME]?",
 			"Can I get credits for GE Area [GE_AREA] with [CLASS_NAME]?",
 			"Can I get credits for [GE_AREA] with [CLASS_NAME]?",
-			"Is it possible to get credits for GE Area [GE_AREA] with [CLASS_NAME]?"
+			"Is it possible to get credits for GE Area [GE_AREA] with [CLASS_NAME]?",
+			"Can I fulfill my [GE_AREA] by taking [CLASS_NAME]?"
 		]
 	},
 	"What classes should I take with [CLASS_NAME]?": {
@@ -386,7 +394,8 @@
 			"What are good classes that I should take with [CLASS_NAME]?",
 			"What classes would people recommend taking [CLASS_NAME] with?",
 			"Which classes would students recommend taking [CLASS_NAME] alongside?",
-			"Which courses would be good for me to take with [CLASS_NAME]?"
+			"Which courses would be good for me to take with [CLASS_NAME]?",
+			"What should I take with [CLASS_NAME]?"
 		]
 	}
 }
