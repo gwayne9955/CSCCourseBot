@@ -17,3 +17,6 @@ class Parameters:
         self.course_level = safe_get(d, 'COURSE_LEVEL')
         if self.course_level is not None:
             self.course_level = int(self.course_level)
+        self.number = safe_get(d, 'NUMBER')
+        if self.number is not None:
+            self.number = int(self.number)
