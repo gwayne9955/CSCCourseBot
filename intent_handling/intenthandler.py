@@ -20,6 +20,7 @@ from intent_handling.intents.ClassAfterClassIntent import ClassAfterClassIntent
 from intent_handling.intents.WhatClassCodeIntent import WhatClassCodeIntent
 from intent_handling.intents.ClassTitleIntent import ClassTitleIntent
 
+from intent_handling.intents.ClassHasLabIntent import ClassHasLabIntent
 from intent_handling.intents.WhenTakeClassIntent import WhenTakeClassIntent
 from intent_handling.parameters import Parameters
 
@@ -27,7 +28,7 @@ from intent_handling.parameters import Parameters
 class IntentHandler:
     ALL_INTENTS: List[type] = [
         ClassesInTermIntent, ClassesOnlyInTermIntent, ClassesWithPrerequisiteIntent,
-        ClassesWithStandingIntent, IsClassInTermIntent,
+        ClassesWithStandingIntent, IsClassInTermIntent, ClassHasLabIntent,
         LevelClassesInTermIntent, PrereqsForClassIntent, TermAllLowerIntent,
         TermAllUpperIntent, TermAnyLevelIntent, WhenTakeClassIntent,
         TermsClassOfferedIntent,
