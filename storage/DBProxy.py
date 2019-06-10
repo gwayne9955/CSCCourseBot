@@ -53,5 +53,5 @@ class DBProxy:
     def course_code(self, intent_name) -> str:
         sql = 'SELECT code FROM main_courses WHERE intent_name="{}"'.format(intent_name)
         result = self.call(sql)
-        assert len(result) == 1
+        assert len(result) > 0
         return 'CSC {}'.format(result[0][0])
