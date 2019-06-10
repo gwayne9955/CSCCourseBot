@@ -31,7 +31,9 @@
 			"What courses are offered during the [QUARTER]?",
 			"What can I take in [QUARTER]?",
 			"What can I take in the [QUARTER]?",
-			"What can I take during the [QUARTER]?"
+			"What can I take during the [QUARTER]?",
+			"Which courses are offered in [QUARTER]?",
+			"What courses are offered in [QUARTER]?"
 		]
 	},
 	"Which classes are only taught in the [QUARTER]?": {

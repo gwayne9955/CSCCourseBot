@@ -70,9 +70,9 @@ class IntentHandler:
     def __init__(self, db: DBProxy):
         self.db = db
 
-    def handle(self, intent_name: str, parameters: Dict) -> str:
+    def handle(self, intent_name: str, parameters: Dict) -> Optional[str]:
         if intent_name not in IntentHandler.INTENT_MAPPING:
-            return Signal.UNKNOWN, "Sorry, I'm not sure how to answer that."
+            return None
 
         IntentType = IntentHandler.INTENT_MAPPING[intent_name]
         params = Parameters(parameters)
