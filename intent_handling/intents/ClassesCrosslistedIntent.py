@@ -10,6 +10,9 @@ class ClassesCrosslistedIntent:
 
     def execute(self, db):
         dept = self.parameters.department_abbreviation
+        if dept == 'CSC':
+            return Signal.NORMAL, "You're browsing the CSC course catalog, silly!"
+
         sql = 'SELECT code ' \
               'FROM course_depts ' \
               'WHERE department="{}"'.format(dept.lower())
