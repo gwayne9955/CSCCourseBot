@@ -4,6 +4,7 @@ from intent_handling.intents.ClassesInTermIntent import ClassesInTermIntent
 from intent_handling.intents.ClassesOnlyInTermIntent import ClassesOnlyInTermIntent
 from intent_handling.intents.IsClassInTermIntent import IsClassInTermIntent
 from intent_handling.intents.LevelClassesInTermIntent import LevelClassesInTermIntent
+from intent_handling.intents.TermAllLowerIntent import TermAllLowerIntent
 from intent_handling.intents.TermAllUpperIntent import TermAllUpperIntent
 from intent_handling.intents.TermAnyLevelIntent import TermAnyLevelIntent
 from intent_handling.intents.TermsClassOfferedIntent import TermsClassOfferedIntent
@@ -13,7 +14,8 @@ from intent_handling.parameters import Parameters
 class IntentHandler:
     ALL_INTENTS: List[type] = [
         ClassesInTermIntent, ClassesOnlyInTermIntent, IsClassInTermIntent,
-        LevelClassesInTermIntent, TermAllUpperIntent, TermAnyLevelIntent,
+        LevelClassesInTermIntent, TermAllLowerIntent,
+        TermAllUpperIntent, TermAnyLevelIntent,
         TermsClassOfferedIntent,
     ]
 
