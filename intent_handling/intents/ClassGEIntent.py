@@ -13,7 +13,6 @@ class ClassGEIntent:
               'FROM course_ge ' \
               'WHERE code="{}"'.format(code.split(' ')[-1])
         result = db.call(sql)
-        print("Result from selecting GE Area for {}: {}".format(code, result))
         ge_areas = [row[0] for row in result]
         satisfied = ', '.join([ge.upper() for ge in ge_areas])
         if self.parameters.ge_area.lower() not in ge_areas:

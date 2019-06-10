@@ -19,6 +19,7 @@ from intent_handling.intents.ClassesTwoPartIntent import ClassesTwoPartIntent
 from intent_handling.intents.ClassAfterClassIntent import ClassAfterClassIntent
 from intent_handling.intents.WhatClassCodeIntent import WhatClassCodeIntent
 from intent_handling.intents.ClassTitleIntent import ClassTitleIntent
+from intent_handling.intents.ClassWithTopicIntent import ClassWithTopicIntent
 from intent_handling.parameters import Parameters
 
 
@@ -37,7 +38,8 @@ class IntentHandler:
         ClassesTwoPartIntent,
         ClassAfterClassIntent,
         WhatClassCodeIntent,
-        ClassTitleIntent
+        ClassTitleIntent,
+        ClassWithTopicIntent
     ]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
