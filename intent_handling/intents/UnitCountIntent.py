@@ -10,7 +10,7 @@ class UnitCountIntent:
     def execute(self, db):
         sql = 'SELECT code, min_units, max_units ' \
               'FROM main_courses ' \
-              'WHERE intent_name={}'.format(self.parameters.class_name)
+              'WHERE intent_name="{}"'.format(self.parameters.class_name)
         result = db.call(sql)
         if len(result) == 0:
             return Signal.UNKNOWN, 'No unit information for {} available.'.format(self.parameters.class_name)
