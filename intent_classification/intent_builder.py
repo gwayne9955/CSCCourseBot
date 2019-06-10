@@ -118,7 +118,5 @@ class Intent():
 if __name__ == '__main__':
     for key in sample_map:
         intent_name = sample_map[key]['intent']
-        if intent_name == "IS_CLASS_IN_TERM" or intent_name == "TERMS_CLASS_OFFERED":
-            continue
         intent = Intent(intent_name, key)
         intent.write_to_file()
