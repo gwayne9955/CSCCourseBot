@@ -8,14 +8,16 @@ from irc.client import ip_numstr_to_quad, ip_quad_to_numstr
 import json
 import requests
 import uuid
-# from storage.DBProxy import DBProxy
-# from intent_handling.intenthandler import IntentHandler
+import stacia
+from storage.DBProxy import DBProxy
+from intent_handling.intenthandler import IntentHandler
 from spell_checker import spell_check
 
 class TestBot(irc.bot.SingleServerIRCBot):
     def __init__(self, channel, nickname, server, port=6667):
         irc.bot.SingleServerIRCBot.__init__(self, [(server, port)], nickname, nickname)
         self.channel = channel
+        self.stacia = stacia.Stacia()
 
     def on_nicknameinuse(self, c, e):
         c.nick(c.get_nickname() + "_")
@@ -80,56 +82,7 @@ class TestBot(irc.bot.SingleServerIRCBot):
             #Foaad: change this
             c.privmsg(self.channel, "Hi there! Ask me information about CSC courses :(")
         else:
-            with open("dialogflow.json", 'r') as j:
-                api = json.load(j)
-
-            url = (api["url"])
-            id = uuid.uuid1()
-
-            print("Hello! And welcome to the CSC Course Chatbot!")
-            query = input("What question can I answer for ya?:\n")
-            # run speck check over query
-            query = spell_check(query)
-            c.privmsg(self.channel, query)
-
-
-
-            # db = DBProxy('credentials.txt')
-            # handler = IntentHandler(db)
-            # while (query.lower() != 'quit'):
-            #
-            #     # The http request
-            #     body = {
-            #         "lang": api["lang"],
-            #         "query": query,
-            #         "sessionId": str(id),
-            #         "timezone": api["timezone"]
-            #     }
-            #     version = {"v": api['version']}
-            #     headers = {
-            #         'Authorization': "Bearer {0}".format(api["clientId"]),
-            #         'Content-Type': "application/json"
-            #     }
-            #     response = requests.request("POST",
-            #                                 url,
-            #                                 data=json.dumps(body),
-            #                                 headers=headers,
-            #                                 params=version)
-            #     if response.status_code == 200:
-            #         # a valid response
-            #         responseJson = json.loads(response.text)
-            #
-            #         # these are to be passed for further computation in the database
-            #         intent = responseJson['result']['metadata']['intentName']  # a string
-            #         parameters = responseJson['result']['parameters']  # a dict
-            #         response = handler.handle(intent, parameters)
-            #
-            #         print("\nResulting intent: {0}".format(intent))
-            #         print("Resulting parameters: {0}\n".format(parameters))
-            #         print("Response: {}".format(response))
-            #     else:
-            #         print("{0} error getting response from DialogFlow\n\tReason: {1}".format(response.status_code, response.reason))
-
+            c.privmsg(self.channel, self.stacia.respond())
 
 def main():
     import sys
