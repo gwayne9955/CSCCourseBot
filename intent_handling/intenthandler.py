@@ -11,6 +11,14 @@ from intent_handling.intents.TermAllLowerIntent import TermAllLowerIntent
 from intent_handling.intents.TermAllUpperIntent import TermAllUpperIntent
 from intent_handling.intents.TermAnyLevelIntent import TermAnyLevelIntent
 from intent_handling.intents.TermsClassOfferedIntent import TermsClassOfferedIntent
+from intent_handling.intents.ClassesComplimentClassIntent import ClassesComplimentClassIntent
+from intent_handling.intents.ClassesWithTopicIntent import ClassesWithTopicIntent
+from intent_handling.intents.ClassGEIntent import ClassGEIntent
+from intent_handling.intents.ClassesGEIntent import ClassesGEIntent
+from intent_handling.intents.ClassesTwoPartIntent import ClassesTwoPartIntent
+from intent_handling.intents.ClassAfterClassIntent import ClassAfterClassIntent
+from intent_handling.intents.WhatClassCodeIntent import WhatClassCodeIntent
+from intent_handling.intents.ClassTitleIntent import ClassTitleIntent
 from intent_handling.parameters import Parameters
 
 
@@ -21,6 +29,15 @@ class IntentHandler:
         LevelClassesInTermIntent, PrereqsForClassIntent, TermAllLowerIntent,
         TermAllUpperIntent, TermAnyLevelIntent,
         TermsClassOfferedIntent,
+        TermsClassOfferedIntent,
+        ClassesComplimentClassIntent,
+        ClassesWithTopicIntent,
+        ClassGEIntent,
+        ClassesGEIntent,
+        ClassesTwoPartIntent,
+        ClassAfterClassIntent,
+        WhatClassCodeIntent,
+        ClassTitleIntent
     ]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
