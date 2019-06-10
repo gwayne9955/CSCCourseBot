@@ -3,6 +3,7 @@ from storage.DBProxy import DBProxy
 from intent_handling.intents.ClassesInTermIntent import ClassesInTermIntent
 from intent_handling.intents.ClassesOnlyInTermIntent import ClassesOnlyInTermIntent
 from intent_handling.intents.ClassesWithPrerequisiteIntent import ClassesWithPrerequisiteIntent
+from intent_handling.intents.ClassesWithStandingIntent import ClassesWithStandingIntent
 from intent_handling.intents.IsClassInTermIntent import IsClassInTermIntent
 from intent_handling.intents.LevelClassesInTermIntent import LevelClassesInTermIntent
 from intent_handling.intents.PrereqsForClassIntent import PrereqsForClassIntent
@@ -16,7 +17,7 @@ from intent_handling.parameters import Parameters
 class IntentHandler:
     ALL_INTENTS: List[type] = [
         ClassesInTermIntent, ClassesOnlyInTermIntent, ClassesWithPrerequisiteIntent,
-        IsClassInTermIntent,
+        ClassesWithStandingIntent, IsClassInTermIntent,
         LevelClassesInTermIntent, PrereqsForClassIntent, TermAllLowerIntent,
         TermAllUpperIntent, TermAnyLevelIntent,
         TermsClassOfferedIntent,
