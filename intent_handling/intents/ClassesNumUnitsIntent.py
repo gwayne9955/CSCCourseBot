@@ -12,7 +12,8 @@ class ClassesNumUnitsIntent:
               'FROM main_courses ' \
               'WHERE min_units={} AND max_units={}'.format(self.parameters.number, self.parameters.number)
         result = db.call(sql)
+        unit_string = 'unit' if self.parameters.number == 1 else 'units'
         if len(result) == 0:
-            return Signal.NORMAL, 'No classes are {} units.'.format(self.parameters.number)
+            return Signal.NORMAL, 'No classes are {} {}.'.format(self.parameters.number, unit_string)
         matching = ', '.join('CSC {}'.format(tup[0]) for tup in result)
-        return Signal.NORMAL, 'The following classes are {} units: {}.'.format(self.parameters.number, matching)
+        return Signal.NORMAL, 'The following classes are {} {}: {}.'.format(self.parameters.number, unit_string, matching)
