@@ -3,13 +3,15 @@ from storage.DBProxy import DBProxy
 from intent_handling.intents.TermsClassOfferedIntent import TermsClassOfferedIntent
 from intent_handling.intents.ClassesComplimentClassIntent import ClassesComplimentClass
 from intent_handling.intents.ClassesWithTopicIntent import ClassesWithTopicIntent
+from intent_handling.intents.ClassGEIntent import ClassGEIntent
 from intent_handling.parameters import Parameters
 
 
 class IntentHandler:
     ALL_INTENTS: List[type] = [TermsClassOfferedIntent,
                                ClassesComplimentClass,
-                               ClassesWithTopicIntent]
+                               ClassesWithTopicIntent,
+                               ClassGEIntent]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
                                        for IntentType in ALL_INTENTS}
