@@ -14,7 +14,7 @@ class ClassesCrosslistedIntent:
         by_code = assoc(result,
                         key=lambda pair: pair[0],
                         value=lambda pair: pair[1])
-        by_code = {code: '/'.join(sorted(depts))
+        by_code = {code: '/'.join(sorted(dept.upper() for dept in depts))
                    for code, depts in by_code.items()
                    if len(depts) > 1}
         crosslisted = ', '.join('{} {}'.format(by_code[code], code)
