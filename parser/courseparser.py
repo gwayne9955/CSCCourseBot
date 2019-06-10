@@ -1,5 +1,6 @@
 import requests
 import re
+from unicodedata import normalize
 from bs4 import BeautifulSoup
 from parser.course import Course
 from parser.coursecode import CourseCode
@@ -40,9 +41,9 @@ class CourseParser:
             if len(prereq_idx) == 0:
                 prereqs = None
             else:
-                prereqs = ''.join(subheaders[prereq_idx[0]:])[len(self.PREREQ_PREFIX):]
+                prereqs = normalize('NFKD', ''.join(subheaders[prereq_idx[0]:])[len(self.PREREQ_PREFIX):])
     
-            desc = ''.join(course_block.find('div', attrs={'class': 'courseblockdesc'}).p.strings)
+            desc = normalize('NFKD', ''.join(course_block.find('div', attrs={'class': 'courseblockdesc'}).p.strings))
             crosslist = re.search(self.CROSSLIST_REGEX, desc)
             if crosslist:
                dept = crosslist.group(1)
