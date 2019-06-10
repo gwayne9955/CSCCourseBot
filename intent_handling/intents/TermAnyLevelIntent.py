@@ -1,3 +1,4 @@
+from intent_handling.intents.LevelClassesInTermIntent import LevelClassesInTermIntent
 
 
 class TermAnyLevelIntent:
@@ -7,4 +8,4 @@ class TermAnyLevelIntent:
         self.parameters = parameters
 
     def execute(self, db):
-        pass
+        return LevelClassesInTermIntent(self.parameters).execute(db)
