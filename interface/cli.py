@@ -8,8 +8,9 @@ sys.path.insert(0, '/'.join(cur_path.split('/')[:-1]))
 import json
 import requests
 import uuid
-from storage.DBProxy import DBProxy
-from intent_handling.intenthandler import IntentHandler
+# from storage.DBProxy import DBProxy
+# from intent_handling.intenthandler import IntentHandler
+from spell_checker import spell_check
 
 
 def main():
@@ -21,6 +22,8 @@ def main():
 
     print("Hello! And welcome to the CSC Course Chatbot!")
     query = input("What question can I answer for ya?:\n")
+    query = spell_check(query)
+    print(query)
     handler = IntentHandler(DBProxy())
     while (query.lower() != 'quit'):
 
