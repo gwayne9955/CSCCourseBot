@@ -78,7 +78,7 @@ def main():
                 \t• \'What class title is given to CSC 466?\'
                 \t• \'When is CSC 453 typically offered?\'
                 \t• \'Which courses require junior standing?\'
-                \t• \'What code does computer graphics have?\'"""
+                \t• \'What code does computer graphics have?\'\n"""
             print(helpStr)
         else:
             response = stacia.respond(query)
