@@ -23,6 +23,7 @@ from intent_handling.intents.ClassTitleIntent import ClassTitleIntent
 from intent_handling.intents.ClassHasLabIntent import ClassHasLabIntent
 from intent_handling.intents.WhenTakeClassIntent import WhenTakeClassIntent
 from intent_handling.intents.SeminarClassesIntent import SeminarClassesIntent
+from intent_handling.intents.UnitCountIntent import UnitCountIntent
 from intent_handling.parameters import Parameters
 
 
@@ -31,7 +32,7 @@ class IntentHandler:
         ClassesInTermIntent, ClassesOnlyInTermIntent, ClassesWithPrerequisiteIntent,
         ClassesWithStandingIntent, IsClassInTermIntent, ClassHasLabIntent,
         LevelClassesInTermIntent, PrereqsForClassIntent, TermAllLowerIntent,
-        TermAllUpperIntent, TermAnyLevelIntent, WhenTakeClassIntent,
+        TermAllUpperIntent, TermAnyLevelIntent, UnitCountIntent, WhenTakeClassIntent,
         SeminarClassesIntent,
         TermsClassOfferedIntent,
         TermsClassOfferedIntent,
