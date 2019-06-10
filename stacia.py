@@ -16,6 +16,8 @@ def main():
 
     print("Hello! And welcome to the CSC Course Chatbot!")
     query = input("What question can I answer for ya?:\n")
+    # run speck check over query
+    query = spell_check(query)
     db = DBProxy('credentials.txt')
     handler = IntentHandler(db)
     while (query.lower() != 'quit'):
