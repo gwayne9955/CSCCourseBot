@@ -19,6 +19,8 @@ from intent_handling.intents.ClassesTwoPartIntent import ClassesTwoPartIntent
 from intent_handling.intents.ClassAfterClassIntent import ClassAfterClassIntent
 from intent_handling.intents.WhatClassCodeIntent import WhatClassCodeIntent
 from intent_handling.intents.ClassTitleIntent import ClassTitleIntent
+
+from intent_handling.intents.WhenTakeClassIntent import WhenTakeClassIntent
 from intent_handling.parameters import Parameters
 
 
@@ -27,7 +29,7 @@ class IntentHandler:
         ClassesInTermIntent, ClassesOnlyInTermIntent, ClassesWithPrerequisiteIntent,
         ClassesWithStandingIntent, IsClassInTermIntent,
         LevelClassesInTermIntent, PrereqsForClassIntent, TermAllLowerIntent,
-        TermAllUpperIntent, TermAnyLevelIntent,
+        TermAllUpperIntent, TermAnyLevelIntent, WhenTakeClassIntent,
         TermsClassOfferedIntent,
         TermsClassOfferedIntent,
         ClassesComplimentClassIntent,
