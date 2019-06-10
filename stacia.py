@@ -15,7 +15,7 @@ def main():
     id = uuid.uuid1()
 
     print("Hello! And welcome to the CSC Course Chatbot!")
-    query = input("What question can I answer for ya?:\n")
+    query = input("What question can I help answer for you?:\n")
     # run speck check over query
     query = spell_check(query)
     db = DBProxy('credentials.txt')
@@ -48,13 +48,14 @@ def main():
             parameters = responseJson['result']['parameters']  # a dict
             response = handler.handle(intent, parameters)
 
-            print("\nResulting intent: {0}".format(intent))
-            print("Resulting parameters: {0}\n".format(parameters))
-            print("Response: {}".format(response))
+            #print("\nResulting intent: {0}".format(intent))
+            #print("Resulting parameters: {0}\n".format(parameters))
+            #print("Response: {}".format(response))
+            print('{0}\n'.format(response[1]))
         else:
             print("{0} error getting response from DialogFlow\n\tReason: {1}".format(response.status_code, response.reason))
 
-        query = input("What question can I answer for ya?:\n")
+        query = input("What question can I help answer for you?:\n")
 
     print("Goodbye and thank you for using our CSC Course Chatbot")
 
