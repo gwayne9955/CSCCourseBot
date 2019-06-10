@@ -4,6 +4,7 @@ from intent_handling.intents.TermsClassOfferedIntent import TermsClassOfferedInt
 from intent_handling.intents.ClassesComplimentClassIntent import ClassesComplimentClass
 from intent_handling.intents.ClassesWithTopicIntent import ClassesWithTopicIntent
 from intent_handling.intents.ClassGEIntent import ClassGEIntent
+from intent_handling.intents.ClassesGEIntent import ClassesGEIntent
 from intent_handling.parameters import Parameters
 
 
@@ -11,7 +12,8 @@ class IntentHandler:
     ALL_INTENTS: List[type] = [TermsClassOfferedIntent,
                                ClassesComplimentClass,
                                ClassesWithTopicIntent,
-                               ClassGEIntent]
+                               ClassGEIntent,
+                               ClassesGEIntent]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
                                        for IntentType in ALL_INTENTS}
