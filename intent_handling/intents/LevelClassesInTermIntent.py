@@ -9,7 +9,7 @@ class LevelClassesInTermIntent:
 
     def execute(self, db):
         sql = 'SELECT code FROM course_terms ' \
-              'WHERE code >= {} AND code <= {} AND term="{}"'.format(
+              'WHERE code >= {} AND code < {} AND term="{}"'.format(
             self.parameters.course_level,
             self.parameters.course_level + 100,
             self.parameters.quarter
