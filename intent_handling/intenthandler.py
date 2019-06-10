@@ -1,11 +1,12 @@
 from typing import *
 from storage.DBProxy import DBProxy
 from intent_handling.intents.TermsClassOfferedIntent import TermsClassOfferedIntent
+from intent_handling.intents.ClassesComplimentClass import ClassesComplimentClass
 from intent_handling.parameters import Parameters
 
 
 class IntentHandler:
-    ALL_INTENTS: List[type] = [TermsClassOfferedIntent]
+    ALL_INTENTS: List[type] = [TermsClassOfferedIntent, ClassesComplimentClass]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
                                        for IntentType in ALL_INTENTS}
