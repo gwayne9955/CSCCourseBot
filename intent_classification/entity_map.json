@@ -419,9 +419,9 @@
 		"entity_type": "COURSE_LEVEL",
 		"description": "A generic course level",
 		"values": {
-			"100": ["100", "one hundred"],
-			"200": ["100", "two hundred"],
-			"300": ["100", "three hundred"]
+			"100": ["100", "one hundred", "100 level", "one hundred level"],
+			"200": ["200", "two hundred", "200 level", "two hundred level"],
+			"300": ["300", "three hundred", "300 level", "three hundred level"]
 		}
 	},
     "[NUMBER]": {

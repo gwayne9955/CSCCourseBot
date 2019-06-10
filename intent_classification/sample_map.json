@@ -378,16 +378,6 @@
 			"Is it possible to get credits for GE Area [GE_AREA] with [CLASS_NAME]?"
 		]
 	},
-	"What classes should I select to focus on [SUBJECT_MATTER]?": {
-		"status": "Changed wording",
-		"intent": "TECHS_WITH_TOPIC",
-		"rephrases": [
-			"What technical electives should I select to do research in [SUBJECT_MATTER]?",
-			"What are some good tech electives to study [SUBJECT_MATTER]?",
-			"What classes should I take to get a job in [SUBJECT_MATTER]?",
-			"What are good technical electives to study [SUBJECT_MATTER]?"
-		]
-	},
 	"What classes should I take with [CLASS_NAME]?": {
 		"status": "Link to flowchart",
 		"intent": "CLASSES_COMPLIMENT_CLASS",

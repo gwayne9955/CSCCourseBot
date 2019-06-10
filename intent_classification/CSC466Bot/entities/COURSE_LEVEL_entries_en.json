@@ -3,21 +3,27 @@
     "value": "100",
     "synonyms": [
       "100",
-      "one hundred"
+      "100 level",
+      "one hundred",
+      "one hundred level"
     ]
   },
   {
     "value": "200",
     "synonyms": [
       "200",
-      "two hundred"
+      "200 level",
+      "two hundred",
+      "two hundred level"
     ]
   },
   {
     "value": "300",
     "synonyms": [
       "300",
-      "three hundred"
+      "300 level",
+      "three hundred",
+      "three hundred level"
     ]
   }
 ]
