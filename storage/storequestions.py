@@ -12,7 +12,7 @@ def main():
           "VALUES (%s, %s, %s)"
     groupId = "H1"
 
-    with open("questions.txt", 'r') as f:
+    with open("new_qs.txt", 'r') as f:
         questionstr = f.read()
 
     questions = questionstr.split('\n')

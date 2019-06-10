@@ -1,0 +1,229 @@
+What terms is [CLASS_NAME] typically offered?": {
+  	"When is [CLASS_NAME] typically offered?",
+  	"When is [CLASS_NAME] offered?",
+  	"When's [CLASS_NAME] offered?",
+  	"What quarter is [CLASS_NAME] offered?"
+Is [CLASS_NAME] offered in [QUARTER]?": {
+  	"Can I take [CLASS_NAME] in the [QUARTER]?",
+  	"Can I take [CLASS_NAME] in [QUARTER]?",
+  	"Is [CLASS_NAME] available in [QUARTER] quarter?",
+  	"Is [CLASS_NAME] offered in [QUARTER] quarter?",
+  	"Is [CLASS_NAME] available in the [QUARTER]?",
+  	"Is [CLASS_NAME] offered in the [QUARTER]?"
+Which classes are offered in [QUARTER]?": {
+  	"What classes can I take in [QUARTER]?",
+  	"What classes are offered during the [QUARTER]?",
+  	"What courses can I take in [QUARTER]?",
+  	"What courses are offered during the [QUARTER]?",
+  	"What can I take in [QUARTER]?",
+  	"What can I take in the [QUARTER]?",
+  	"What can I take during the [QUARTER]?"
+Which classes are only taught in the [QUARTER]?": {
+  	"What classes are only offered in the [QUARTER]?",
+  	"Which classes are only taught during the [QUARTER]?",
+  	"Which courses are only taught in the [QUARTER]?",
+  	"Which classes are only taught during [QUARTER] quarter?",
+  	"Which courses are only taught in [QUARTER]?",
+  	"What courses are only offered in the [QUARTER]?",
+  	"Which courses are only taught during the [QUARTER]?"
+Does [QUARTER] offer any [COURSE_LEVEL] courses?": {
+  	"Are [COURSE_LEVEL] classes are offered in [QUARTER]?",
+  	"Are [COURSE_LEVEL] courses are offered in the [QUARTER]?",
+  	"Are [COURSE_LEVEL] courses are offered in [QUARTER] quarter?",
+  	"In [QUARTER] quarter, are [COURSE_LEVEL] classes are offered?",
+  	"Are [COURSE_LEVEL] classes are available in [QUARTER]?",
+  	"Are [COURSE_LEVEL] courses are available in the [QUARTER]?",
+  	"Are [COURSE_LEVEL] courses are available in [QUARTER] quarter?",
+  	"In [QUARTER] quarter, are [COURSE_LEVEL] classes are available?"
+Which [COURSE_LEVEL] courses are offered in [QUARTER]?": {
+  	"Which [COURSE_LEVEL] classes are offered in [QUARTER]?",
+  	"Which [COURSE_LEVEL] courses are offered in the [QUARTER]?",
+  	"Which [COURSE_LEVEL] courses are offered in [QUARTER] quarter?",
+  	"In [QUARTER] quarter, which [COURSE_LEVEL] classes are offered?",
+  	"Which [COURSE_LEVEL] classes are available in [QUARTER]?",
+  	"Which [COURSE_LEVEL] courses are available in the [QUARTER]?",
+  	"Which [COURSE_LEVEL] courses are available in [QUARTER] quarter?",
+  	"In [QUARTER] quarter, which [COURSE_LEVEL] classes are available?"
+Which upper division courses are offered in [QUARTER]?": {
+  	"Which upper division classes are offered in [QUARTER]?",
+  	"Which upper division courses are offered in the [QUARTER]?",
+  	"In [QUARTER], what upper division classes are offered?",
+  	"What upper division classes are offered in [QUARTER] quarter?"
+Which lower division courses are offered in [QUARTER]?": {
+  	"Which lower division classes are offered in [QUARTER]?",
+  	"Which lower division courses are offered in [QUARTER] quarter?",
+  	"Which lower division courses are offered in the [QUARTER]?",
+  	"What lower division classes are offered in [QUARTER]?",
+  	"What lower division classes are available in the [QUARTER]?"
+What are the prerequisites for [CLASS_NAME]?": {
+  	"What are prerequisites for taking [CLASS_NAME]?",
+  	"What are some prereqs for [CLASS_NAME]?",
+  	"What are the prerequisites to take [CLASS_NAME]?",
+  	"What are the prereqs to take [CLASS_NAME]?"
+Is [CLASS_NAME] a prerequisite for [CLASS_NAME]?": {
+  	"Is [CLASS_NAME] a prereq for [CLASS_NAME]?",
+  	"Does [CLASS_NAME] have [CLASS_NAME] as a prerequisite?",
+  	"Does [CLASS_NAME] have [CLASS_NAME] as a prereq?"
+Which classes have [CLASS_NAME] as a prerequisite?": {
+  	"Which courses have [CLASS_NAME] as a prerequisite?",
+  	"Which classes have [CLASS_NAME] as a prereq?",
+  	"Which classes require [CLASS_NAME] as a prereq?",
+  	"Which classes have as a prequisite [CLASS_NAME]?",
+  	"Which classes have as a preq [CLASS_NAME]?"
+Which classes have no prerequisites?": {
+  	"Which courses have no prerequisites?",
+  	"Which classes have no prereqs?",
+  	"Which classes do not require prerequisites?",
+  	"Which classes are there no prerequisites?"
+Does [CLASS_NAME] have an upper divisional prerequisite?": {
+  	"Does [CLASS_NAME] have an upper division prerequisite?",
+  	"Is there an upper division prerequisite for [CLASS_NAME]?",
+  	"Are there upper division prerequisites for [CLASS_NAME]?",
+  	"Does [CLASS_NAME] have an upper division prereq?",
+  	"Is there an upper division prereq for [CLASS_NAME]?",
+  	"Are there upper division prereqs for [CLASS_NAME]?"
+Which classes require [CLASS_QUALIFICATION] standing?": {
+  	"Which courses require [CLASS_QUALIFICATION] standing?",
+  	"Which classes require me to be a [CLASS_QUALIFICATION]?",
+  	"Which courses do I need to be a [CLASS_QUALIFICATION] to take?",
+  	"Which classes need [CLASS_QUALIFICATION] standing?",
+  	"Which classes need [CLASS_QUALIFICATION] in order to take them?"
+Does [CLASS_NAME] require [CLASS_QUALIFICATION] standing?": {
+  	"Do I need [CLASS_QUALIFICATION] standing to take [CLASS_NAME]?",
+  	"Is [CLASS_QUALIFICATION] required to take [CLASS_NAME]?",
+  	"Is [CLASS_QUALIFICATION] needed to take [CLASS_NAME]?",
+  	"Is [CLASS_QUALIFICATION] necessary to take [CLASS_NAME]?",
+  	"Does [CLASS_NAME] need [CLASS_QUALIFICATION] standing?",
+  	"Do I need to be a [CLASS_QUALIFICATION] to take [CLASS_NAME]?",
+  	"Am I required to be a [CLASS_QUALIFICATION] to take [CLASS_NAME]?",
+  	"Does [CLASS_NAME] require me to be a [CLASS_QUALIFICATION]?"
+When do most people take [CLASS_NAME]?": {
+  	"What quarter is [CLASS_NAME] mostly taken in?",
+  	"What quarter is [CLASS_NAME] taken most frequently in?",
+  	"When do students usually take [CLASS_NAME]?",
+  	"What is the most common quarter to take [CLASS_NAME]?",
+  	"When should I take [CLASS_NAME]?",
+  	"When is most common to take [CLASS_NAME]?",
+  	"Which quarter should I take [CLASS_NAME] in?"
+Does [CLASS_NAME] have a lab section?": {
+  	"Is [CLASS_NAME] lecture only?"
+Which classes are seminars?": {
+  	"Which courses are seminars?",
+  	"What classes are considered to be seminars?",
+  	"Which classes are taught as seminars?",
+  	"Which courses are taught like seminars?"
+How many units is [CLASS_NAME]?": {
+  	"How many units is [CLASS_NAME] worth?",
+  	"How many credits is [CLASS_NAME] worth?",
+  	"How many credits is [CLASS_NAME]?",
+  	"How many units does [CLASS_NAME] count for?"
+Which classes are [NUMBER] units?": {
+  	"Which courses are [NUMBER] units?",
+  	"Which classes count for [NUMBER] units?",
+  	"Which classes are worth [NUMBER] units?",
+  	"What are all [NUMBER] unit classes?"
+Is [CLASS_NAME] a [NUMBER] unit course?": {
+  	"Is [CLASS_NAME] a [NUMBER] unit class?",
+  	"Does [CLASS_NAME] count for [NUMBER] units?",
+  	"Does [CLASS_NAME] count for [NUMBER] credits?",
+  	"Is [CLASS_NAME] a [NUMBER] credit course?"
+Which classes are crosslisted in another department?": {
+  	"Which courses are crosslisted in another department?",
+  	"What classes are also listed in another department?",
+  	"Which class listings can also be found in another department?",
+  	"Which classes are crosslisted under another department?"
+Is [CLASS_NAME] crosslisted in another department?": {
+  	"Can I find [CLASS_NAME] listed in another department?",
+  	"Is there another department listing of [CLASS_NAME]?",
+  	"Is [CLASS_NAME] crosslisted somewhere else?",
+  	"Is [CLASS_NAME] crosslisted in some other department?"
+Which classes are crosslisted in [DEPARTMENT_ABBREVIATION]?": {
+  	"Which courses are crosslisted in [DEPARTMENT_ABBREVIATION]?",
+  	"What classes are crosslisted in [DEPARTMENT_ABBREVIATION]?",
+  	"In [DEPARTMENT_ABBREVIATION], which classes are crosslisted?",
+  	"Which classes can also be found in [DEPARTMENT_ABBREVIATION]?"
+Is [CLASS_NAME] crosslisted in [DEPARTMENT_ABBREVIATION]?": {
+  	"Can [CLASS_NAME] also be found in [DEPARTMENT_ABBREVIATION]?",
+  	"May [CLASS_NAME] also be listed in [DEPARTMENT_ABBREVIATION]?",
+  	"Can I also find [CLASS_NAME] in [DEPARTMENT_ABBREVIATION]?"
+Which classes are credit/no credit grading only?": {
+  	"Which courses are credit/no credit grading only?",
+  	"Which classes are credit or no credit grading only?",
+  	"Which classes can only be taken credit or no credit?",
+  	"What are classes that can only be taken credit or no credit?",
+  	"What are credit or no credit only classes?",
+  	"What are credit or no credit only courses?"
+Is [CLASS_NAME] credit/no credit grading only?": {
+  	"Can [CLASS_NAME] only be taken as credit or no credit?",
+  	"Can you only take [CLASS_NAME] as credit or no credit?",
+  	"Is [CLASS_NAME] credit or no credit only?",
+  	"Is [CLASS_NAME] credit or no credit grading only?"
+What topics are covered in [CLASS_NAME]?": {
+  	"What topics are taught in [CLASS_NAME]?",
+  	"Which topics are covered in [CLASS_NAME]?",
+  	"What topics does [CLASS_NAME] cover?",
+  	"Which topics does [CLASS_NAME] cover?",
+  	"What does it look like to take [CLASS_NAME]?",
+  	"What will I learn in [CLASS_NAME]?",
+  	"What is the course description for [CLASS_NAME]?",
+  	"What do you learn about in [CLASS_NAME]?",
+  	"What is [CLASS_NAME] about?"
+Which classes include [SUBJECT_MATTER]?": {
+  	"Which courses include [SUBJECT_MATTER]?",
+  	"What are classes that include [SUBJECT_MATTER]?",
+  	"What are some classes that include [SUBJECT_MATTER]?",
+  	"Which classes consist of [SUBJECT_MATTER]?",
+  	"Which classes touch on [SUBJECT_MATTER]?"
+Does [CLASS_NAME] include [SUBJECT_MATTER]?": {
+  	"Would [CLASS_NAME] include [SUBJECT_MATTER]?",
+  	"Does [CLASS_NAME] consist of [SUBJECT_MATTER]?",
+  	"Is [SUBJECT_MATTER] included in [CLASS_NAME]?",
+  	"Is [SUBJECT_MATTER]? taught in [CLASS_NAME]?"
+What is the course title for [CLASS_NAME]?": {
+  	"What is the class title for [CLASS_NAME]?",
+  	"What class title is given to [CLASS_NAME]?",
+  	"What class title is [CLASS_NAME] listed as?",
+  	"Which course title is [CLASS_NAME]?",
+  	"What is [CLASS_NAME] called?",
+  	"What is [CLASS_NAME]'s name?",
+  	"What name does [CLASS_NAME] have?",
+  	"What class name is [CLASS_NAME]?",
+  	"What is another name for [CLASS_NAME]?",
+  	"What name do people also call [CLASS_NAME]?",
+  	"What is [CLASS_NAME] also named as?",
+  	"What is [CLASS_NAME] also called?",
+  	"What name is also given to [CLASS_NAME]?"
+What is the course code for [CLASS_NAME]?": {
+  	"What is the class code for [CLASS_NAME]?",
+  	"What code does [CLASS_NAME] have?",
+  	"What is [CLASS_NAME]'s course code?",
+  	"Which course code is [CLASS_NAME]?"
+What class should I take after [CLASS_NAME]?": {
+  	"What course should I take after [CLASS_NAME]?",
+  	"What classes build off [CLASS_NAME]?",
+  	"Which course should I take following [CLASS_NAME]?",
+  	"What class do students typically take after [CLASS_NAME]?",
+  	"After [CLASS_NAME], what course should I take?",
+  	"What class should I take next after [CLASS_NAME]?"
+Which classes are two-part sequences?": {
+  	"Which courses are two-part sequences?",
+  	"Which classes are usually taken in two parts?",
+  	"What courses are usually taken as a two-part sequence?",
+  	"Which courses are typically taken as two different parts?"
+Which classes fulfill GE Area [GE_AREA]?": {
+  	"Which courses fulfill GE Area [GE_AREA]?",
+  	"Which classes can I fulfill my [GE_AREA] with?",
+  	"Which classes can I get credits for GE Area [GE_AREA] with?",
+  	"Which classes give me credits for [GE_AREA]?",
+  	"Which classes are possible to get credits for GE Area [GE_AREA]?"
+Does [CLASS_NAME] fulfill GE Area [GE_AREA]?": {
+  	"Can I fulfill my [GE_AREA] with [CLASS_NAME]?",
+  	"Can I get credits for GE Area [GE_AREA] with [CLASS_NAME]?",
+  	"Can I get credits for [GE_AREA] with [CLASS_NAME]?",
+  	"Is it possible to get credits for GE Area [GE_AREA] with [CLASS_NAME]?"
+What classes should I take with [CLASS_NAME]?": {
+  	"What courses should I take with [CLASS_NAME]?",
+  	"What are good classes that I should take with [CLASS_NAME]?",
+  	"What classes would people recommend taking [CLASS_NAME] with?",
+  	"Which classes would students recommend taking [CLASS_NAME] alongside?",
+  	"Which courses would be good for me to take with [CLASS_NAME]?"

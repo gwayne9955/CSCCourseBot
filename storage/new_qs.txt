@@ -1,0 +1,218 @@
+H1|What terms is [CLASS_NAME] typically offered?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|When is [CLASS_NAME] typically offered?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|When is [CLASS_NAME] offered?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|When's [CLASS_NAME] offered?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|What quarter is [CLASS_NAME] offered?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|Is [CLASS_NAME] offered in [QUARTER]?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|Can I take [CLASS_NAME] in the [QUARTER]?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|Can I take [CLASS_NAME] in [QUARTER]?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|Is [CLASS_NAME] available in [QUARTER] quarter?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|Is [CLASS_NAME] offered in [QUARTER] quarter?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|Is [CLASS_NAME] available in the [QUARTER]?|[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|Is [CLASS_NAME] offered in the [QUARTER]?[CLASS_CODE] is offered in [QUARTER_LIST].
+H1|Which classes are offered in [QUARTER]?|The following courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What classes can I take in [QUARTER]?|The following courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What classes are offered during the [QUARTER]?|The following courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What courses can I take in [QUARTER]?|The following courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What courses are offered during the [QUARTER]?|The following courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What can I take in [QUARTER]?|The following courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What can I take in the [QUARTER]?|The following courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What can I take during the [QUARTER]?|The following courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which classes are only taught in the [QUARTER]?|The following courses are typically only offered only in [QUARTER]: [CLASS_CODE_LIST].
+H1|What classes are only offered in the [QUARTER]?|The following courses are typically only offered only in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which classes are only taught during the [QUARTER]?|The following courses are typically only offered only in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which courses are only taught in the [QUARTER]?|The following courses are typically only offered only in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which classes are only taught during [QUARTER] quarter?|The following courses are typically only offered only in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which courses are only taught in [QUARTER]?|The following courses are typically only offered only in [QUARTER]: [CLASS_CODE_LIST].
+H1|What courses are only offered in the [QUARTER]?|The following courses are typically only offered only in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which courses are only taught during the [QUARTER]?|The following courses are typically only offered only in [QUARTER]: [CLASS_CODE_LIST].
+H1|Does [QUARTER] offer any [COURSE_LEVEL] courses?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Are [COURSE_LEVEL] classes are offered in [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Are [COURSE_LEVEL] courses are offered in the [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Are [COURSE_LEVEL] courses are offered in [QUARTER] quarter?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|In [QUARTER] quarter| are [COURSE_LEVEL] classes are offered?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Are [COURSE_LEVEL] classes are available in [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Are [COURSE_LEVEL] courses are available in the [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Are [COURSE_LEVEL] courses are available in [QUARTER] quarter?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|In [QUARTER] quarter| are [COURSE_LEVEL] classes are available?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which [COURSE_LEVEL] courses are offered in [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which [COURSE_LEVEL] classes are offered in [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which [COURSE_LEVEL] courses are offered in the [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which [COURSE_LEVEL] courses are offered in [QUARTER] quarter?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|In [QUARTER] quarter| which [COURSE_LEVEL] classes are offered?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which [COURSE_LEVEL] classes are available in [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which [COURSE_LEVEL] courses are available in the [QUARTER]?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which [COURSE_LEVEL] courses are available in [QUARTER] quarter?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|In [QUARTER] quarter| which [COURSE_LEVEL] classes are available?|The following [COURSE_LEVEL] courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which upper division courses are offered in [QUARTER]?|The following upper division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which upper division classes are offered in [QUARTER]?|The following upper division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which upper division courses are offered in the [QUARTER]?|The following upper division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|In [QUARTER]| what upper division classes are offered?|The following upper division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What upper division classes are offered in [QUARTER] quarter?|The following upper division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which lower division courses are offered in [QUARTER]?|The following lower division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which lower division classes are offered in [QUARTER]?|The following lower division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which lower division courses are offered in [QUARTER] quarter?|The following lower division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|Which lower division courses are offered in the [QUARTER]?|The following lower division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What lower division classes are offered in [QUARTER]?|The following lower division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What lower division classes are available in the [QUARTER]?|The following lower division courses are offered in [QUARTER]: [CLASS_CODE_LIST].
+H1|What are the prerequisites for [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|What are prerequisites for taking [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|What are some prereqs for [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|What are the prerequisites to take [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|What are the prereqs to take [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Which classes have [CLASS_NAME] as a prerequisite?|The following classes require [CLASS_CODE]: [CLASS_CODE_LIST].
+H1|Which courses have [CLASS_NAME] as a prerequisite?|The following classes require [CLASS_CODE]: [CLASS_CODE_LIST].
+H1|Which classes have [CLASS_NAME] as a prereq?|The following classes require [CLASS_CODE]: [CLASS_CODE_LIST].
+H1|Which classes require [CLASS_NAME] as a prereq?|The following classes require [CLASS_CODE]: [CLASS_CODE_LIST].
+H1|Which classes have as a prequisite [CLASS_NAME]?|The following classes require [CLASS_CODE]: [CLASS_CODE_LIST].
+H1|Which classes have as a preq [CLASS_NAME]?|The following classes require [CLASS_CODE]: [CLASS_CODE_LIST].
+H1|Which classes have no prerequisites?|The following classes have no prerequisites: [CLASS_CODE_LIST].
+H1|Which courses have no prerequisites?|The following classes have no prerequisites: [CLASS_CODE_LIST].
+H1|Which classes have no prereqs?|The following classes have no prerequisites: [CLASS_CODE_LIST].
+H1|Which classes do not require prerequisites?|The following classes have no prerequisites: [CLASS_CODE_LIST].
+H1|Which classes are there no prerequisites?|The following classes have no prerequisites: [CLASS_CODE_LIST].
+H1|Which classes require [CLASS_QUALIFICATION] standing?|The following classes require [CLASS_QUALIFICATION] standing: [CLASS_CODE_LIST].
+H1|Which courses require [CLASS_QUALIFICATION] standing?|The following classes require [CLASS_QUALIFICATION] standing: [CLASS_CODE_LIST].
+H1|Which classes require me to be a [CLASS_QUALIFICATION]?|The following classes require [CLASS_QUALIFICATION] standing: [CLASS_CODE_LIST].
+H1|Which courses do I need to be a [CLASS_QUALIFICATION] to take?|The following classes require [CLASS_QUALIFICATION] standing: [CLASS_CODE_LIST].
+H1|Which classes need [CLASS_QUALIFICATION] standing?|The following classes require [CLASS_QUALIFICATION] standing: [CLASS_CODE_LIST].
+H1|Which classes need [CLASS_QUALIFICATION] in order to take them?|The following classes require [CLASS_QUALIFICATION] standing: [CLASS_CODE_LIST].
+H1|Does [CLASS_NAME] require [CLASS_QUALIFICATION] standing?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Do I need [CLASS_QUALIFICATION] standing to take [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Is [CLASS_QUALIFICATION] required to take [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Is [CLASS_QUALIFICATION] needed to take [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Is [CLASS_QUALIFICATION] necessary to take [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Does [CLASS_NAME] need [CLASS_QUALIFICATION] standing?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Do I need to be a [CLASS_QUALIFICATION] to take [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Am I required to be a [CLASS_QUALIFICATION] to take [CLASS_NAME]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|Does [CLASS_NAME] require me to be a [CLASS_QUALIFICATION]?|The prerequisites for [CLASS_CODE] are: [CLASS_CODE_LIST].
+H1|When do most people take [CLASS_NAME]?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What quarter is [CLASS_NAME] mostly taken in?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What quarter is [CLASS_NAME] taken most frequently in?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|When do students usually take [CLASS_NAME]?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What is the most common quarter to take [CLASS_NAME]?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|When should I take [CLASS_NAME]?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|When is most common to take [CLASS_NAME]?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which quarter should I take [CLASS_NAME] in?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Does [CLASS_NAME] have a lab section?|Yes, [CLASS_CODE] has a lab section.
+H1|Is [CLASS_NAME] lecture only?|Yes, [CLASS_CODE] has a lab section.
+H1|Which classes are seminars?|The following classes are seminars: [CLASS_CODE_LIST].
+H1|Which courses are seminars?|The following classes are seminars: [CLASS_CODE_LIST].
+H1|What classes are considered to be seminars?|The following classes are seminars: [CLASS_CODE_LIST].
+H1|Which classes are taught as seminars?|The following classes are seminars: [CLASS_CODE_LIST].
+H1|Which courses are taught like seminars?|The following classes are seminars: [CLASS_CODE_LIST].
+H1|How many units is [CLASS_NAME]?|[CLASS_CODE] is [NUMBER] units.
+H1|How many units is [CLASS_NAME] worth?|[CLASS_CODE] is [NUMBER] units.
+H1|How many credits is [CLASS_NAME] worth?|[CLASS_CODE] is [NUMBER] units.
+H1|How many credits is [CLASS_NAME]?|[CLASS_CODE] is [NUMBER] units.
+H1|How many units does [CLASS_NAME] count for?|[CLASS_CODE] is [NUMBER] units.
+H1|Which classes are [NUMBER] units?|The following classes are [NUMBER] units: [CLASS_CODE_LIST].
+H1|Which courses are [NUMBER] units?|The following classes are [NUMBER] units: [CLASS_CODE_LIST].
+H1|Which classes count for [NUMBER] units?|The following classes are [NUMBER] units: [CLASS_CODE_LIST].
+H1|Which classes are worth [NUMBER] units?|The following classes are [NUMBER] units: [CLASS_CODE_LIST].
+H1|What are all [NUMBER] unit classes?|The following classes are [NUMBER] units: [CLASS_CODE_LIST].
+H1|Is [CLASS_NAME] a [NUMBER] unit course?|[CLASS_CODE] is [NUMBER] units.
+H1|Is [CLASS_NAME] a [NUMBER] unit class?|[CLASS_CODE] is [NUMBER] units.
+H1|Does [CLASS_NAME] count for [NUMBER] units?|[CLASS_CODE] is [NUMBER] units.
+H1|Does [CLASS_NAME] count for [NUMBER] credits?|[CLASS_CODE] is [NUMBER] units.
+H1|Is [CLASS_NAME] a [NUMBER] credit course?|[CLASS_CODE] is [NUMBER] units.
+H1|Which classes are crosslisted in another department?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|Which courses are crosslisted in another department?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|What classes are also listed in another department?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|Which class listings can also be found in another department?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|Which classes are crosslisted under another department?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|Is [CLASS_NAME] crosslisted in another department?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|Can I find [CLASS_NAME] listed in another department?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|Is there another department listing of [CLASS_NAME]?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|Is [CLASS_NAME] crosslisted somewhere else?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|Is [CLASS_NAME] crosslisted in some other department?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|Which classes are crosslisted in [DEPARTMENT_ABBREVIATION]?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|Which courses are crosslisted in [DEPARTMENT_ABBREVIATION]?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|What classes are crosslisted in [DEPARTMENT_ABBREVIATION]?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|In [DEPARTMENT_ABBREVIATION]| which classes are crosslisted?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|Which classes can also be found in [DEPARTMENT_ABBREVIATION]?|The following classes are crosslisted in [DEPARTMENT_ABBREVIATION]: [CLASS_CODE_LIST].
+H1|Is [CLASS_NAME] crosslisted in [DEPARTMENT_ABBREVIATION]?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|Can [CLASS_NAME] also be found in [DEPARTMENT_ABBREVIATION]?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|May [CLASS_NAME] also be listed in [DEPARTMENT_ABBREVIATION]?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|Can I also find [CLASS_NAME] in [DEPARTMENT_ABBREVIATION]?|[CLASS_CODE] is crosslisted as [CLASS_CODE].
+H1|Which classes are credit/no credit grading only?|The following classes are credit/no credit grading only: [CLASS_CODE_LIST].
+H1|Which courses are credit/no credit grading only?|The following classes are credit/no credit grading only: [CLASS_CODE_LIST].
+H1|Which classes are credit or no credit grading only?|The following classes are credit/no credit grading only: [CLASS_CODE_LIST].
+H1|Which classes can only be taken credit or no credit?|The following classes are credit/no credit grading only: [CLASS_CODE_LIST].
+H1|What are classes that can only be taken credit or no credit?|The following classes are credit/no credit grading only: [CLASS_CODE_LIST].
+H1|What are credit or no credit only classes?|The following classes are credit/no credit grading only: [CLASS_CODE_LIST].
+H1|What are credit or no credit only courses?|The following classes are credit/no credit grading only: [CLASS_CODE_LIST].
+H1|Is [CLASS_NAME] credit/no credit grading only?|Yes, [CLASS_CODE] is credit/no credit grading only.
+H1|Can [CLASS_NAME] only be taken as credit or no credit?|Yes, [CLASS_CODE] is credit/no credit grading only.
+H1|Can you only take [CLASS_NAME] as credit or no credit?|Yes, [CLASS_CODE] is credit/no credit grading only.
+H1|Is [CLASS_NAME] credit or no credit only?|Yes, [CLASS_CODE] is credit/no credit grading only.
+H1|Is [CLASS_NAME] credit or no credit grading only?|Yes, [CLASS_CODE] is credit/no credit grading only.
+H1|What topics are covered in [CLASS_NAME]?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|What topics are taught in [CLASS_NAME]?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|Which topics are covered in [CLASS_NAME]?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|What topics does [CLASS_NAME] cover?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|Which topics does [CLASS_NAME] cover?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|What does it look like to take [CLASS_NAME]?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|What will I learn in [CLASS_NAME]?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|What is the course description for [CLASS_NAME]?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|What do you learn about in [CLASS_NAME]?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|What is [CLASS_NAME] about?|Here are [NUMBER] topics covered in [CLASS_CODE]: [SUBJECT_MATTER_LIST].
+H1|Which classes include [SUBJECT_MATTER]?|The following classes are related to [SUBJECT_MATTER]: [CLASS_CODE_LIST].
+H1|Which courses include [SUBJECT_MATTER]?|The following classes are related to [SUBJECT_MATTER]: [CLASS_CODE_LIST].
+H1|What are classes that include [SUBJECT_MATTER]?|The following classes are related to [SUBJECT_MATTER]: [CLASS_CODE_LIST].
+H1|What are some classes that include [SUBJECT_MATTER]?|The following classes are related to [SUBJECT_MATTER]: [CLASS_CODE_LIST].
+H1|Which classes consist of [SUBJECT_MATTER]?|The following classes are related to [SUBJECT_MATTER]: [CLASS_CODE_LIST].
+H1|Which classes touch on [SUBJECT_MATTER]?|The following classes are related to [SUBJECT_MATTER]: [CLASS_CODE_LIST].
+H1|Does [CLASS_NAME] include [SUBJECT_MATTER]?|Yes, [CLASS_NAME] covers [SUBJECT_MATTER_LIST]. [SUBJECT_MATTER] is covered in the following classes: [CLASS_CODE_LIST].
+H1|Would [CLASS_NAME] include [SUBJECT_MATTER]?|Yes, [CLASS_NAME] covers [SUBJECT_MATTER_LIST]. [SUBJECT_MATTER] is covered in the following classes: [CLASS_CODE_LIST].
+H1|Does [CLASS_NAME] consist of [SUBJECT_MATTER]?|Yes, [CLASS_NAME] covers [SUBJECT_MATTER_LIST]. [SUBJECT_MATTER] is covered in the following classes: [CLASS_CODE_LIST].
+H1|Is [SUBJECT_MATTER] included in [CLASS_NAME]?|Yes, [CLASS_NAME] covers [SUBJECT_MATTER_LIST]. [SUBJECT_MATTER] is covered in the following classes: [CLASS_CODE_LIST].
+H1|Is [SUBJECT_MATTER]? taught in [CLASS_NAME]?|Yes, [CLASS_NAME] covers [SUBJECT_MATTER_LIST]. [SUBJECT_MATTER] is covered in the following classes: [CLASS_CODE_LIST].
+H1|What is the course title for [CLASS_NAME]|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What is the class title for [CLASS_NAME]?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What class title is given to [CLASS_NAME]?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What class title is [CLASS_NAME] listed as?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|Which course title is [CLASS_NAME]?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What is [CLASS_NAME] called?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What is [CLASS_NAME]'s name?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What name does [CLASS_NAME] have?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What class name is [CLASS_NAME]?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What is another name for [CLASS_NAME]?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What name do people also call [CLASS_NAME]?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What is [CLASS_NAME] also named as?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What is [CLASS_NAME] also called?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What name is also given to [CLASS_NAME]?|[CLASS_CODE]'s course name is [CLASS_NAME].
+H1|What is the course code for [CLASS_NAME]?|[CLASS_NAME]'s course code is [CLASS_CODE].
+H1|What is the class code for [CLASS_NAME]?|[CLASS_NAME]'s course code is [CLASS_CODE].
+H1|What code does [CLASS_NAME] have?|[CLASS_NAME]'s course code is [CLASS_CODE].
+H1|What is [CLASS_NAME]'s course code?|[CLASS_NAME]'s course code is [CLASS_CODE].
+H1|Which course code is [CLASS_NAME]?|[CLASS_NAME]'s course code is [CLASS_CODE].
+H1|What class should I take after [CLASS_NAME]?|The CSC flowchart would be best to understand what order to take courses. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What course should I take after [CLASS_NAME]?|The CSC flowchart would be best to understand what order to take courses. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What classes build off [CLASS_NAME]?|The CSC flowchart would be best to understand what order to take courses. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which course should I take following [CLASS_NAME]?|The CSC flowchart would be best to understand what order to take courses. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What class do students typically take after [CLASS_NAME]?|The CSC flowchart would be best to understand what order to take courses. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|After [CLASS_NAME]| what course should I take?|The CSC flowchart would be best to understand what order to take courses. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What class should I take next after [CLASS_NAME]?|The CSC flowchart would be best to understand what order to take courses. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which classes are two-part sequences?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which courses are two-part sequences?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which classes are usually taken in two parts?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What courses are usually taken as a two-part sequence?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which courses are typically taken as two different parts?|To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which classes fulfill GE Area [GE_AREA]?|The following classes fulfill GE Area [GE_AREA]: [CLASS_NAME_LIST]
+H1|Which courses fulfill GE Area [GE_AREA]?|The following classes fulfill GE Area [GE_AREA]: [CLASS_NAME_LIST]
+H1|Which classes can I fulfill my [GE_AREA] with?|The following classes fulfill GE Area [GE_AREA]: [CLASS_NAME_LIST]
+H1|Which classes can I get credits for GE Area [GE_AREA] with?|The following classes fulfill GE Area [GE_AREA]: [CLASS_NAME_LIST]
+H1|Which classes give me credits for [GE_AREA]?|The following classes fulfill GE Area [GE_AREA]: [CLASS_NAME_LIST]
+H1|Which classes are possible to get credits for GE Area [GE_AREA]?|The following classes fulfill GE Area [GE_AREA]: [CLASS_NAME_LIST]
+H1|Does [CLASS_NAME] fulfill GE Area [GE_AREA]?|Yes, [CLASS_NAME] fulfills the following GE Areas: [CLASS_NAME_LIST].
+H1|Can I fulfill my [GE_AREA] with [CLASS_NAME]?|Yes, [CLASS_NAME] fulfills the following GE Areas: [CLASS_NAME_LIST].
+H1|Can I get credits for GE Area [GE_AREA] with [CLASS_NAME]?|Yes, [CLASS_NAME] fulfills the following GE Areas: [CLASS_NAME_LIST].
+H1|Can I get credits for [GE_AREA] with [CLASS_NAME]?|Yes, [CLASS_NAME] fulfills the following GE Areas: [CLASS_NAME_LIST].
+H1|Is it possible to get credits for GE Area [GE_AREA] with [CLASS_NAME]?|Yes, [CLASS_NAME] fulfills the following GE Areas: [CLASS_NAME_LIST].
+H1|What classes should I take with [CLASS_NAME]?|The flowchart would be best to see what classes compliment each other. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What courses should I take with [CLASS_NAME]?|The flowchart would be best to see what classes compliment each other. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What are good classes that I should take with [CLASS_NAME]?|The flowchart would be best to see what classes compliment each other. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|What classes would people recommend taking [CLASS_NAME] with?|The flowchart would be best to see what classes compliment each other. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which classes would students recommend taking [CLASS_NAME] alongside?|The flowchart would be best to see what classes compliment each other. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
+H1|Which courses would be good for me to take with [CLASS_NAME]?|The flowchart would be best to see what classes compliment each other. To see the most recent CSC flowchart, visit [FLOWCHART_LINK].
