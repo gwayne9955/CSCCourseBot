@@ -22,9 +22,10 @@ keywords = {
 def best_team_estimate(query):
     query = query.lower()
     counter = Counter()
-    for group, kw in keywords.items():
-        if kw in query:
-            counter[group] += 1
+    for group, kws in keywords.items():
+        for kw in kws:
+            if kw in query:
+                counter[group] += 1
     if len(counter) == 0:
         return None
     return counter.most_common(1)
