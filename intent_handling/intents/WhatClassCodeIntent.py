@@ -11,6 +11,6 @@ class WhatClassCodeIntent:
         code = db.course_code(self.parameters.class_name)
         pretty_name = db.call('SELECT pretty_name '
                               'FROM main_courses '
-                              'WHERE intent_name="{}"'.format(self.parameters.class_name))
+                              'WHERE intent_name="{}"'.format(self.parameters.class_name))[0][0]
         output = "{}'s course code is {}.".format(pretty_name, code)
         return Signal.NORMAL, output
