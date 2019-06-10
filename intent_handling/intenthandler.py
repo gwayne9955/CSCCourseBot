@@ -20,6 +20,8 @@ from intent_handling.intents.ClassAfterClassIntent import ClassAfterClassIntent
 from intent_handling.intents.WhatClassCodeIntent import WhatClassCodeIntent
 from intent_handling.intents.ClassTitleIntent import ClassTitleIntent
 from intent_handling.intents.ClassWithTopicIntent import ClassWithTopicIntent
+from intent_handling.intents.ClassTopicsIntent import ClassTopicsIntent
+from intent_handling.intents.ClassCNCIntent import ClassCNCIntent
 from intent_handling.parameters import Parameters
 
 
@@ -39,7 +41,9 @@ class IntentHandler:
         ClassAfterClassIntent,
         WhatClassCodeIntent,
         ClassTitleIntent,
-        ClassWithTopicIntent
+        ClassWithTopicIntent,
+        ClassTopicsIntent,
+        ClassCNCIntent
     ]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
