@@ -16,7 +16,10 @@ class ClassesWithTopicIntent:
             return Signal.UNKNOWN, 'No classes found with topic {}'.format(
                 self.parameters.subject_matter)
 
-        output = result
+        output = "The following classes are related to {}:\n\n".format(
+            self.parameters.subject_matter)
+        for course in result:
+            output += "\tCSC {}\n".format(course[0])
 
         return Signal.NORMAL, output
 
