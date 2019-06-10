@@ -2,13 +2,13 @@ import pymysql
 
 
 class DBProxy:
-    def __init__(self):
+    def __init__(self, credentials_path='../credentials.txt'):
+        self.credentials_path = credentials_path
         self.connection = self.setup()
         self.cursor = self.connection.cursor()
 
-    @staticmethod
-    def setup():
-        f = open("../credentials.txt")
+    def setup(self):
+        f = open(self.credentials_path)
         credentials = f.read().split(',')
         f.close()
         connection = pymysql.connect(host=credentials[0],
