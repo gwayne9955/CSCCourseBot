@@ -9,14 +9,12 @@ class ClassesCrosslistedIntent:
         self.parameters = parameters
 
     def execute(self, db):
-        sql = 'SELECT code, department FROM course_depts'
+        dept = self.parameters.department_abbreviation
+        sql = 'SELECT code ' \
+              'FROM course_depts ' \
+              'WHERE department="{}"'.format(dept.lower())
         result = db.call(sql)
-        by_code = assoc(result,
-                        key=lambda pair: pair[0],
-                        value=lambda pair: pair[1])
-        by_code = {code: '/'.join(sorted(dept.upper() for dept in depts))
-                   for code, depts in by_code.items()
-                   if len(depts) > 1}
-        crosslisted = ', '.join('{} {}'.format(by_code[code], code)
-                                for code in sorted(by_code))
-        return Signal.NORMAL, 'The following courses are crosslisted: {}.'.format(crosslisted)
+        if len(result) == 0:
+            return Signal.NORMAL, 'No classes are crosslisted in {}.'.format(dept)
+        matching = ', '.join('CSC {}'.format(tup[0]) for tup in result)
+        return Signal.NORMAL, 'The following classes are crosslisted in {}: {}.'.format(dept, matching)
