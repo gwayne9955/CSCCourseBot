@@ -19,19 +19,6 @@
 			"Is [CLASS_NAME] offered in the [QUARTER]?"
 		]
 	},
-	"Which classes are rarely offered?": {
-		"intent": "WHICH_CLASSES_RARE",
-		"rephrases": [
-			"What classes are rarely offered?",
-			"Which classes are hard to get?",
-			"Which classes rare?",
-			"Which classes aren't offered often?",
-			"What courses are rarely offered?",
-			"Which courses are hard to get?",
-			"Which courses rare?",
-			"Which courses aren't offered often?"
-		]
-	},
 	"Which classes are offered in [QUARTER]?": {
 		"intent": "WHAT_CLASSES_IN_TERM",
 		"rephrases": [
@@ -44,17 +31,6 @@
 			"What can I take during the [QUARTER]?"
 		]
 	},
-	"How many classes are offered in [QUARTER] quarter?": {
-		"intent": "NUM_CLASSES_IN_TERM",
-		"rephrases": [
-			"How many classes are offered in the [QUARTER]?",
-			"How many classes are there in the [QUARTER]?",
-			"How many classes in the [QUARTER]?",
-			"How many courses are offered in the [QUARTER]?",
-			"How many courses are there in the [QUARTER]?",
-			"How many courses in the [QUARTER]?"
-		]
-	},
 	"Which classes are only taught in the [QUARTER]?": {
 		"intent": "CLASSES_ONLY_IN_TERM",
 		"rephrases": [
@@ -65,51 +41,6 @@
 			"Which courses are only taught in [QUARTER]?",
 			"What courses are only offered in the [QUARTER]?",
 			"Which courses are only taught during the [QUARTER]?"
-		]
-	},
-	"Which term typically offers the most course variety?": {
-		"intent": "TERM_MOST_VARIETY",
-		"rephrases": [
-			"Which term usually has the most course variety?",
-			"Which term offers the most class variety?",
-			"Which term has the most class variety?",
-			"Which quarter typically offers the most course variety?",
-			"Which quarter usually has the most course variety?",
-			"Which quarter offers the most class variety?",
-			"Which quarter has the most class variety?"
-		]
-	},
-	"Which term typically offers the least course variety?": {
-		"intent": "TERM_LEAST_VARIETY",
-		"rephrases": [
-			"Which term usually offers the least course variety?",
-			"Which quarter typically offers very little course variety?",
-			"Which term typically offers the least class variety?",
-			"Which term usually offers the least class variety?",
-			"Which quarter has the least class variety?",
-			"Which quarter has the least course variety?"
-		]
-	},
-	"Which term typically offers the most [COURSE_LEVEL] level courses?": {
-		"intent": "TERM_MOST_LEVEL_CLASSES",
-		"rephrases": [
-			"Which quarter typically offers the most [COURSE_LEVEL] courses?",
-			"Which quarter typically offers the most [COURSE_LEVEL] classes?",
-			"In what term are the most [COURSE_LEVEL] classes offered?",
-			"In what term are the most [COURSE_LEVEL] courses offered?",
-			"When are the most [COURSE_LEVEL] classes offered?",
-			"When are the most [COURSE_LEVEL] courses offered?"
-		]
-	},
-	"Which term typically offers the least [COURSE_LEVEL] level courses?": {
-		"intent": "TERM_LEAST_LEVEL_CLASSES",
-		"rephrases": [
-			"Which quarter typically offers the least [COURSE_LEVEL] courses?",
-			"Which quarter typically offers the least [COURSE_LEVEL] classes?",
-			"In what term are the least [COURSE_LEVEL] classes offered?",
-			"In what term are the least [COURSE_LEVEL] courses offered?",
-			"When are the least [COURSE_LEVEL] classes offered?",
-			"When are the least [COURSE_LEVEL] courses offered?"
 		]
 	},
 	"Does [QUARTER] offer any [COURSE_LEVEL] courses?": {
@@ -126,6 +57,7 @@
 		]
 	},
 	"Which [COURSE_LEVEL] courses are offered in [QUARTER]?": {
+      	"status": "Not working",
 		"intent": "LEVEL_CLASSES_IN_TERM",
 		"rephrases": [
 			"Which [COURSE_LEVEL] classes are offered in [QUARTER]?",
@@ -138,15 +70,6 @@
 			"In [QUARTER] quarter, which [COURSE_LEVEL] classes are available?"
 		]
 	},
-	"Does [QUARTER] offer any upper division courses?": {
-		"intent": "TERM_ANY_UPPER",
-		"rephrases": [
-			"Does [QUARTER] offer any upper division classes?",
-			"Are there upper division courses offered in the [QUARTER]?",
-			"Are upper division courses offered in [QUARTER]?",
-			"Are there any upper division courses offered in [QUARTER] quarter"
-		]
-	},
 	"Which upper division courses are offered in [QUARTER]?": {
 		"intent": "TERM_ALL_UPPER",
 		"rephrases": [
@@ -154,17 +77,6 @@
 			"Which upper division courses are offered in the [QUARTER]?",
 			"In [QUARTER], what upper division classes are offered?",
 			"What upper division classes are offered in [QUARTER] quarter?"
-		]
-	},
-	"Does [QUARTER] offer any lower division courses?": {
-		"intent": "TERM_ANY_LOWER",
-		"rephrases": [
-			"Does [QUARTER] offer any lower division classes?",
-			"Does [QUARTER] quarter offer any lower division courses?",
-			"Are there any lower division courses in the [QUARTER]?",
-			"Are there lower division courses offered in the [QUARTER]?",
-			"Are there lower division courses offered in [QUARTER]?",
-			"Are there lower division courses offered in [QUARTER] quarter?"
 		]
 	},
 	"Which lower division courses are offered in [QUARTER]?": {
@@ -177,36 +89,6 @@
 			"What lower division classes are available in the [QUARTER]?"
 		]
 	},
-	"Which classes require consent of instructor?": {
-		"intent": "WHICH_CONSENT",
-		"rephrases": [
-			"Which courses require consent of instructor?",
-			"Which classes require the consent of the instructor?",
-			"What classes require instructor's consent?",
-			"What are the classes that need instructor's consent?",
-			"What classes need instructor's consent?",
-			"What classes need the consent of the instructor?"
-		]
-	},
-	"Does [CLASS_NAME] require consent of instructor?": {
-		"intent": "DOES_CLASS_CONSENT",
-		"rephrases": [
-			"Is instructor's consent required for [CLASS_NAME]?",
-			"Is the consent of the instructor required for [CLASS_NAME]?",
-			"Does [CLASS_NAME] require instructor's consent?",
-			"Do I need instructor's consent to take [CLASS_NAME]?",
-			"Do I need the consent of the instructor to take [CLASS_NAME]?"
-		]
-	},
-	"Can I get into [CLASS_NAME] with instructor’s consent?": {
-		"intent": "CONSENT_ENOUGH_FOR_CLASS",
-		"rephrases": [
-			"Does [CLASS_NAME] allow for me to get in with instructor's consent?",
-			"Can I get into [CLASS_NAME] with the consent of the instructor?",
-			"Does [CLASS_NAME] offer instructor's consent?",
-			"Is instructor's consent available for [CLASS_NAME]?"
-		]
-	},
 	"What are the prerequisites for [CLASS_NAME]?": {
 		"intent": "CLASS_WHAT_PREREQS",
 		"rephrases": [
@@ -216,18 +98,8 @@
 			"What are the prereqs to take [CLASS_NAME]?"
 		]
 	},
-	"What are the recommended prerequisites for [CLASS_NAME]?": {
-		"intent": "CLASS_RECOMMENDED_PREREQS",
-		"rephrases": [
-			"What are recommended prerequisites for [CLASS_NAME]?",
-			"What are recommended prerequisites to take [CLASS_NAME]?",
-			"What are the recommended prerequisites for taking [CLASS_NAME]?",
-			"What are recommended prereqs for [CLASS_NAME]?",
-			"What are recommended prereqs to take [CLASS_NAME]?",
-			"What are the recommended prereqs for taking [CLASS_NAME]?"
-		]
-	},
 	"Is [CLASS_NAME] a prerequisite for [CLASS_NAME]?": {
+      	"status": "Two of the same parameters not working",
 		"intent": "IS_CLASS_PREREQ_ANOTHER",
 		"rephrases": [
 			"Is [CLASS_NAME] a prereq for [CLASS_NAME]?",
@@ -236,6 +108,7 @@
 		]
 	},
 	"Which classes have [CLASS_NAME] as a prerequisite?": {
+      	"status": "Substring check of prereq stringj",
 		"intent": "WHICH_CLASSES_REQUIRE_CLASS",
 		"rephrases": [
 			"Which courses have [CLASS_NAME] as a prerequisite?",
@@ -254,43 +127,8 @@
 			"Which classes are there no prerequisites?"
 		]
 	},
-	"Which classes have more than [NUMBER] prerequisites?": {
-		"intent": "CLASSES_MORE_X_PREREQS",
-		"rephrases": [
-			"Which courses have more than [NUMBER] prerequisites?",
-			"Which classes have more than [NUMBER] prereqs?",
-			"What classes have more than [NUMBER] prerequisites?",
-			"Which classes have greater than [NUMBER] prerequisites?"
-		]
-	},
-	"Which classes have less than [NUMBER] prerequisites?": {
-		"intent": "CLASSES_LESS_X_PREREQS",
-		"rephrases": [
-			"Which courses have less than [NUMBER] prerequisites?",
-			"Which classes have less than [NUMBER] prereqs?",
-			"What classes have less than [NUMBER] prerequisites?",
-			"Which classes have fewer than [NUMBER] prerequisites?"
-		]
-	},
-	"Which classes have an upper divisional prerequisite?": {
-		"intent": "CLASSES_WITH_UPPER_PREREQ",
-		"rephrases": [
-			"Which classes have upper divisional prereqs?",
-			"Which courses have upper divisional prerequisite?",
-			"Which classes require upper division prerequisites?",
-			"Which classes require upper division prereqs?"
-		]
-	},
-	"Which classes have no upper divisional prerequisite?": {
-		"intent": "CLASSES_WITHOUT_UPPER_PREREQ",
-		"rephrases": [
-			"Which classes have no upper divisional prereqs?",
-			"Which courses have no upper divisional prerequisite?",
-			"Which classes do not have upper division prerequisites?",
-			"Which classes don't have upper division prereqs?"
-		]
-	},
 	"Does [CLASS_NAME] have an upper divisional prerequisite?": {
+      	"status": "Not parsing",
 		"intent": "CLASS_HAVE_UPPER_PREREQ",
 		"rephrases": [
 			"Does [CLASS_NAME] have an upper division prerequisite?",
@@ -301,54 +139,8 @@
 			"Are there upper division prereqs for [CLASS_NAME]?"
 		]
 	},
-	"Which classes require a C- or better in another course?": {
-		"intent": "CLASS_REQ_C_ANY",
-		"rephrases": [
-			"Which courses require a C- or better in another course?",
-			"Which classes require a C- or better in another class?",
-			"Which classes do I need a C- or better in another course?",
-			"Which classes is there a C- or better required in another course?"
-		]
-	},
-	"Does [CLASS_NAME] require a C- or better in [CLASS_NAME]?": {
-		"intent": "CLASS_REQ_C_CLASS",
-		"rephrases": [
-			"Do I need at least a C- or better in [CLASS_NAME] to take [CLASS_NAME]?",
-			"Do I need at least a C or better in [CLASS_NAME] for [CLASS_NAME]?",
-			"Is a C- needed in [CLASS_NAME] to take [CLASS_NAME]?",
-			"Is a C needed in [CLASS_NAME] to take [CLASS_NAME]?"
-		]
-	},
-	"Do I need a C- or better in [CLASS_NAME] to take any other classes?": {
-		"intent": "C_NEEDED_IN_CLASS",
-		"rephrases": [
-			"Do I need a C or better in [CLASS_NAME] to take any other courses?",
-			"Do I need at least a C- in [CLASS_NAME] to take other courses?",
-			"Do I need at least a C in [CLASS_NAME] to take other courses?",
-			"Is a C- needed in [CLASS_NAME] to take other classes?",
-			"Is a C needed in [CLASS_NAME] to take other classes?",
-			"Does [CLASS_NAME] require a C- or better to take any other classes?"
-		]
-	},
-	"What is the shortest path to taking [CLASS_NAME]?": {
-		"intent": "SHORTEST_PATH_CLASS",
-		"rephrases": [
-			"What is the easiest way to be able to take [CLASS_NAME]?",
-			"What is the shortest path to be able to take [CLASS_NAME]?",
-			"What is the shortest path of classes to be able to take [CLASS_NAME]?"
-		]
-	},
-	"What classes are prerequisites for the most other classes?": {
-		"intent": "CLASSES_PREREQ_FOR_MOST",
-		"rephrases": [
-			"What courses are prerequisites for the most other classes?",
-			"What courses are prereqs for the most other classes?",
-			"What classes are prereqs for most other classes?",
-			"Which classes are prerequisites for many other classes?",
-			"Which classes are foundational to take?"
-		]
-	},
 	"Which classes require [CLASS_QUALIFICATION] standing?": {
+		"status": "substring check of prereq string",
 		"intent": "CLASSES_REQ_STANDING",
 		"rephrases": [
 			"Which courses require [CLASS_QUALIFICATION] standing?",
@@ -356,16 +148,6 @@
 			"Which courses do I need to be a [CLASS_QUALIFICATION] to take?",
 			"Which classes need [CLASS_QUALIFICATION] standing?",
 			"Which classes need [CLASS_QUALIFICATION] in order to take them?"
-		]
-	},
-	"Which classes do not require [CLASS_QUALIFICATION] standing?": {
-		"intent": "CLASSES_NO_REQ_STANDING",
-		"rephrases": [
-			"Which courses do not require [CLASS_QUALIFICATION] standing?",
-			"Which courses do not require me to be a [CLASS_QUALIFICATION]?",
-			"Which classes is [CLASS_QUALIFICATION] standing not required?",
-			"For what courses is [CLASS_QUALIFICATION] standing not necessary?",
-			"For which courses is [CLASS_QUALIFICATION] standing not needed?"
 		]
 	},
 	"Does [CLASS_NAME] require [CLASS_QUALIFICATION] standing?": {
@@ -382,6 +164,7 @@
 		]
 	},
 	"When do most people take [CLASS_NAME]?": {
+		"status": "Link to flowchart",
 		"intent": "WHEN_MOST_TAKE_CLASS",
 		"rephrases": [
 			"What quarter is [CLASS_NAME] mostly taken in?",
@@ -393,82 +176,21 @@
 			"Which quarter should I take [CLASS_NAME] in?"
 		]
 	},
-	"Which classes are limited in total credit?": {
-		"intent": "CLASSES_LIMITED_CREDIT",
-		"rephrases": [
-			"Which classes have a limit in total credit?",
-			"Which courses are limited in total credit?",
-			"Which courses have a limit on the total amount of credit?",
-			"Which classes have a limit on total credit?"
-		]
-	},
-	"Is [CLASS_NAME] limited in total credit?": {
-		"intent": "CLASS_LIMITED_CREDIT",
-		"rephrases": [
-			"Does [CLASS_NAME] have a limit in total credit?",
-			"Is [CLASS_NAME] limited by total credit?",
-			"Is total credit limited for [CLASS_NAME]?",
-			"Is total credit limited for taking [CLASS_NAME]?",
-			"Is there a limit on total credit for [CLASS_NAME]?"
-		]
-	},
-	"Which classes count as a tech elective?": {
-		"intent": "CLASSES_COUNT_TECH",
-		"rephrases": [
-			"Which courses count as a tech elective?",
-			"Which classes can count as a tech elective?",
-			"What classes can also count as a tech elective?",
-			"What tech electives can I take?",
-			"Which classes can I take as a tech elective?",
-			"Which classes can be taken as a tech elective?",
-			"What tech electives can be taken?"
-		]
-	},
-	"Can I select [CLASS_NAME] as a tech elective?": {
-		"intent": "CLASS_COUNT_TECH",
-		"rephrases": [
-			"Can I take [CLASS_NAME] as a tech elective?",
-			"Would [CLASS_NAME] count as a tech elective?",
-			"Can I count [CLASS_NAME] as a tech elective?",
-			"Can I count [CLASS_NAME] for a tech elective?",
-			"Can I take [CLASS_NAME] towards a tech elective?"
-		]
-	},
-	"Which classes include a lab section?": {
+	"Does [CLASS_NAME] have a lab section?": {
+      	"status": "Just added, check course description",
 		"intent": "CLASSES_LAB",
 		"rephrases": [
-			"Which courses include a lab section?",
-			"Which classes have a lab section?",
-			"Which classes also have a lab section?",
-			"Which classes have a lab section too?"
-		]
-	},
-	"Which classes include lecture only?": {
-		"intent": "CLASSES_ONLY_LECTURE",
-		"rephrases": [
-			"Which courses include lecture only?",
-			"Which classes are considered lecture only?",
-			"Which classes would be considered lecture only?",
-			"Which classes are taught only in lecture?",
-			"Which classes are taught by lecture only?"
+			"Is [CLASS_NAME] lecture only?"
 		]
 	},
 	"Which classes are seminars?": {
+		"status": "Check description",
 		"intent": "CLASSES_SEMINAR",
 		"rephrases": [
 			"Which courses are seminars?",
 			"What classes are considered to be seminars?",
 			"Which classes are taught as seminars?",
-			"Which courses are taight like seminars?"
-		]
-	},
-	"What is the structure of [CLASS_NAME]?": {
-		"intent": "CLASS_STRUCTURE",
-		"rephrases": [
-			"How is [CLASS_NAME] structured?",
-			"What does the structure of [CLASS_NAME] look like?",
-			"How is [CLASS_NAME] layed out?",
-			"What is the structure of [CLASS_NAME] like?"
+			"Which courses are taught like seminars?"
 		]
 	},
 	"How many units is [CLASS_NAME]?": {
@@ -496,15 +218,6 @@
 			"Does [CLASS_NAME] count for [NUMBER] units?",
 			"Does [CLASS_NAME] count for [NUMBER] credits?",
 			"Is [CLASS_NAME] a [NUMBER] credit course?"
-		]
-	},
-	"Is [CLASS_NAME] worth more units than [CLASS_NAME]?": {
-		"intent": "CLASS_MORE_UNITS_CLASS",
-		"rephrases": [
-			"Does [CLASS_NAME] count for more units than [CLASS_NAME]?",
-			"Can I get more units taking [CLASS_NAME] than [CLASS_NAME]?",
-			"Is [CLASS_NAME] listed for more units than [CLASS_NAME]?",
-			"Is [CLASS_NAME] worth more credits than [CLASS_NAME]?"
 		]
 	},
 	"Which classes are crosslisted in another department?": {
@@ -554,6 +267,7 @@
 		]
 	},
 	"Is [CLASS_NAME] credit/no credit grading only?": {
+      	"status": "Not parsing",
 		"intent": "CLASS_CNC",
 		"rephrases": [
 			"Can [CLASS_NAME] only be taken as credit or no credit?",
@@ -577,6 +291,7 @@
 		]
 	},
 	"Which classes include [SUBJECT_MATTER]?": {
+		"status": "Not parsing",
 		"intent": "CLASSES_WITH_TOPIC",
 		"rephrases": [
 			"Which courses include [SUBJECT_MATTER]?",
@@ -584,16 +299,6 @@
 			"What are some classes that include [SUBJECT_MATTER]?",
 			"Which classes consist of [SUBJECT_MATTER]?",
 			"Which classes touch on [SUBJECT_MATTER]?"
-		]
-	},
-	"Which classes don’t include [SUBJECT_MATTER]?": {
-		"intent": "CLASSES_NO_WITH_TOPIC",
-		"rephrases": [
-			"Which courses don't include [SUBJECT_MATTER]?",
-			"What are classes that don't include [SUBJECT_MATTER]?",
-			"What are some classes that don't include [SUBJECT_MATTER]?",
-			"Which classes don't consist of [SUBJECT_MATTER]?",
-			"Which classes don't touch on [SUBJECT_MATTER]?"
 		]
 	},
 	"Does [CLASS_NAME] include [SUBJECT_MATTER]?": {
@@ -611,12 +316,7 @@
 			"What is the class title for [CLASS_NAME]?",
 			"What class title is given to [CLASS_NAME]?",
 			"What class title is [CLASS_NAME] listed as?",
-			"Which course title is [CLASS_NAME]?"
-		]
-	},
-	"What is the name of [CLASS_NAME]?": {
-		"intent": "WHAT_CLASS_NAME",
-		"rephrases": [
+			"Which course title is [CLASS_NAME]?",
 			"What is [CLASS_NAME] called?",
 			"What is [CLASS_NAME]'s name?",
 			"What name does [CLASS_NAME] have?",
@@ -637,45 +337,8 @@
 			"Which course code is [CLASS_NAME]?"
 		]
 	},
-	"Which classes include group work?": {
-		"intent": "CLASSES_GROUP",
-		"rephrases": [
-			"Which courses include group work?",
-			"Which classes have a lot of group work?",
-			"What classes can I take that has group work?",
-			"What courses consist of mostly group work?"
-		]
-	},
-	"Does [CLASS_NAME] include group work?": {
-		"intent": "CLASSES_NO_GROUP",
-		"rephrases": [
-			"Is there a lot of group work in [CLASS_NAME]?",
-			"Does [CLASS_NAME] have a lot of group work?",
-			"Is [CLASS_NAME] taught mostly by group work",
-			"Does [CLASS_NAME] consist mostly of group work?",
-			"Does [CLASS_NAME] typically consist of group work?"
-		]
-	},
-	"Which classes are project based?": {
-		"intent": "CLASSES_PROJECT",
-		"rephrases": [
-			"Which courses are project based?",
-			"Which classes have a lot of projects?",
-			"What classes can I take that have a lot of projects?",
-			"What courses consist of mostly projects?"
-		]
-	},
-	"Is [CLASS_NAME] project based?": {
-		"intent": "CLASS_PROJECT",
-		"rephrases": [
-			"Are there a lot of projects in [CLASS_NAME]?",
-			"Does [CLASS_NAME] have a lot of projects?",
-			"Is [CLASS_NAME] taught mostly with projects",
-			"Does [CLASS_NAME] consist mostly of projects?",
-			"Does [CLASS_NAME] typically consist of projects?"
-		]
-	},
 	"What class should I take after [CLASS_NAME]?": {
+      	"status": "Link to flowchart",
 		"intent": "CLASS_AFTER_CLASS",
 		"rephrases": [
 			"What course should I take after [CLASS_NAME]?",
@@ -687,22 +350,13 @@
 		]
 	},
 	"Which classes are two-part sequences?": {
+		"status": "Link to flowchart",
 		"intent": "CLASSES_TWO_PART",
 		"rephrases": [
 			"Which courses are two-part sequences?",
 			"Which classes are usually taken in two parts?",
 			"What courses are usually taken as a two-part sequence?",
 			"Which courses are typically taken as two different parts?"
-		]
-	},
-	"Which classes are introductory studies?": {
-		"intent": "CLASSES_INTRO",
-		"rephrases": [
-			"Which courses are introductory studies?",
-			"What classes are considered introductory studies?",
-			"What introductory classes can I take?",
-			"Which introductory classes can I take?",
-			"Which intro courses can be taken?"
 		]
 	},
 	"Which classes fulfill GE Area [GE_AREA]?": {
@@ -724,35 +378,8 @@
 			"Is it possible to get credits for GE Area [GE_AREA] with [CLASS_NAME]?"
 		]
 	},
-	"Which classes are most similar to [CLASS_NAME]?": {
-		"intent": "CLASSES_SIMILAR_CLASS",
-		"rephrases": [
-			"Which courses are most similar to [CLASS_NAME]?",
-			"What classes are similar to [CLASS_NAME]?",
-			"Which courses are similar to [CLASS_NAME]?",
-			"Which classes are like [CLASS_NAME]?",
-			"If I could not get [CLASS_NAME], which classes should I take instead?"
-		]
-	},
-	"What are the similarities between [CLASS_NAME] and [CLASS_NAME]?": {
-		"intent": "CLASS_SHARED_TOPICS",
-		"rephrases": [
-			"What are the similarities in taking [CLASS_NAME] and [CLASS_NAME]?",
-			"What are key similarities in [CLASS_NAME] and [CLASS_NAME]?",
-			"Why would a student take [CLASS_NAME] and [CLASS_NAME]?",
-			"How is [CLASS_NAME] similar to [CLASS_NAME]?"
-		]
-	},
-	"What are the differences between [CLASS_NAME] and [CLASS_NAME]?": {
-		"intent": "CLASS_DIFFERENCES",
-		"rephrases": [
-			"What are the differences in taking [CLASS_NAME] versus [CLASS_NAME]?",
-			"What are key differences in [CLASS_NAME] and [CLASS_NAME]?",
-			"Why would a student take [CLASS_NAME] over [CLASS_NAME]?",
-			"How is [CLASS_NAME] different from [CLASS_NAME]?"
-		]
-	},
-	"What technical electives should I select to focus on [SUBJECT_MATTER]?": {
+	"What classes should I select to focus on [SUBJECT_MATTER]?": {
+		"status": "Changed wording",
 		"intent": "TECHS_WITH_TOPIC",
 		"rephrases": [
 			"What technical electives should I select to do research in [SUBJECT_MATTER]?",
@@ -762,6 +389,7 @@
 		]
 	},
 	"What classes should I take with [CLASS_NAME]?": {
+		"status": "Link to flowchart",
 		"intent": "CLASSES_COMPLIMENT_CLASS",
 		"rephrases": [
 			"What courses should I take with [CLASS_NAME]?",
@@ -769,16 +397,6 @@
 			"What classes would people recommend taking [CLASS_NAME] with?",
 			"Which classes would students recommend taking [CLASS_NAME] alongside?",
 			"Which courses would be good for me to take with [CLASS_NAME]?"
-		]
-	},
-	"What subjects are also commonly studied with [SUBJECT_MATTER]?": {
-		"intent": "TOPICS_COMMON_TOPIC",
-		"rephrases": [
-			"What subjects do people tend to study with [SUBJECT_MATTER]?",
-			"What subjects do people tend to study alongside [SUBJECT_MATTER]?",
-			"What subjects do students tend to study with [SUBJECT_MATTER]?",
-			"What are some subjects alongside [SUBJECT_MATTER] that students tend to study?",
-			"Are there any subjects that are commonly studied with [SUBJECT_MATTER]?"
 		]
 	}
 }
