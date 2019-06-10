@@ -13,15 +13,22 @@ from intent_handling.parameters import Parameters
 
 
 class IntentHandler:
-    ALL_INTENTS: List[type] = [TermsClassOfferedIntent,
-                               ClassesComplimentClassIntent,
-                               ClassesWithTopicIntent,
-                               ClassGEIntent,
-                               ClassesGEIntent,
-                               ClassesTwoPartIntent,
-                               ClassAfterClassIntent,
-                               WhatClassCodeIntent,
-                               ClassTitleIntent]
+    ALL_INTENTS: List[type] = [
+        ClassesInTermIntent, ClassesOnlyInTermIntent, ClassesWithPrerequisiteIntent,
+        ClassesWithStandingIntent, IsClassInTermIntent,
+        LevelClassesInTermIntent, PrereqsForClassIntent, TermAllLowerIntent,
+        TermAllUpperIntent, TermAnyLevelIntent,
+        TermsClassOfferedIntent,
+        TermsClassOfferedIntent,
+        ClassesComplimentClassIntent,
+        ClassesWithTopicIntent,
+        ClassGEIntent,
+        ClassesGEIntent,
+        ClassesTwoPartIntent,
+        ClassAfterClassIntent,
+        WhatClassCodeIntent,
+        ClassTitleIntent
+    ]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
                                        for IntentType in ALL_INTENTS}
