@@ -8,16 +8,22 @@ class ClassGEIntent:
         self.parameters = parameters
 
     def execute(self, db):
-        code = db.
+        code = db.course_code(self.parameters.class_name)
         sql = 'SELECT ge_area ' \
               'FROM course_ge ' \
               'WHERE code="{}"'.format(code)
         result = db.call(sql)
-        courses = [row[0] for row in result]
-        if self.parameters.class_name not in courses:
+        ge_areas = [row[0] for row in result]
+        satisfied = ', '.join([ge.upper() for ge in ge_areas])
+        if self.parameters.ge_area.lower() not in ge_areas:
             output = 'No, {} does not satisfy GE Area {}.'.format(
                     self.parameters.class_name, self.parameters.ge_area)
-            if len()
-            output += ' But'
-            return Signal.UNKNOWN,
+            if len(ge_areas) > 0:
+                output += ' But, {} does satisfy GE Areas {}'.format(
+                    self.parameters.class_name, satisfied)
+            return Signal.UNKNOWN, output
+
+        output = 'Yes, {} satisfies the following GE Areas {}'.format(
+            self.parameters.class_name, satisfied)
+        return Signal.NORMAL, output
 
