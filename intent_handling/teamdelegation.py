@@ -28,4 +28,4 @@ def best_team_estimate(query):
                 counter[group] += 1
     if len(counter) == 0:
         return None
-    return counter.most_common(1)
+    return counter.most_common(1)[0]
