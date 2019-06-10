@@ -1,14 +1,14 @@
 from intent_handling.intents.LinkToFlowchartIntent import LinkToFlowchart
 
 
-class ClassesComplimentClassIntent:
-    NAME = 'CLASSES_COMPLIMENT_CLASS'
+class ClassAfterClassIntent:
+    NAME = 'CLASS_AFTER_CLASS'
 
     def __init__(self, parameters):
         self.parameters = parameters
 
     @staticmethod
     def execute(db):
-        output = 'The CSC flowchart would be best to see what classes ' \
-                 'compliment each other. '
+        output = "The CSC flowchart would be best to understand what order to" \
+                 " take courses. "
         return output + LinkToFlowchart().execute()
