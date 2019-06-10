@@ -5,6 +5,7 @@ import requests
 import uuid
 from storage.DBProxy import DBProxy
 from intent_handling.intenthandler import IntentHandler
+from spell_checker import spell_check
 
 def main():
     with open("dialogflow.json", 'r') as j:
@@ -15,6 +16,8 @@ def main():
 
     print("Hello! And welcome to the CSC Course Chatbot!")
     query = input("What question can I answer for ya?:\n")
+    # run spell-checker on query
+    query = spell_check(query)
     handler = IntentHandler(DBProxy())
     while (query.lower() != 'quit'):
 
