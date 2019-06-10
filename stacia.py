@@ -5,9 +5,10 @@ import requests
 import uuid
 from storage.DBProxy import DBProxy
 from intent_handling.intenthandler import IntentHandler
+from intent_handling.teamdelegation import best_team_estimate
 
 def main():
-    with open("/home/mjpangbu466/CSCCourseBot/dialogflow.json", 'r') as j:
+    with open("dialogflow.json", 'r') as j:
         api = json.load(j)
 
     url = (api["url"])
@@ -15,7 +16,7 @@ def main():
 
     print("Hello! And welcome to the CSC Course Chatbot!")
     query = input("What question can I answer for ya?:\n")
-    db = DBProxy('/home/mjpangbu466/CSCCourseBot/credentials.txt')
+    db = DBProxy('credentials.txt')
     handler = IntentHandler(db)
     while (query.lower() != 'quit'):
 
@@ -44,6 +45,13 @@ def main():
             intent = responseJson['result']['metadata']['intentName']  # a string
             parameters = responseJson['result']['parameters']  # a dict
             response = handler.handle(intent, parameters)
+
+            if response is None:
+                team = best_team_estimate(query)
+                if team is None:
+                    response = "Sorry, I'm not sure how to answer that."
+                else:
+                    response = 'The {} bot might be able to answer that question for you.'.format(team)
 
             print("\nResulting intent: {0}".format(intent))
             print("Resulting parameters: {0}\n".format(parameters))
