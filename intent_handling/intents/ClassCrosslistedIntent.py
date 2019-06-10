@@ -11,12 +11,13 @@ class ClassCrosslistedIntent:
         sql = 'SELECT course_depts.code, department ' \
               'FROM course_depts JOIN main_courses ON course_depts.code=main_courses.code ' \
               'WHERE intent_name="{}"'.format(self.parameters.class_name)
-        result = [(code, dept) for code, dept in db.call(sql) if dept != 'csc']
+        result = db.call(sql)
         if len(result) == 0:
             return Signal.UNKNOWN, 'No information available for {}.'.format(self.parameters.class_name)
         else:
+            result = [(code, dept) for code, dept in result if dept != 'csc']
             code_string = db.course_code(self.parameters.class_name)
-            if len(result) == 1:
+            if len(result) == 0:
                 return Signal.NORMAL, '{} is not crosslisted in any other departments.'.format(code_string)
             else:
                 crosslisted = ', '.join('{} {}'.format(tup[1].upper(), tup[0]) for tup in result)
