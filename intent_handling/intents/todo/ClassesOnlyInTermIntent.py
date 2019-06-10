@@ -1,3 +1,4 @@
+from intent_handling.signal import Signal
 
 
 class ClassesOnlyInTermIntent:
@@ -7,4 +8,6 @@ class ClassesOnlyInTermIntent:
         self.parameters = parameters
 
     def execute(self, db):
-        pass
+        sql = 'SELECT * FROM course_terms'
+        result = db.call(sql)
+        print(result)
