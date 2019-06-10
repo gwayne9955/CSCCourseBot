@@ -82,7 +82,8 @@ class TestBot(irc.bot.SingleServerIRCBot):
             #Foaad: change this
             c.privmsg(self.channel, "Hi there! Ask me information about CSC courses :(")
         else:
-            c.privmsg(self.channel, self.stacia.respond(cmd))
+            stacia_response = self.stacia.respond(cmd)[1]
+            c.privmsg(self.channel, stacia_response)
 
 def main():
     import sys
