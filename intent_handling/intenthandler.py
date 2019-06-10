@@ -19,7 +19,9 @@ from intent_handling.intents.ClassesTwoPartIntent import ClassesTwoPartIntent
 from intent_handling.intents.ClassAfterClassIntent import ClassAfterClassIntent
 from intent_handling.intents.WhatClassCodeIntent import WhatClassCodeIntent
 from intent_handling.intents.ClassTitleIntent import ClassTitleIntent
-
+from intent_handling.intents.ClassWithTopicIntent import ClassWithTopicIntent
+from intent_handling.intents.ClassTopicsIntent import ClassTopicsIntent
+from intent_handling.intents.ClassCNCIntent import ClassCNCIntent
 from intent_handling.intents.ClassCrosslistedIntent import ClassCrosslistedIntent
 from intent_handling.intents.ClassesCrosslistedIntent import ClassesCrosslistedIntent
 from intent_handling.intents.ClassCrosslistedInDeptIntent import ClassCrosslistedInDeptIntent
@@ -52,7 +54,10 @@ class IntentHandler:
         ClassesTwoPartIntent,
         ClassAfterClassIntent,
         WhatClassCodeIntent,
-        ClassTitleIntent
+        ClassTitleIntent,
+        ClassWithTopicIntent,
+        ClassTopicsIntent,
+        ClassCNCIntent
     ]
 
     INTENT_MAPPING: Dict[str, type] = {IntentType.NAME: IntentType
