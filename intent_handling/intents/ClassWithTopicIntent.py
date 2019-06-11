@@ -16,22 +16,19 @@ class ClassWithTopicIntent:
         result = db.call(sql)
 
         codes = [row[0] for row in result]
-        print("Codes: {}, searching for: {}".format(codes, code.split(' ')[-1]))
         if int(code.split(' ')[-1]) not in codes:
             output = 'No, {} does not cover {}.'.format(
                 code, pretty_topic)
             if len(codes) > 0:
-                output += ' But, {} is covered in the following classes:\n'.format(
-                    pretty_topic)
-                for c in codes:
-                    output += '\tCSC {}\n'.format(c)
+                output += ' But, {} is covered in the following classes: {}'\
+                          .format(pretty_topic, ', '.join(["CSC {}".format(c)
+                                                           for c in codes]))
             return Signal.UNKNOWN, output
 
         output = 'Yes, {} covers {}.'.format(code,
                                              pretty_topic)
         if len(codes) > 1:
-            output += ' {} is covered in the following classes:\n'.format(
-                pretty_topic)
-            for c in codes:
-                output += '\tCSC {}\n'.format(c)
+            pretty_topic = pretty_topic[0].upper() + pretty_topic[1:]
+            output += ' {} is covered in the following classes: {}'.format(
+                pretty_topic, ', '.join(["CSC {}".format(c) for c in codes]))
         return Signal.NORMAL, output

@@ -19,9 +19,8 @@ class ClassesGEIntent:
             return Signal.UNKNOWN, output
 
         codes = [row[0] for row in result]
-        output = 'The following classes fulfill GE Area {}\n'.format(
-            self.parameters.ge_area)
-        for code in codes:
-            output += '\tCSC {}\n'.format(code)
+        output = 'The following classes fulfill GE Area {}. {}'.format(
+            self.parameters.ge_area, ', '.join(["CSC {}".format(c) for c in
+                                                codes]))
 
         return Signal.NORMAL, output

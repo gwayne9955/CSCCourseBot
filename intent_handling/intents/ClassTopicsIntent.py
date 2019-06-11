@@ -15,12 +15,9 @@ class ClassTopicsIntent:
         result = db.call(sql)
 
         topics = [row[0] for row in result]
-        topics = topics[:10]
-        output = "Here are {} topics are covered in {}:\n".format(
-            len(topics), code)
-        for topic in topics:
-            pretty_topic = ' '.join(topic.split('_'))
-            output += '\t{}\n'.format(pretty_topic)
+        topics = [' '.join(topic.split('_')) for topic in topics[:10]]
+        output = "Here are {} topics are covered in {}: {}".format(
+            len(topics), code, ', '.join(topics))
 
         return Signal.NORMAL, output
 

@@ -8,4 +8,4 @@ class WhenTakeClassIntent:
         self.parameters = parameters
 
     def execute(self, db):
-        return LinkToFlowchart.execute()
+        return LinkToFlowchart().execute()
