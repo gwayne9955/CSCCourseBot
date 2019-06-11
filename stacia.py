@@ -68,7 +68,7 @@ class Stacia:
 
 def main():
     print("Hello! And welcome to the CSC Course Chatbot!")
-    print("You can me questions about the Cal Poly CSC Course System or enter \'Help\' or \'quit\'")
+    print("You can ask me questions about the Cal Poly CSC Course System or enter \'Help\' or \'quit\'")
     stacia = Stacia()
     query = input("What question can I help answer for you?:\n")
     while (query.lower() != 'quit'):
