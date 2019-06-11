@@ -12,16 +12,16 @@ from intent_handling.signal import Signal
 
 class Stacia:
     def __init__(self):
-        with open("dialogflow.json", 'r') as j:
+        with open("/home/mjpangbu/CSCCourseBot/stacia.py/dialogflow.json", 'r') as j:
             self.api = json.load(j)
 
         self.url = (self.api["url"])
         self.id = uuid.uuid1()
 
-        db = DBProxy('credentials.txt')
-        self.handler = handler = IntentHandler(db)
+        db = DBProxy('/home/mjpangbu/CSCCourseBot/stacia.py/credentials.txt')
+        self.handler = IntentHandler(db)
 
-    def respond(self, query) -> str:
+    def respond(self, query):
         query = spell_check(query)
 
         # The http request
