@@ -17,10 +17,9 @@ class ClassesWithTopicIntent:
             return Signal.UNKNOWN, 'No classes found with topic {}'.format(
                 pretty_topic)
 
-        output = "The following classes are related to {}:\n\n".format(
-            pretty_topic)
-        for course in result:
-            output += "\tCSC {}\n".format(course[0])
+        codes = [row[0] for row in result]
+        output = "The following classes are related to {}: {}".format(
+            pretty_topic, ', '.join(["CSC {}".format(c) for c in codes]))
 
         return Signal.NORMAL, output
 

@@ -33,6 +33,5 @@ def correct_text(text, json_response):
 def spell_check(text):
     data = {'text': text}
     response = requests.post(endpoint, headers=headers, params=params, data=data)
-    print(response)
     json_response = response.json()
     return correct_text(text, json_response)

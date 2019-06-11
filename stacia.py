@@ -67,22 +67,22 @@ class Stacia:
 
 
 def main():
-    print("Hello! And welcome to the CSC Course Chatbot!")
-    print("You can me questions about the Cal Poly CSC Course System or enter \'Help\' or \'quit\'")
+    print("Hello! And welcome to the Stacia CSC Course Chatbot!")
+    print("You can ask me questions about the Cal Poly CSC Course System or enter \'help\' or \'quit\'")
     stacia = Stacia()
     query = input("What question can I help answer for you?:\n")
     while (query.lower() != 'quit'):
         if query.lower() == 'help':
             helpStr = """Example questions about the Cal Poly CSC Course System you can ask me:\n
-                \t• \'Does CSC 349 satisfy GE Area a2?\'
-                \t• \'What class title is given to CSC 466?\'
+                \t• \'Does CSC 349 satisfy GE Area A2?\'
+                \t• \'What is the name of CSC 466?\'
                 \t• \'When is CSC 453 typically offered?\'
-                \t• \'Which courses require junior standing?\'
-                \t• \'What code does computer graphics have?\'\n"""
+                \t• \'Which courses require graduate standing?\'
+                \t• \'What are the prerequisites for CSC 480?\'\n"""
             print(helpStr)
         else:
             response = stacia.respond(query)
-            print("{}".format(response[1]))
+            print("{}\n".format(response[1]))
         query = input("What question can I help answer for you?:\n")
 
     print("Goodbye and thank you for using our CSC Course Chatbot")
