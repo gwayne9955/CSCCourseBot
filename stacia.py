@@ -82,7 +82,7 @@ def main():
             print(helpStr)
         else:
             response = stacia.respond(query)
-            print("{}".format(response[1]))
+            print("{}\n".format(response[1]))
         query = input("What question can I help answer for you?:\n")
 
     print("Goodbye and thank you for using our CSC Course Chatbot")
